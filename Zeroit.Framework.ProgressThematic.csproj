@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2556460-63C9-4483-AD45-28FB9F025C0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Zeroit.Framework.ProgressThematic</RootNamespace>
+    <AssemblyName>Zeroit.Framework.ProgressThematic</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\ControlRenderer.cs" />
+    <Compile Include="Helpers\Helper.cs" />
+    <Compile Include="Helpers\OnAnimation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\Utilities.cs" />
+    <Compile Include="Helpers\DrawText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\DrawBorders.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\RoundRect.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\AnimationFunctions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Animator.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Animator2D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Animator3D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\AnimatorStatus.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\float2D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\float3D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\FloatExtensions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\FPSLimiterKnownValues.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\IAnimator.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\KnownAnimationFunctions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Path.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Path2D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Path2DExtensions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Path3D.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Path3DExtensions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PathExtensions.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorDialog\PeaceAnimatorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorDialog\PeaceAnimatorDialog.Designer.cs">
+      <DependentUpon>PeaceAnimatorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorDialog\PeaceAnimatorUITypeEditor.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorDialog\PeaceInput.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorWithEditor - Extension.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorWithEditor - StartFast.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorWithEditor - StartFasterAnimation.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorWithEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\SafeInvoker.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\SafeInvoker`1.cs" />
+    <Compile Include="Helpers\_Helpers\Animations\PeaceAnimator\Timer.cs" />
+    <Compile Include="Helpers\_Helpers\Drawing\MyColor.cs" />
+    <Compile Include="Helpers\_Helpers\Drawing\MyRectangle.cs" />
+    <Compile Include="Helpers\_Helpers\Drawing\MySize.cs" />
+    <Compile Include="Helpers\_Helpers\LineSeparators\SimpleLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\LineSeparators\SimpleLine2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Math\MyMaths.cs" />
+    <Compile Include="Helpers\_Helpers\Rotating3DCube\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Rotating3DCube\Point3D.cs" />
+    <Compile Include="Helpers\_Helpers\Rotating3DCube\RotatingCube.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Theme\Design Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Theme\NYX Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Theme\Spicylips Theme.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Helpers\_Helpers\Theme\ThemeManagers\Themes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\DaggerControls\DaggerCircleProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\DaggerControls\DaggerCircleProgressBarV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\DaggerControls\DaggerCircleProgressSmooth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\Constructors\Circular.cs" />
+    <Compile Include="Progress_V2\_FormEditors\Constructors\Indicator.cs" />
+    <Compile Include="Progress_V2\_FormEditors\Constructors\Bars.cs" />
+    <Compile Include="Progress_V2\_FormEditors\Constructors\Base.cs" />
+    <Compile Include="Progress_V2\Enumeration.cs" />
+    <Compile Include="Progress_V2\PenParameters.cs" />
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Extended_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Extended_UC.Designer.cs">
+      <DependentUpon>Extended_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Indicator_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Indicator_UC.Designer.cs">
+      <DependentUpon>Indicator_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\iTunes_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\iTunes_UC.Designer.cs">
+      <DependentUpon>iTunes_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Maze_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Maze_UC.Designer.cs">
+      <DependentUpon>Maze_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Alter_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Alter_UC.Designer.cs">
+      <DependentUpon>ProgBar_Alter_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Clear_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Clear_UC.Designer.cs">
+      <DependentUpon>ProgBar_Clear_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Perplex_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Perplex_UC.Designer.cs">
+      <DependentUpon>ProgBar_Perplex_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Rect_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Rect_UC.Designer.cs">
+      <DependentUpon>ProgBar_Rect_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Splitter_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Splitter_UC.Designer.cs">
+      <DependentUpon>ProgBar_Splitter_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Transparent_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Transparent_UC.Designer.cs">
+      <DependentUpon>ProgBar_Transparent_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Prog_Antonio_Normal_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Bars\Prog_Antonio_Normal_UC.Designer.cs">
+      <DependentUpon>Prog_Antonio_Normal_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBarDefault_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBarDefault_UC.Designer.cs">
+      <DependentUpon>CircularProgressBarDefault_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBar_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBar_UC.Designer.cs">
+      <DependentUpon>CircularProgressBar_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV2_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV2_UC.Designer.cs">
+      <DependentUpon>CircularProgressV2_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV3_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV3_UC.Designer.cs">
+      <DependentUpon>CircularProgressV3_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV4_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV4_UC.Designer.cs">
+      <DependentUpon>CircularProgressV4_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV5_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV5_UC.Designer.cs">
+      <DependentUpon>CircularProgressV5_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerSmooth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerSmooth.Designer.cs">
+      <DependentUpon>DaggerSmooth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerV2.Designer.cs">
+      <DependentUpon>DaggerV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Dagger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Dagger.Designer.cs">
+      <DependentUpon>Dagger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Gorgeous_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Gorgeous_UC.Designer.cs">
+      <DependentUpon>Gorgeous_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Ignito_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Ignito_UC.Designer.cs">
+      <DependentUpon>Ignito_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressAwesome_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressAwesome_UC.Designer.cs">
+      <DependentUpon>ProgressAwesome_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPerfect_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPerfect_UC.Designer.cs">
+      <DependentUpon>ProgressBarPerfect_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPie_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPie_UC.Designer.cs">
+      <DependentUpon>ProgressBarPie_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingArc_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingArc_UC.Designer.cs">
+      <DependentUpon>RotatingArc_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingCompass_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingCompass_UC.Designer.cs">
+      <DependentUpon>RotatingCompass_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Supreme_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\Supreme_UC.Designer.cs">
+      <DependentUpon>Supreme_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtendedV1_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtendedV1_UC.Designer.cs">
+      <DependentUpon>ZeroitMultiCoExtendedV1_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtended_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtended_UC.Designer.cs">
+      <DependentUpon>ZeroitMultiCoExtended_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCo_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCo_UC.Designer.cs">
+      <DependentUpon>ZeroitMultiCo_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\CircularIndeterminate_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\CircularIndeterminate_UC.Designer.cs">
+      <DependentUpon>CircularIndeterminate_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\GoogleProgress_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\GoogleProgress_UC.Designer.cs">
+      <DependentUpon>GoogleProgress_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_Optimized_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_Optimized_UC.Designer.cs">
+      <DependentUpon>MacOSX_Optimized_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_UC.Designer.cs">
+      <DependentUpon>MacOSX_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\Matrix_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\Matrix_UC.Designer.cs">
+      <DependentUpon>Matrix_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicatorUnique_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicatorUnique_UC.Designer.cs">
+      <DependentUpon>ProgressIndicatorUnique_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicator_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicator_UC.Designer.cs">
+      <DependentUpon>ProgressIndicator_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\Vuvuzela_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\Vuvuzela_UC.Designer.cs">
+      <DependentUpon>Vuvuzela_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerCircle_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerCircle_UC.Designer.cs">
+      <DependentUpon>SpinnerCircle_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerProgress_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerProgress_UC.Designer.cs">
+      <DependentUpon>SpinnerProgress_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\WinHorizontal_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\WinHorizontal_UC.Designer.cs">
+      <DependentUpon>WinHorizontal_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\WinRing_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\UserControls\Indicators\WinRing_UC.Designer.cs">
+      <DependentUpon>WinRing_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Transparent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Splitter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Rect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Perplex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Clear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ProgBar_Alter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\Prog_Antonio - Normal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\Maze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\iTunes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\Indicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Bars\ExtendedProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Dagger\DaggerSmooth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Dagger\DaggerV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Dagger\Dagger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\RotatingCompass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ZeroitMultiCoExtended1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ZeroitMultiCoExtended.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ZeroitMultiCo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Supreme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\RotatingArc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ProgressBarPie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ProgressBarPerfect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\ProgressAwesome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Ignito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\Gorgeous.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressV5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressV4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressV3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressBarDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Circular\CircularProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\MacOSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\Win8ProgressRing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\Win8MarqueeHorizontal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\Vuvuzela.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\SpinnerCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\ProgressIndicatorUnique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\ProgressIndicator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\Matrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\MacOSX_Optimized.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\GoogleProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_External Access\Indicators\CircularIndeterminate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ExtendedProgressBar.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\Indicator.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\iTunes.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\MazeProgress.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressAntonio-Normal.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressBarAlter.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressBarClear.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressBarPerplex.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressBarRect.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressBarTransparent.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Bars\ProgressSplitter.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressBar.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressBarDefault.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressV2.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressV3.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressV4.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\CircularProgressV5.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\Dagger\DaggerCircleProgressSmooth.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\Dagger\DaggerCircleProgressBarV2.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\Dagger\DaggerCircleProgressBar.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\Gorgeous.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\Ignito.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ProgressAwesome.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ProgressBarPerfect.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ProgressBarPie.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\RotatingArc.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\RotatingCompass.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\SupremeCircularProgress.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ZeroitMultiCo.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ZeroitMultiCoExtended.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Circular\ZeroitMultiCoExtended1.cs" />
+    <Compile Include="Progress_V2\_FormEditors\Private-Events.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\Private-Fields.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\CircularIndeterminate.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\GoogleProgress.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\MacOSX.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\MacOSXOptimized.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\Matrix.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\ProgressIndicator.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\ProgressIndicatorUnique.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\RotatingProgress.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\SpinnerCircle.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\SpinningProgress.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\Win8MarqueeHorizontal.cs" />
+    <Compile Include="Progress_V2\_FormEditors\_Inputs\Indicators\Win8ProgressRing.cs" />
+    <Compile Include="Progress_V2\_FormEditors\ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress_V2\_FormEditors\ProgressEditorUITypeEditor.cs" />
+    <Compile Include="Progress_V2\_FormEditors\ProgressInput.cs" />
+    <Compile Include="Progress_V2\_FormEditors\ProgressInternal_Converter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Progress_V2\Bars\ExtendedProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\iTunes.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\MazeProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressAntonio - Boxed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressAntonio - Gradient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressAntonio - Helpers.cs" />
+    <Compile Include="Progress_V2\Bars\ProgressAntonio - Normal.cs" />
+    <Compile Include="Progress_V2\Bars\ProgressBarAlter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressBarClear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressBarPerplex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressBarRect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressBarTransparent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\ProgressSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressBarDefault.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV3.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV5a.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV5aClock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\CircularProgressV_BarData.cs" />
+    <Compile Include="Progress_V2\Circular\Gorgeous.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\IgnitoProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Bars\Indicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ProgressBarAwesome.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ProgressBarPerfect.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ProgressBarPie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\RotatingArc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\RotatingCompass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\RotatingPieProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\SupremeCircularProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ZeroitMultiCo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ZeroitMultiCoExtended.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Circular\ZeroitMultiCoExtended1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\CircularIndeterminate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\GoogleProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\MacOSX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\MacOSXOptimized.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\Matrix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\ProgressIndicator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\ProgressIndicatorUnique.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\RotatingProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\SpinnerCircle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\SpinningProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\Win8MarqueeHorizontal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\Indicators\Win8ProgressRing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\ThematicProgress.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Progress_V2\ThematicProgress_SmartTag.cs" />
+    <EmbeddedResource Include="Helpers\_Helpers\Animations\PeaceAnimator\PeaceAnimatorDialog\PeaceAnimatorDialog.resx">
+      <DependentUpon>PeaceAnimatorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\Extended_UC.resx">
+      <DependentUpon>Extended_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\Indicator_UC.resx">
+      <DependentUpon>Indicator_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\iTunes_UC.resx">
+      <DependentUpon>iTunes_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\Maze_UC.resx">
+      <DependentUpon>Maze_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Alter_UC.resx">
+      <DependentUpon>ProgBar_Alter_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Clear_UC.resx">
+      <DependentUpon>ProgBar_Clear_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Perplex_UC.resx">
+      <DependentUpon>ProgBar_Perplex_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Rect_UC.resx">
+      <DependentUpon>ProgBar_Rect_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Splitter_UC.resx">
+      <DependentUpon>ProgBar_Splitter_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\ProgBar_Transparent_UC.resx">
+      <DependentUpon>ProgBar_Transparent_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Bars\Prog_Antonio_Normal_UC.resx">
+      <DependentUpon>Prog_Antonio_Normal_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBarDefault_UC.resx">
+      <DependentUpon>CircularProgressBarDefault_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressBar_UC.resx">
+      <DependentUpon>CircularProgressBar_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV2_UC.resx">
+      <DependentUpon>CircularProgressV2_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV3_UC.resx">
+      <DependentUpon>CircularProgressV3_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV4_UC.resx">
+      <DependentUpon>CircularProgressV4_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\CircularProgressV5_UC.resx">
+      <DependentUpon>CircularProgressV5_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerSmooth.resx">
+      <DependentUpon>DaggerSmooth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\DaggerV2.resx">
+      <DependentUpon>DaggerV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\Dagger.resx">
+      <DependentUpon>Dagger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\Gorgeous_UC.resx">
+      <DependentUpon>Gorgeous_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\Ignito_UC.resx">
+      <DependentUpon>Ignito_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressAwesome_UC.resx">
+      <DependentUpon>ProgressAwesome_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPerfect_UC.resx">
+      <DependentUpon>ProgressBarPerfect_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ProgressBarPie_UC.resx">
+      <DependentUpon>ProgressBarPie_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingArc_UC.resx">
+      <DependentUpon>RotatingArc_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\RotatingCompass_UC.resx">
+      <DependentUpon>RotatingCompass_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\Supreme_UC.resx">
+      <DependentUpon>Supreme_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtendedV1_UC.resx">
+      <DependentUpon>ZeroitMultiCoExtendedV1_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCoExtended_UC.resx">
+      <DependentUpon>ZeroitMultiCoExtended_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Circular\ZeroitMultiCo_UC.resx">
+      <DependentUpon>ZeroitMultiCo_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\CircularIndeterminate_UC.resx">
+      <DependentUpon>CircularIndeterminate_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\GoogleProgress_UC.resx">
+      <DependentUpon>GoogleProgress_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_Optimized_UC.resx">
+      <DependentUpon>MacOSX_Optimized_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\MacOSX_UC.resx">
+      <DependentUpon>MacOSX_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\Matrix_UC.resx">
+      <DependentUpon>Matrix_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicatorUnique_UC.resx">
+      <DependentUpon>ProgressIndicatorUnique_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\ProgressIndicator_UC.resx">
+      <DependentUpon>ProgressIndicator_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\Vuvuzela_UC.resx">
+      <DependentUpon>Vuvuzela_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerCircle_UC.resx">
+      <DependentUpon>SpinnerCircle_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\SpinnerProgress_UC.resx">
+      <DependentUpon>SpinnerProgress_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\WinHorizontal_UC.resx">
+      <DependentUpon>WinHorizontal_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\UserControls\Indicators\WinRing_UC.resx">
+      <DependentUpon>WinRing_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress_V2\_FormEditors\ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
