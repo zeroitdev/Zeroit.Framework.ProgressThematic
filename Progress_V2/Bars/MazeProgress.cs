@@ -636,6 +636,8 @@ namespace Zeroit.Framework.ProgressThematic
             }
         }
 
+        
+
         /// <summary>
         /// Represents the method that is called when the maze layout changes.
         /// </summary>
@@ -731,8 +733,8 @@ namespace Zeroit.Framework.ProgressThematic
         private void Maze_Paint(PaintEventArgs e)
         {
             g = e.Graphics;
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             //g.SmoothingMode = SmoothingMode.HighQuality;
             //g.Clear(BackColor);

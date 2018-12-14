@@ -366,8 +366,8 @@ namespace Zeroit.Framework.ProgressThematic
         {
             ProgressBarNormal_Paint(e);
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = Smoothing;
+            //g.TextRenderingHint = TextRendering;
 
             //g.Clear(BackColor);
 
