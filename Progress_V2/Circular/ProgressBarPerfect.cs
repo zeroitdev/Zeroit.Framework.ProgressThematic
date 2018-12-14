@@ -490,7 +490,13 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             _numberOfCircles = ProgressPerfect_NumberOfCircles;
 
             ProgressPerfect_timerAnimation.Interval = ProgressBarPerfect_AnimationSpeed;

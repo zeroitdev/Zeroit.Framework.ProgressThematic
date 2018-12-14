@@ -130,10 +130,15 @@ namespace Zeroit.Framework.ProgressThematic
         private void ProgressBarGradient_Paint(PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = Smoothing;
+            //g.TextRenderingHint = TextRendering;
 
-            g.Clear(BackColor);
+            if (allowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
+
+            //g.Clear(BackColor);
 
             if (RollingType == RollingTypes.None)
                 ProgressBarGradient_DrawBackground(g);

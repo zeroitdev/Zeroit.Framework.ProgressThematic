@@ -240,6 +240,10 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics G = e.Graphics;
             //G.SmoothingMode = Smoothing;
             //G.TextRenderingHint = TextRendering;
+            if (allowTransparency)
+            {
+                MakeTransparent(this, G);
+            }
 
             switch (ProgressAlter_Orientation)
             {

@@ -520,7 +520,11 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics graphic = e.Graphics;
             //graphic.SmoothingMode = Smoothing;
 
-           
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             //graphic.Clear(BackColor);
 
             Rectangle rectangle = new Rectangle(SP_Position_Horizontal, SP_Position_Vertical, checked(base.Width - SP_Width_Tweak),

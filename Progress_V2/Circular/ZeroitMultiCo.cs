@@ -896,8 +896,12 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
-            g.Clear(BackColor);
+            //g.Clear(BackColor);
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             Rectangle rect = new Rectangle(MC_CorrectShift, MC_CorrectShift_Height, Width - MC_Shift, Height - MC_Shift_Height);
             Rectangle coloredRectangle = new Rectangle(MC_Position_Horizontal, MC_Position_Horizontal, Width - MC_RectShift, Height - MC_RectShift_Height);

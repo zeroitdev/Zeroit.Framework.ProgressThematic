@@ -954,6 +954,11 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             #region OnPaint - Draw Background
 
             //timer.Interval = ExtendedProgress_TimerInterval;

@@ -404,6 +404,11 @@ namespace Zeroit.Framework.ProgressThematic
 
         private void Unique_OnPaint(PaintEventArgs e)
         {
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             ProgressPerfect_timerAnimation.Interval = ProgressBarPerfect_AnimationSpeed;
             
             float angle = 360.0F / Unique_NumberOfCircles;
@@ -415,7 +420,7 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
 
             for (int i = 1; i <= Unique_NumberOfCircles; i++)
             {

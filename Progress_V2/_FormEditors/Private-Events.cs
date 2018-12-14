@@ -362,12 +362,21 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
             #region Values
 
-            
+
 
             #endregion
 
-            
+            #region Show Text
 
+            if (progressInput.AllowTransparency == true)
+            {
+                mainControl_Transparency_Yes_RadioBtn.Checked = true;
+            }
+            else
+            {
+                mainControl_Transparency_No_RadioBtn.Checked = true;
+            }
+            #endregion  
         }
 
     }

@@ -486,7 +486,12 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
-            g.Clear(this.BackColor);
+            //g.Clear(this.BackColor);
+
+            if (allowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             Bitmap bmp = GenerateProcentBar(this.Width, this.Height, this.Value, this.BarMirrorOpacity, this.BackColor);
             g.DrawImage(bmp, 0, 0);

@@ -478,7 +478,12 @@ namespace Zeroit.Framework.ProgressThematic
             
             Rectangle innerRectangle = new Rectangle(0 + DagUpUnfilledThickness + DagInnerBorderWidth, 0 + DagUpUnfilledThickness + DagInnerBorderWidth, Width - (2*DagUpUnfilledThickness) - (2 * DagInnerBorderWidth), Height - (2*DagUpUnfilledThickness) - (2 * DagInnerBorderWidth));
 
-            g.Clear(this.BackColor);
+            //g.Clear(this.BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             g.DrawArc(new Pen(this.DagUpUnFilledColor, (float)this.DagUpUnfilledThickness)
             {

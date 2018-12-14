@@ -364,6 +364,11 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void ProgressBarBoxed_Paint(PaintEventArgs e)
         {
+            if (allowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             ProgressBarNormal_Paint(e);
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;

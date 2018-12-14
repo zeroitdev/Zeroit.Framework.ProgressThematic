@@ -155,7 +155,9 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            
 
             SolidBrush b = new SolidBrush(Color);
             float w = this.ClientSize.Width;
@@ -167,6 +169,11 @@ namespace Zeroit.Framework.ProgressThematic
             StringFormat f = new StringFormat(StringFormatFlags.NoWrap);
             f.Alignment = StringAlignment.Center;
             //e.Graphics.DrawString(Convert.ToInt32(Value).ToString() + postFix, this.Font, b, r, f);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
 
             if (ShowText)
             {

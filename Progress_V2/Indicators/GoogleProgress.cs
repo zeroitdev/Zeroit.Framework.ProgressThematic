@@ -1345,7 +1345,12 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
 
             if (GoogleProgress_annulus_graphic == null)
             {

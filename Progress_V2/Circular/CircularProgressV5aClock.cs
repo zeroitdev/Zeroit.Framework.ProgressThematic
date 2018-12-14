@@ -203,9 +203,14 @@ namespace Zeroit.Framework.ProgressThematic
             //G.TextRenderingHint = TextRendering;
 
             //G.SmoothingMode = SmoothingMode.HighQuality;
-            if (BackColor != Color.Transparent)
+            //if (BackColor != Color.Transparent)
+            //{
+            //    G.Clear(BackColor);
+            //}
+
+            if (AllowTransparency)
             {
-                G.Clear(BackColor);
+                MakeTransparent(this, G);
             }
 
             for (int i = 0; i <= _barCount; i++)

@@ -666,7 +666,12 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
 
             MacOSX_Optimized_m_Pen.EndCap = MacOSX_Optimized_EndCap;
             MacOSX_Optimized_m_Pen.StartCap = MacOSX_Optimized_StartCap;

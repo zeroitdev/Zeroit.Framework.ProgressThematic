@@ -2083,7 +2083,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
                 }
 
 
-            else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
+                else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                          (int) ProgressBar.IPIndeterminate)
                 {
                     progressInput = new ProgressInput(
@@ -2364,6 +2364,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void mainControl_Transparency_Yes_RadioBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            UserControl_Transparency();
         }
     }
 }

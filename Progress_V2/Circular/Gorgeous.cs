@@ -593,7 +593,12 @@ namespace Zeroit.Framework.ProgressThematic
             //graphics.SmoothingMode = Smoothing;
             //graphics.TextRenderingHint = TextRendering;
 
-            graphics.Clear(BackColor);
+            //graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, graphics);
+            }
             //graphics.TextRenderingHint = TextRenderingHint.AntiAlias;
 
             //ForeColor = Color.White;

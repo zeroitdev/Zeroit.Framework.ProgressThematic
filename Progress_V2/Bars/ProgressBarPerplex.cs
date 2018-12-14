@@ -479,7 +479,12 @@ namespace Zeroit.Framework.ProgressThematic
             //G.TextRenderingHint = TextRendering;
             //Graphics Gtrans = Graphics.FromImage(B);
 
-            G.Clear(BackColor);
+            //G.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, G);
+            }
 
             float val = Value / Maximum;
             int intValue = Convert.ToInt32(val * Width);

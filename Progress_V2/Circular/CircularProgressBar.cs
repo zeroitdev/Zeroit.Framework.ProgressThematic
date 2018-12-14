@@ -428,8 +428,13 @@ namespace Zeroit.Framework.ProgressThematic
             //graphics.SmoothingMode = Smoothing;
             //graphics.TextRenderingHint = TextRendering;
 
-            graphics.Clear(BackColor);
-            
+            //graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, graphics);
+            }
+
             LinearGradientBrush brush = new LinearGradientBrush(this.ClientRectangle, this.Color1_Progress,
                 this.Color2_Progress, LinearGradientMode.ForwardDiagonal);
 

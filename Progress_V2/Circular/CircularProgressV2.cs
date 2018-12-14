@@ -373,8 +373,13 @@ namespace Zeroit.Framework.ProgressThematic
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
 
-            g.Clear(BackColor);
-            
+            //g.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
+
             Rectangle rect = new Rectangle(CPv2_Shift, CPv2_Shift, Width - CPv2_ProgressWidth, Height - CPv2_ProgressWidth);
 
             float percentage = Value;

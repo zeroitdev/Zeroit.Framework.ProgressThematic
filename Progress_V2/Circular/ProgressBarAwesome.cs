@@ -1125,7 +1125,12 @@ namespace Zeroit.Framework.ProgressThematic
         {
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
 
             if (ShowText)
             {
@@ -1181,9 +1186,14 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The e.</param>
         private void ProgressAwesome_OnPaint(Graphics e)
         {
-            e.SmoothingMode = Smoothing;
-            e.TextRenderingHint = TextRendering;
-            e.Clear(BackColor);
+            //e.SmoothingMode = Smoothing;
+            //e.TextRenderingHint = TextRendering;
+            //e.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             if (ShowText)
             {

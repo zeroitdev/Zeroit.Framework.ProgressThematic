@@ -690,6 +690,11 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             WinRing_timer.Interval = AnimationSpeed[0];
 
             {                       // begin transparent WinRing_background

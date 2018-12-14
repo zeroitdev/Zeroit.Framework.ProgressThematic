@@ -348,9 +348,13 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics G = e.Graphics;
             //G.SmoothingMode = Smoothing;
             //G.TextRenderingHint = TextRendering;
-            G.Clear(BackColor);
-            
-            
+            //G.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, G);
+            }
+
             float percentage = Value;
 
             //float progressAngle = Convert.ToSingle(360 / 100 * percentage);

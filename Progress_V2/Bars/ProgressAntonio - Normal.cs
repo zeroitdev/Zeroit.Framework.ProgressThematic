@@ -347,7 +347,12 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
-            g.Clear(BackColor);
+            //g.Clear(BackColor);
+
+            if (allowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             _iPercent = ((Value) / Maximum) * (100f);
 

@@ -46,7 +46,7 @@ namespace Zeroit.Framework.ProgressThematic
                 ControlStyles.SupportsTransparentBackColor,
                 true);
 
-            BackColor = Color.Transparent;
+            //BackColor = Color.Transparent;
 
             ProgressAwesome_animator = DesignMode ? null : new Animator();
 
@@ -203,6 +203,8 @@ namespace Zeroit.Framework.ProgressThematic
 
         #region HatchBrush
 
+        private HatchStyle hatchStyle = HatchStyle.BackwardDiagonal;
+        
 
         /// <summary>
         /// Enum HatchBrushType
@@ -442,6 +444,20 @@ namespace Zeroit.Framework.ProgressThematic
 
         #region Public Properties
 
+        
+        /// <summary>
+        /// Gets or sets the hatch style.
+        /// </summary>
+        /// <value>The hatch style.</value>
+        public HatchStyle HatchStyle
+        {
+            get { return hatchStyle; }
+            set
+            {
+                hatchStyle = value;
+                Invalidate();
+            }
+        }
         
         /// <summary>
         /// Gets or sets the progress input.

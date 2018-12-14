@@ -226,8 +226,12 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
-            g.Clear(BackColor);
+            //g.Clear(BackColor);
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
 
             LinearGradientBrush l = new LinearGradientBrush(new Point(0, 0), new Point(Width + (int)Value + 50, Height), Trans_ProgressColor1, Trans_ProgressColor2);
 

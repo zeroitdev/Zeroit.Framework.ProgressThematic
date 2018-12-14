@@ -999,7 +999,13 @@ namespace Zeroit.Framework.ProgressThematic
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             timer_indeterminate.Interval = progressInput.RefreshRate;
 
             if (control_graphic == null)
@@ -1030,6 +1036,7 @@ namespace Zeroit.Framework.ProgressThematic
             ControlWidthHeight = (Width / 2) + (Height / 2);
         }
 
+        
         #endregion
 
         #endregion

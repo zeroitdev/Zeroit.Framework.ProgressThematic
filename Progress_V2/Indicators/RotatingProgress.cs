@@ -419,8 +419,13 @@ namespace Zeroit.Framework.ProgressThematic
 
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
-            e.Graphics.Clear(BackColor);
-            
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
+
             if (Vuvuzela_RotatingBorder)
             {
                 e.Graphics.DrawEllipse(new Pen(Vuvuzela_RotatingCircle), new Rectangle(0 + Vuvuzela_HorizontalSpacing, 0 + Vuvuzela_VerticalSpacing, Width - 2, Height - 2));

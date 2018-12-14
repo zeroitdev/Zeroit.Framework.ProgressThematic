@@ -133,6 +133,15 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
             #region Bool - Radio Buttton
 
+            if (mainControl_Transparency_Yes_RadioBtn.Checked == true)
+            {
+                progressInput.AllowTransparency = true;
+            }
+            else
+            {
+                progressInput.AllowTransparency = false;
+            }
+
             if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
             {
                 progressInput.AutoAnimate = true;

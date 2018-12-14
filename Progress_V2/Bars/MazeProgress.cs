@@ -733,6 +733,12 @@ namespace Zeroit.Framework.ProgressThematic
         private void Maze_Paint(PaintEventArgs e)
         {
             g = e.Graphics;
+
+            if (allowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
+
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 

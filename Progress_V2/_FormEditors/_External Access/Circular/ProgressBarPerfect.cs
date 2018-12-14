@@ -166,6 +166,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         private void Set_Perfect_Retrieved_Values(ProgressInput progressInput)
         {
+
             #region MainControl Inputs
 
             #region Enums - ComboBox
@@ -201,6 +202,15 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             #endregion
 
             #region Bool - Radio Buttton
+
+            if (mainControl_Transparency_Yes_RadioBtn.Checked == true)
+            {
+                progressInput.AllowTransparency = true;
+            }
+            else
+            {
+                progressInput.AllowTransparency = false;
+            }
 
             if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
             {

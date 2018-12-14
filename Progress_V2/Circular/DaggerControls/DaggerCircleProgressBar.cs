@@ -396,7 +396,12 @@ namespace Zeroit.Framework.ProgressThematic
             //{
             //    g.DrawImage(this.BackgroundImage, 0, 0);
             //}
-            
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
+
             Rectangle rectangle = new Rectangle(this.DagFilledThickness / 2 + 1, this.DagFilledThickness / 2 + 1, base.Width - this.DagFilledThickness - 2, base.Height - this.DagFilledThickness - 2);
             g.DrawArc(new Pen(this.DagUnFilledColor, (float)this.DagUnfilledThickness), rectangle, (float)this.DagStartAngle, 360f);
             g.DrawArc(new Pen(Color.FromArgb(this.DagFilledColorAlpha, (int)this.DagFilledColor.R, (int)this.DagFilledColor.G, (int)this.DagFilledColor.B), (float)this.DagFilledThickness), rectangle, (float)this.DagStartAngle, (float)((int)((((double)this.Value / Maximum) * 100) * 3.6)));

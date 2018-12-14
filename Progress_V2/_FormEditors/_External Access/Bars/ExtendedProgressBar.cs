@@ -388,6 +388,15 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
                 progressInput.FixedSize = false;
             }
 
+            if (mainControl_Transparency_Yes_RadioBtn.Checked == true)
+            {
+                progressInput.AllowTransparency = true;
+            }
+            else
+            {
+                progressInput.AllowTransparency = false;
+            }
+
             #endregion
 
             #region String

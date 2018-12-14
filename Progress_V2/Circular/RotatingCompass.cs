@@ -425,12 +425,17 @@ namespace Zeroit.Framework.ProgressThematic
 
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
-            e.Graphics.Clear(BackColor);
+            //e.Graphics.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, e.Graphics);
+            }
 
             //timer.Interval = interval;
 
             //Text = "";
-            
+
             if (RotatingBorder)
             {
                 e.Graphics.DrawPie(new Pen(RotatingBorderColor), new Rectangle(0, 0, Width - 2, Height - 2), 180, Value/Maximum * 360);

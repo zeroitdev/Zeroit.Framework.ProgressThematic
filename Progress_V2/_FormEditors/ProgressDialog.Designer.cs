@@ -31,6 +31,10 @@
             this.colorSelector = new System.Windows.Forms.ColorDialog();
             this.thematic1501 = new Zeroit.Framework.ProgressThematic.ThemeManagers.Design();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.mainControl_Transparency_No_RadioBtn = new System.Windows.Forms.RadioButton();
+            this.mainControl_Transparency_Yes_RadioBtn = new System.Windows.Forms.RadioButton();
             this.mainControl_HatchType_ComboBox = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.mainControl_HatchColor2_Btn = new System.Windows.Forms.Button();
@@ -91,12 +95,9 @@
             this.mainControl_ProgressType_ComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mainControl_IndicatorProgress_ComboBox = new System.Windows.Forms.ComboBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.mainControl_Transparency_No_RadioBtn = new System.Windows.Forms.RadioButton();
-            this.mainControl_Transparency_Yes_RadioBtn = new System.Windows.Forms.RadioButton();
             this.thematic1501.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_StartingAngle_Numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_Minimum_Numeric)).BeginInit();
@@ -109,7 +110,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AI_Duration_Numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AA_Speed_Numeric)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // thematic1501
@@ -192,6 +192,51 @@
             this.groupBox1.TabIndex = 117;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Main Controls";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label25.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label25.Location = new System.Drawing.Point(5, 293);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(89, 19);
+            this.label25.TabIndex = 145;
+            this.label25.Text = "Transparency";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.mainControl_Transparency_No_RadioBtn);
+            this.panel7.Controls.Add(this.mainControl_Transparency_Yes_RadioBtn);
+            this.panel7.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.panel7.Location = new System.Drawing.Point(164, 285);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(133, 35);
+            this.panel7.TabIndex = 144;
+            // 
+            // mainControl_Transparency_No_RadioBtn
+            // 
+            this.mainControl_Transparency_No_RadioBtn.AutoSize = true;
+            this.mainControl_Transparency_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
+            this.mainControl_Transparency_No_RadioBtn.Name = "mainControl_Transparency_No_RadioBtn";
+            this.mainControl_Transparency_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.mainControl_Transparency_No_RadioBtn.TabIndex = 110;
+            this.mainControl_Transparency_No_RadioBtn.Text = "No";
+            this.mainControl_Transparency_No_RadioBtn.UseVisualStyleBackColor = true;
+            // 
+            // mainControl_Transparency_Yes_RadioBtn
+            // 
+            this.mainControl_Transparency_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_Transparency_Yes_RadioBtn.Checked = true;
+            this.mainControl_Transparency_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
+            this.mainControl_Transparency_Yes_RadioBtn.Name = "mainControl_Transparency_Yes_RadioBtn";
+            this.mainControl_Transparency_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.mainControl_Transparency_Yes_RadioBtn.TabIndex = 109;
+            this.mainControl_Transparency_Yes_RadioBtn.TabStop = true;
+            this.mainControl_Transparency_Yes_RadioBtn.Text = "Yes";
+            this.mainControl_Transparency_Yes_RadioBtn.UseVisualStyleBackColor = true;
+            this.mainControl_Transparency_Yes_RadioBtn.CheckedChanged += new System.EventHandler(this.mainControl_Transparency_Yes_RadioBtn_CheckedChanged);
             // 
             // mainControl_HatchType_ComboBox
             // 
@@ -1011,50 +1056,6 @@
             this.mainControl_IndicatorProgress_ComboBox.Visible = false;
             this.mainControl_IndicatorProgress_ComboBox.SelectedIndexChanged += new System.EventHandler(this.IndicatorBarTypeChanged);
             // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label25.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label25.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label25.Location = new System.Drawing.Point(5, 293);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(89, 19);
-            this.label25.TabIndex = 145;
-            this.label25.Text = "Transparency";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.mainControl_Transparency_No_RadioBtn);
-            this.panel7.Controls.Add(this.mainControl_Transparency_Yes_RadioBtn);
-            this.panel7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel7.Location = new System.Drawing.Point(164, 285);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(133, 35);
-            this.panel7.TabIndex = 144;
-            // 
-            // mainControl_Transparency_No_RadioBtn
-            // 
-            this.mainControl_Transparency_No_RadioBtn.AutoSize = true;
-            this.mainControl_Transparency_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
-            this.mainControl_Transparency_No_RadioBtn.Name = "mainControl_Transparency_No_RadioBtn";
-            this.mainControl_Transparency_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
-            this.mainControl_Transparency_No_RadioBtn.TabIndex = 110;
-            this.mainControl_Transparency_No_RadioBtn.Text = "No";
-            this.mainControl_Transparency_No_RadioBtn.UseVisualStyleBackColor = true;
-            // 
-            // mainControl_Transparency_Yes_RadioBtn
-            // 
-            this.mainControl_Transparency_Yes_RadioBtn.AutoSize = true;
-            this.mainControl_Transparency_Yes_RadioBtn.Checked = true;
-            this.mainControl_Transparency_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
-            this.mainControl_Transparency_Yes_RadioBtn.Name = "mainControl_Transparency_Yes_RadioBtn";
-            this.mainControl_Transparency_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
-            this.mainControl_Transparency_Yes_RadioBtn.TabIndex = 109;
-            this.mainControl_Transparency_Yes_RadioBtn.TabStop = true;
-            this.mainControl_Transparency_Yes_RadioBtn.Text = "Yes";
-            this.mainControl_Transparency_Yes_RadioBtn.UseVisualStyleBackColor = true;
-            // 
             // ProgressDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1070,6 +1071,8 @@
             this.thematic1501.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_StartingAngle_Numeric)).EndInit();
@@ -1088,8 +1091,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AA_Speed_Numeric)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }

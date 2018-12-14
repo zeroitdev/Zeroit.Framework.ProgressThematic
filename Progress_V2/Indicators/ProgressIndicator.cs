@@ -279,7 +279,12 @@ namespace Zeroit.Framework.ProgressThematic
             //this.BuffGraphics.Graphics.TextRenderingHint = TextRendering;
 
             //BuffGraphics.Graphics.Clear(BackColor);
-            G.Clear(BackColor);
+            //G.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, G);
+            }
 
             BaseColor.Color = P_BaseColor;
             AnimationColor.Color = P_AnimationColor;

@@ -2372,11 +2372,16 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics G = e.Graphics;
             //G.TextRenderingHint = TextRendering;
             //G.SmoothingMode = Smoothing;
-            G.Clear(BackColor);
+            //G.Clear(BackColor);
 
-            if (BackColor != Color.Transparent)
+            //if (BackColor != Color.Transparent)
+            //{
+            //    G.Clear(BackColor);
+            //}
+
+            if (AllowTransparency)
             {
-                G.Clear(BackColor);
+                MakeTransparent(this, G);
             }
 
             //timer.Interval = CPv5_Interval;

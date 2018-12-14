@@ -596,8 +596,13 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
             //g.SmoothingMode = Smoothing;
             //g.TextRenderingHint = TextRendering;
-            g.Clear(BackColor);
-            
+            //g.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, g);
+            }
+
             Rectangle circRect = new Rectangle(2, 2, Width - 5, Height - 5);
             Pen outera = new Pen(IG_Colors[0], 10);
             outera.EndCap = IG_Caps;

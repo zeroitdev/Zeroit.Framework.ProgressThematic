@@ -265,7 +265,12 @@ namespace Zeroit.Framework.ProgressThematic
             //G.SmoothingMode = Smoothing;
             //G.TextRenderingHint = TextRendering;
 
-            G.Clear(BackColor);
+            //G.Clear(BackColor);
+
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, G);
+            }
 
             this.ProgressRect_percent = this.Value / this.Maximum * 100;
 
