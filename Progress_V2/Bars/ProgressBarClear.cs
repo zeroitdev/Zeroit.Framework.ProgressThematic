@@ -252,10 +252,10 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void ProgressBarClear_Paint(PaintEventArgs e)
         {
-            G = e.Graphics;
+            Graphics G = e.Graphics;
 
-            G.SmoothingMode = Smoothing;
-            G.TextRenderingHint = TextRendering;
+            //G.SmoothingMode = Smoothing;
+            //G.TextRenderingHint = TextRendering;
 
             G.Clear(ProgressBarClear_ColorGradient1);
 

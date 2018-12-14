@@ -474,9 +474,9 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void ProgressBarPerplex_Paint(PaintEventArgs e)
         {
-            G = e.Graphics;
-            G.SmoothingMode = Smoothing;
-            G.TextRenderingHint = TextRendering;
+            Graphics G = e.Graphics;
+            //G.SmoothingMode = Smoothing;
+            //G.TextRenderingHint = TextRendering;
             //Graphics Gtrans = Graphics.FromImage(B);
 
             G.Clear(BackColor);

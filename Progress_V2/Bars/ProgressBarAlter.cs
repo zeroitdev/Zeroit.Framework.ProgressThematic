@@ -237,9 +237,9 @@ namespace Zeroit.Framework.ProgressThematic
         private void ProgressAlter_Paint(PaintEventArgs e)
         {
 
-            G = e.Graphics;
-            G.SmoothingMode = Smoothing;
-            G.TextRenderingHint = TextRendering;
+            Graphics G = e.Graphics;
+            //G.SmoothingMode = Smoothing;
+            //G.TextRenderingHint = TextRendering;
 
             switch (ProgressAlter_Orientation)
             {
