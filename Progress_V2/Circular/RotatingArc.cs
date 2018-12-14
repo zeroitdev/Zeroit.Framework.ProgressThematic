@@ -1372,8 +1372,8 @@ namespace Zeroit.Framework.ProgressThematic
 
             heartTimer.Interval = HeartTimerInterval;
 
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             e.Graphics.Clear(BackColor);
             

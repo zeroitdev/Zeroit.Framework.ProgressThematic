@@ -346,8 +346,8 @@ namespace Zeroit.Framework.ProgressThematic
             //Bitmap B = new Bitmap(Width, Height);
             //timer.Interval = CPv4_Speed;
             Graphics G = e.Graphics;
-            G.SmoothingMode = Smoothing;
-            G.TextRenderingHint = TextRendering;
+            //G.SmoothingMode = Smoothing;
+            //G.TextRenderingHint = TextRendering;
             G.Clear(BackColor);
             
             

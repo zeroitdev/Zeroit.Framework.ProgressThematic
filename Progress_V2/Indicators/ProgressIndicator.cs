@@ -273,12 +273,13 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void ProgIndicatorV1_OnPaint(PaintEventArgs e)
         {
+            Graphics G = e.Graphics;
+            //this.BuffGraphics = this.GraphicsContext.Allocate(this.CreateGraphics(), this.ClientRectangle);
+            //this.BuffGraphics.Graphics.SmoothingMode = Smoothing;
+            //this.BuffGraphics.Graphics.TextRenderingHint = TextRendering;
 
-            this.BuffGraphics = this.GraphicsContext.Allocate(this.CreateGraphics(), this.ClientRectangle);
-            this.BuffGraphics.Graphics.SmoothingMode = Smoothing;
-            this.BuffGraphics.Graphics.TextRenderingHint = TextRendering;
-
-            BuffGraphics.Graphics.Clear(BackColor);
+            //BuffGraphics.Graphics.Clear(BackColor);
+            G.Clear(BackColor);
 
             BaseColor.Color = P_BaseColor;
             AnimationColor.Color = P_AnimationColor;
@@ -288,17 +289,19 @@ namespace Zeroit.Framework.ProgressThematic
             {
                 if (this.IndicatorIndex == i)
                 {
-                    this.BuffGraphics.Graphics.FillEllipse(this.AnimationColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
+                    //this.BuffGraphics.Graphics.FillEllipse(this.AnimationColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
+                    G.FillEllipse(this.AnimationColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
 
                 }
                 else
                 {
-                    this.BuffGraphics.Graphics.FillEllipse(this.BaseColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
+                    //this.BuffGraphics.Graphics.FillEllipse(this.BaseColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
+                    G.FillEllipse(this.BaseColor, this.FloatPoint[i].X, this.FloatPoint[i].Y, ProgIndicator_CircleWidth, ProgIndicator_CircleWidth);
 
                 }
             }
 
-            this.BuffGraphics.Render(e.Graphics);
+            //this.BuffGraphics.Render(e.Graphics);
             
         }
 

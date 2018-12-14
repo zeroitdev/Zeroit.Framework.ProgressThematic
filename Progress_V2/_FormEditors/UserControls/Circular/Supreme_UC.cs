@@ -121,13 +121,27 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         private void circular_Supreme_SolidColor_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
                 ZeroitThematicProgress1.SP_SolidColor = colorSelector.Color;
 
                 circular_Supreme_SolidColor_Btn.BackColor = colorSelector.Color;
 
             }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+
+                    ZeroitThematicProgress1.SP_SolidColor = colorSelector.Color;
+
+                    circular_Supreme_SolidColor_Btn.BackColor = colorSelector.Color;
+
+
+                }
+            }
+            
         }
 
         private void circular_Supreme_Type_ComboBox_SelectedIndexChanged(object sender, EventArgs e)

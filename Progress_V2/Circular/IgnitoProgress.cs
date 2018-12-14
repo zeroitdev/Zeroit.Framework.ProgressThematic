@@ -594,8 +594,8 @@ namespace Zeroit.Framework.ProgressThematic
         {
             
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = Smoothing;
+            //g.TextRenderingHint = TextRendering;
             g.Clear(BackColor);
             
             Rectangle circRect = new Rectangle(2, 2, Width - 5, Height - 5);

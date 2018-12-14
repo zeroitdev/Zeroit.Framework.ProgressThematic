@@ -435,11 +435,11 @@ namespace Zeroit.Framework.ProgressThematic
 
             //Bitmap b = new Bitmap(Width, Height);
             Graphics graphic = e.Graphics;
-            graphic.SmoothingMode = Smoothing;
-            graphic.TextRenderingHint = TextRendering;
+            //graphic.SmoothingMode = Smoothing;
+            //graphic.TextRenderingHint = TextRendering;
 
             
-            graphic.Clear(BackColor);
+            //graphic.Clear(BackColor);
 
             Rectangle rectangle = new Rectangle(SP_Position_Horizontal, SP_Position_Vertical, checked(base.Width - SP_Width_Tweak),
                 checked(base.Height - SP_Height_Tweak));
@@ -451,7 +451,14 @@ namespace Zeroit.Framework.ProgressThematic
             pen.StartCap = Supreme_StartCap;
             pen.EndCap = Supreme_EndCap;
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, graphic);
+            }
+
             graphic.DrawArc(pen, rectangle, /*0f*/ Supreme_StartAngle, /*360f*/ Supreme_SweepAngle);
+
+            
 
             switch (SP_DrawMode)
             {
@@ -494,8 +501,11 @@ namespace Zeroit.Framework.ProgressThematic
                 (float)this.SP_Angle,
                 (float)checked((int)System.Math.Round((double)(checked(/*360*/ Supreme_SweepAngle * Value)) / Maximum)));
 
-            //e.Graphics.DrawImage(b, 0, 0);
             
+
+
+            //e.Graphics.DrawImage(b, 0, 0);
+
         }
 
         /// <summary>
@@ -508,8 +518,10 @@ namespace Zeroit.Framework.ProgressThematic
             //Graphics graphic = Graphics.FromImage(bitmap);
 
             Graphics graphic = e.Graphics;
-            graphic.SmoothingMode = Smoothing;
-            graphic.Clear(BackColor);
+            //graphic.SmoothingMode = Smoothing;
+
+           
+            //graphic.Clear(BackColor);
 
             Rectangle rectangle = new Rectangle(SP_Position_Horizontal, SP_Position_Vertical, checked(base.Width - SP_Width_Tweak),
                 checked(base.Height - SP_Height_Tweak));
@@ -521,8 +533,15 @@ namespace Zeroit.Framework.ProgressThematic
             pen.StartCap = Supreme_StartCap;
             pen.EndCap = Supreme_EndCap;
 
+            if (AllowTransparency)
+            {
+                MakeTransparent(this, graphic);
+                SP_SolidColor = Color.Transparent;
+            }
+
             graphic.DrawArc(pen, rectangle, Supreme_StartAngle, Supreme_SweepAngle);
 
+            
             switch (SP_DrawMode)
             {
                 case Supreme_colorMode.Solid:
@@ -570,6 +589,7 @@ namespace Zeroit.Framework.ProgressThematic
                 (float)this./*SP_Angle*/Supreme_StartAngle,
                 (float)checked((int)System.Math.Round((double)(checked(Supreme_SweepAngle * Value)) / Maximum)));
 
+            
 
         }
 

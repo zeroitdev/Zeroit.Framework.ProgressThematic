@@ -63,9 +63,9 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="a">a.</param>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        private void DrawText(Brush b1, HorizontalAlignment a, int x, int y)
+        private void DrawText(Graphics G, Brush b1, HorizontalAlignment a, int x, int y)
         {
-            DrawText(b1, Text, a, x, y);
+            DrawText(G,b1, Text, a, x, y);
         }
         /// <summary>
         /// Draws the text.
@@ -75,7 +75,7 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="a">a.</param>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        private void DrawText(Brush b1, string text, HorizontalAlignment a, int x, int y)
+        private void DrawText(Graphics G, Brush b1, string text, HorizontalAlignment a, int x, int y)
         {
             //Graphics G = CreateGraphics();
             //G.SmoothingMode = SmoothingMode.HighQuality;
@@ -105,7 +105,7 @@ namespace Zeroit.Framework.ProgressThematic
         /// </summary>
         /// <param name="b1">The b1.</param>
         /// <param name="p1">The p1.</param>
-        private void DrawText(Brush b1, Point p1)
+        private void DrawText(Graphics G, Brush b1, Point p1)
         {
             
             if (Text.Length == 0)
@@ -118,7 +118,7 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="b1">The b1.</param>
         /// <param name="x">The x.</param>
         /// <param name="y">The y.</param>
-        private void DrawText(Brush b1, int x, int y)
+        private void DrawText(Graphics G, Brush b1, int x, int y)
         {
             
             if (Text.Length == 0)

@@ -346,8 +346,8 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="System.Windows.Forms.PaintEventArgs"/> instance containing the event data.</param>
         private void ProgressDisk_Paint(System.Windows.Forms.PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             e.Graphics.Clear(BackColor);
             e.Graphics.ExcludeClip(innerBackgroundRegion);

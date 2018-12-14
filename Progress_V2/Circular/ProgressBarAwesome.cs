@@ -1123,13 +1123,13 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
         private void ProgressAwesome_OnPaint(PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
 
             if (ShowText)
             {
-                Text = Convert.ToInt32(Value).ToString() + PostFix;
+                Text = Convert.ToInt32((Value / Maximum) * 100).ToString() + PostFix;
             }
 
             #region Testing Code (Use the Try Catch Code for any error)
@@ -1187,7 +1187,7 @@ namespace Zeroit.Framework.ProgressThematic
 
             if (ShowText)
             {
-                Text = Convert.ToInt32(Value).ToString() + PostFix;
+                Text = Convert.ToInt32((Value / Maximum) * 100).ToString() + PostFix;
             }
 
             #region Testing Code (Use the Try Catch Code for any error)

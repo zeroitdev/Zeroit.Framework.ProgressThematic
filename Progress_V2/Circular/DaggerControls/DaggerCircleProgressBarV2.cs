@@ -467,11 +467,11 @@ namespace Zeroit.Framework.ProgressThematic
             #region New Code
 
             Graphics g = e.Graphics;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
-            g.CompositingQuality = CompositingQuality.HighQuality;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+            //g.SmoothingMode = SmoothingMode.AntiAlias;
+            //g.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            //g.CompositingQuality = CompositingQuality.HighQuality;
+            //g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            //g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
 
             Rectangle rectangle = new Rectangle(this.DagUpFilledThickness / 2 + 1, this.DagUpFilledThickness / 2 + 1, base.Width - this.DagUpFilledThickness - 2, base.Height - this.DagUpFilledThickness - 2);
 

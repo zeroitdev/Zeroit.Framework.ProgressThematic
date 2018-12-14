@@ -4046,6 +4046,425 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         }
 
+        private void UserControl_Transparency()
+        {
+
+
+            #region Bars
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                extended_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                extended_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                indicator_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                indicator_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                iTunes_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                iTunes_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                maze_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                maze_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                antonio_Normal_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                antonio_Normal_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                alter_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                alter_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                clear_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                clear_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                perplex_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                perplex_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                rect_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                rect_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                splitter_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                splitter_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                transparent_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                transparent_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+
+            #endregion
+
+            #region Circular
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressBar_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressBar_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressBarDefault_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressBarDefault_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressV2_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressV2_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressV3_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressV3_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressV4_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressV4_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularProgressV5_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularProgressV5_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                gorgeous_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                gorgeous_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                ignito_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                ignito_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                progressAwesome_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                progressAwesome_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                progressBarPerfect_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                progressBarPerfect_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                progressBarPie_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                progressBarPie_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                rotatingArc_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                rotatingArc_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                rotatingCompass_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                rotatingCompass_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                supreme_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                supreme_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                zeroitMultiCo_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                zeroitMultiCo_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                zeroitMultiCoExtended_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                zeroitMultiCoExtended_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                zeroitMultiCoExtendedV1_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                zeroitMultiCoExtendedV1_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                dagger_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                dagger_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                daggerV2_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                daggerV2_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                daggerSmooth_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                daggerSmooth_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            #endregion
+
+            #region Indicator
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                circularIndeterminate_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                circularIndeterminate_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                googleProgress_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                googleProgress_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                macOSX_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                macOSX_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                macOSX_Optimized_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                macOSX_Optimized_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                matrix_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                matrix_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                progressIndicator_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                progressIndicator_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                progressIndicatorUnique_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                progressIndicatorUnique_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                spinnerCircle_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                spinnerCircle_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            //if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            //{
+            //    spinnerProgress_UC.ZeroitThematicProgress1.AutoAnimate = true;
+            //}
+            //else
+            //{
+            //    spinnerProgress_UC.ZeroitThematicProgress1.AutoAnimate = false;
+            //}
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                vuvuzela_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                vuvuzela_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                winHorizontal_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                winHorizontal_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            if (mainControl_AutoAnimate_Yes_RadioBtn.Checked == true)
+            {
+                winRing_UC.ZeroitThematicProgress1.AllowTransparency = true;
+            }
+            else
+            {
+                winRing_UC.ZeroitThematicProgress1.AllowTransparency = false;
+            }
+
+            #endregion
+
+        }
+
+
 
         private void UserControl_Location()
         {

@@ -253,7 +253,7 @@ namespace Zeroit.Framework.ProgressThematic
                     {
                         G.FillRectangle(LGB1, new Rectangle(3, 3, Width - 4, Height - 4));
 
-                        DrawBorders(new Pen(ProgressAlter_ColorBorder), 30);
+                        DrawBorders(G,new Pen(ProgressAlter_ColorBorder), 30);
                     }
 
                     else if (Value == Minimum)
@@ -269,7 +269,7 @@ namespace Zeroit.Framework.ProgressThematic
                     if (ShowValue)
                     {
                         string val = Convert.ToInt32(Value).ToString();
-                        DrawText(new SolidBrush(ForeColor), val, HorizontalAlignment.Center, 0, 0);
+                        DrawText(G,new SolidBrush(ForeColor), val, HorizontalAlignment.Center, 0, 0);
                     }
 
                     break;
@@ -284,7 +284,7 @@ namespace Zeroit.Framework.ProgressThematic
                     if (Value == Maximum)
                     {
                         G.FillRectangle(LGB2, new Rectangle(3, 3, Width - 4, Height - 4));
-                        DrawBorders(new Pen(ProgressAlter_ColorBorder), 3);
+                        DrawBorders(G,new Pen(ProgressAlter_ColorBorder), 3);
                     }
                     else if (Value == Minimum)
                     {
@@ -299,14 +299,14 @@ namespace Zeroit.Framework.ProgressThematic
                     if (ShowValue)
                     {
                         string val = Convert.ToInt32(Value).ToString();
-                        DrawText(new SolidBrush(ForeColor), val, HorizontalAlignment.Center, 0, 0);
+                        DrawText(G,new SolidBrush(ForeColor), val, HorizontalAlignment.Center, 0, 0);
                     }
 
                     break;
             }
 
-            DrawBorders(new Pen(ProgressAlter_ColorInside));
-            DrawBorders(new Pen(ProgressAlter_ColorBorder), 1);
+            DrawBorders(G,new Pen(ProgressAlter_ColorInside));
+            DrawBorders(G,new Pen(ProgressAlter_ColorBorder), 1);
         }
 
         #endregion

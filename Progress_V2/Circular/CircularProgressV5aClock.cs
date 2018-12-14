@@ -200,9 +200,9 @@ namespace Zeroit.Framework.ProgressThematic
 
             Graphics G = e.Graphics;
 
-            G.TextRenderingHint = TextRendering;
+            //G.TextRenderingHint = TextRendering;
 
-            G.SmoothingMode = SmoothingMode.HighQuality;
+            //G.SmoothingMode = SmoothingMode.HighQuality;
             if (BackColor != Color.Transparent)
             {
                 G.Clear(BackColor);

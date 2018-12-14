@@ -663,9 +663,9 @@ namespace Zeroit.Framework.ProgressThematic
 
             //MacOSX_Optimized_CalculateSpokesPoints();
 
-            e.Graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
 
             MacOSX_Optimized_m_Pen.EndCap = MacOSX_Optimized_EndCap;

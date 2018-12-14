@@ -417,8 +417,8 @@ namespace Zeroit.Framework.ProgressThematic
         private void Vuvuzela_OnPaint(PaintEventArgs e)
         {
 
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
             
             if (Vuvuzela_RotatingBorder)

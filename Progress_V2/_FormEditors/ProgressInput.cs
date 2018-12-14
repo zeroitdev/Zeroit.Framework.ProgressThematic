@@ -249,7 +249,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// <summary>
         /// The allow transparency
         /// </summary>
-        private bool allowTransparency = false;
+        private bool allowTransparency = true;
 
         /// <summary>
         /// The automatic increment

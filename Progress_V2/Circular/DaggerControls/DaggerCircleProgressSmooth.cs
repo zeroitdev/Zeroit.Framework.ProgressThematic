@@ -652,11 +652,11 @@ namespace Zeroit.Framework.ProgressThematic
             Graphics g = e.Graphics;
 
 
-            g.SmoothingMode = SmoothingMode.HighQuality;
-            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
-            g.CompositingQuality = CompositingQuality.HighQuality;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = SmoothingMode.HighQuality;
+            //g.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            //g.CompositingQuality = CompositingQuality.HighQuality;
+            //g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            //g.TextRenderingHint = TextRendering;
             g.Clear(this.BackColor);
 
             Rectangle rectangle = new Rectangle(this.DagSmoothFilledThickness / 2 + 1, this.DagSmoothFilledThickness / 2 + 1, base.Width - this.DagSmoothFilledThickness - 2, base.Height - this.DagSmoothFilledThickness - 2);

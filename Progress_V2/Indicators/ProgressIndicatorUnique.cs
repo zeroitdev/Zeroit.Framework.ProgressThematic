@@ -412,9 +412,9 @@ namespace Zeroit.Framework.ProgressThematic
 
             e.Graphics.TranslateTransform(Width / 2.0F, Height / 2.0F);
             e.Graphics.RotateTransform(angle * Value * (int)Unique_Rotation);
-            e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
 
             for (int i = 1; i <= Unique_NumberOfCircles; i++)

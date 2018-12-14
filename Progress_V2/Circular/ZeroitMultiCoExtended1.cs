@@ -910,8 +910,8 @@ namespace Zeroit.Framework.ProgressThematic
             
             //Graphics G = e.Graphics;
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = Smoothing;
+            //g.TextRenderingHint = TextRendering;
             g.Clear(BackColor);
 
             valueConvertMCExV2 = (Value / Maximum) * 100;

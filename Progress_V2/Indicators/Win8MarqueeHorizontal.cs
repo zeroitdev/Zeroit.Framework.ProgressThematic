@@ -612,8 +612,8 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void WinHR_OnPaint(PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             WinHR_timer.Interval = AnimationSpeed[0];
             {                       // begin transparent background

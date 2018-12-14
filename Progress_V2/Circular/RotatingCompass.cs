@@ -253,7 +253,18 @@ namespace Zeroit.Framework.ProgressThematic
         #endregion
 
         #region Public Properties
+        private Color rotatingBorderColor = Color.Blue;
 
+        [Category("CircularProgress Compass")]
+        public Color RotatingBorderColor
+        {
+            get { return rotatingBorderColor; }
+            set
+            {
+                rotatingBorderColor = value;
+                Invalidate();
+            }
+        }
         /// <summary>
         /// Gets or sets the color of the rotating compass line width.
         /// </summary>
@@ -412,8 +423,8 @@ namespace Zeroit.Framework.ProgressThematic
         private void RotatingCompass_OnPaint(PaintEventArgs e)
         {
 
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
 
             //timer.Interval = interval;
@@ -422,7 +433,7 @@ namespace Zeroit.Framework.ProgressThematic
             
             if (RotatingBorder)
             {
-                e.Graphics.DrawPie(new Pen(Color.Blue), new Rectangle(0, 0, Width - 2, Height - 2), 180, Value/Maximum * 360);
+                e.Graphics.DrawPie(new Pen(RotatingBorderColor), new Rectangle(0, 0, Width - 2, Height - 2), 180, Value/Maximum * 360);
 
                 if (FillPie)
                 {

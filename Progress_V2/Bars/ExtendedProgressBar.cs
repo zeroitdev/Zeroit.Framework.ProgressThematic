@@ -949,6 +949,8 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
         private void Extended_Paint(PaintEventArgs e)
         {
+            
+
             //e.Graphics.SmoothingMode = Smoothing;
             //e.Graphics.TextRenderingHint = TextRendering;
 

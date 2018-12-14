@@ -425,8 +425,8 @@ namespace Zeroit.Framework.ProgressThematic
 
             //Graphics graphics = e.Graphics;
 
-            graphics.SmoothingMode = Smoothing;
-            graphics.TextRenderingHint = TextRendering;
+            //graphics.SmoothingMode = Smoothing;
+            //graphics.TextRenderingHint = TextRendering;
 
             graphics.Clear(BackColor);
             

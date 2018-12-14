@@ -894,8 +894,8 @@ namespace Zeroit.Framework.ProgressThematic
             //timer.Interval = speed;
 
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
+            //g.SmoothingMode = Smoothing;
+            //g.TextRenderingHint = TextRendering;
             g.Clear(BackColor);
 
 

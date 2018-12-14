@@ -384,11 +384,11 @@ namespace Zeroit.Framework.ProgressThematic
             #region New  Code
 
             Graphics g = e.Graphics;
-            g.SmoothingMode = Smoothing;
-            g.InterpolationMode = InterpolationMode.HighQualityBilinear;
-            g.CompositingQuality = CompositingQuality.HighQuality;
-            g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
+            //g.SmoothingMode = Smoothing;
+            //g.InterpolationMode = InterpolationMode.HighQualityBilinear;
+            //g.CompositingQuality = CompositingQuality.HighQuality;
+            //g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+            //g.TextRenderingHint = TextRenderingHint.ClearTypeGridFit;
 
             //g.Clear(BackColor);
 

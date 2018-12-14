@@ -46,6 +46,7 @@ namespace Zeroit.Framework.ProgressThematic
                 ControlStyles.SupportsTransparentBackColor,
                 true);
 
+            BackColor = Color.Transparent;
 
             ProgressAwesome_animator = DesignMode ? null : new Animator();
 
@@ -2553,7 +2554,7 @@ namespace Zeroit.Framework.ProgressThematic
         /// <summary>
         /// The smoothing
         /// </summary>
-        private SmoothingMode smoothing = SmoothingMode.AntiAlias;
+        private SmoothingMode smoothing = SmoothingMode.HighQuality;
 
         /// <summary>
         /// Gets or sets the smoothing.
@@ -2575,6 +2576,51 @@ namespace Zeroit.Framework.ProgressThematic
 
 
 
+        #endregion
+
+        #region Interpolation Mode
+
+        private InterpolationMode interpolationMode = InterpolationMode.HighQualityBilinear;
+
+        public InterpolationMode InterpolationMode
+        {
+            get { return interpolationMode; }
+            set
+            {
+                interpolationMode = value;
+                Invalidate();
+            }
+        }
+        #endregion
+
+        #region Compositing Quality
+
+        private CompositingQuality compositingQuality = CompositingQuality.HighQuality;
+
+        public CompositingQuality CompositingQuality
+        {
+            get { return compositingQuality; }
+            set
+            {
+                compositingQuality = value;
+                Invalidate();
+            }
+        }
+        #endregion
+
+        #region Pixel Offset Mode
+
+        private PixelOffsetMode pixelOffsetMode = PixelOffsetMode.HighQuality;
+
+        public PixelOffsetMode PixelOffsetMode
+        {
+            get { return pixelOffsetMode; }
+            set
+            {
+                pixelOffsetMode = value;
+                Invalidate();
+            }
+        }
         #endregion
 
         #region Protected Overridden Events
@@ -3082,24 +3128,370 @@ namespace Zeroit.Framework.ProgressThematic
 
         }
 
+        #region Paint Background
+        ///// <summary>
+        ///// Handles the <see cref="E:PaintBackground" /> event.
+        ///// </summary>
+        ///// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
+        //protected override void OnPaintBackground(PaintEventArgs e)
+        //{
+
+        //    //Bitmap b = new Bitmap(1, 1);
+        //    Graphics g = e.Graphics;
+
+
+
+        //    #region Peace Animator Easing For Value
+
+        //    switch (EasingType)
+        //    {
+        //        case PeaceAnimatorEasing.BounceEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.BounceEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.BounceEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.BounceEaseOutIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseOutIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CircularEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CircularEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CircularEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CubicEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CubicEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.CubicEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.ExponentialEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.ExponentialEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.ExponentialEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.Liner:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
+
+        //            break;
+        //        case PeaceAnimatorEasing.None:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.None;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuadraticEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuadraticEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuadraticEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuarticEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuarticEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuarticEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuinticEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuinticEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.QuinticEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.SinusoidalEaseIn:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseIn;
+
+        //            break;
+        //        case PeaceAnimatorEasing.SinusoidalEaseInOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseInOut;
+
+        //            break;
+        //        case PeaceAnimatorEasing.SinusoidalEaseOut:
+        //            peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseOut;
+
+        //            break;
+        //        default:
+        //            break;
+        //    }
+
+        //    #endregion
+
+
+        //    #region Paint Codes
+
+        //    #region New Concept Code
+        //    switch (ProgressType)
+        //    {
+        //        case ProgressType.Bar:
+        //            {
+        //                switch (SolidProgressBar)
+        //                {
+        //                    case ProgressBar.RPExtendedProgress:
+        //                        Extended_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPIndicator:
+        //                        ZeroitIndicator_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPiTunes:
+        //                        iTunes_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPMaze:
+        //                        Maze_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPProgNormal:
+        //                        ProgressBarNormal_Paint(e);
+        //                        break;
+
+        //                    //case ProgressBar.RPProgBoxed:
+        //                    //    ProgressBarBoxed_Paint(e);
+        //                    //    break;
+
+        //                    //case ProgressBar.RPProgGradient:
+        //                    //    ProgressBarGradient_Paint(e);
+        //                    //    break;
+
+        //                    case ProgressBar.RPAlter:
+        //                        ProgressAlter_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPClear:
+        //                        ProgressBarClear_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPPerplex:
+        //                        ProgressBarPerplex_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPRect:
+        //                        ProgressRect_Paint(e);
+        //                        break;
+        //                    case ProgressBar.RPTransparent:
+        //                        Transparent_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.RPSplitter:
+        //                        ProgressBarSplitter_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPAwesome:
+        //                        ProgressAwesome_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPBarCircular:
+        //                        ZeroitProgressCircular_Paint(e);
+        //                        break;
+
+        //                    //case CircularProgress.CircularProgressv5aClock:
+        //                    //    CircularProgressv5aClock_Paint(e);
+        //                    //    break;
+
+        //                    case ProgressBar.CPBarCircularDefault:
+        //                        ZeroitProgressBarCircularDefault_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPv2:
+        //                        CPv2_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPv3:
+        //                        CPv3_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPv4:
+        //                        CPv4_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPv5:
+        //                        CPv5_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPGorgeous:
+        //                        Gorgeous_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPIgnito:
+        //                        Ignito_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPMulitCo:
+        //                        MultiCo_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPMultiCoExtended:
+        //                        MultiCoExtended_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPMultiCoV1:
+        //                        MCExV2_Paint(e);
+        //                        break;
+
+
+        //                    case ProgressBar.CPPerfect:
+        //                        ProgressBarPerfect_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPProgressPie:
+        //                        ProgressPie_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPRotatingArc:
+        //                        RotatingArc_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPRotatingCompass:
+        //                        RotatingCompass_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPSupreme:
+        //                        SP_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPDagger:
+        //                        Dagger_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPDaggerSmooth:
+        //                        DagSmoothOnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.CPDaggerV1:
+        //                        DagUpPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPIndeterminate:
+        //                        CircularIndeterminatePaint(e);
+        //                        break;
+        //                    case ProgressBar.IPGoogle:
+        //                        Google_Paint(e);
+        //                        break;
+        //                    case ProgressBar.IPMacOSX:
+        //                        MacOSX_Paint(e);
+        //                        break;
+        //                    case ProgressBar.IPMacOSXOptimized:
+        //                        MacOSX_Optimized_Paint(e);
+        //                        break;
+        //                    case ProgressBar.IPMatrix:
+        //                        MacOSX_Matrix_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPV1:
+        //                        ProgIndicatorV1_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPUnique:
+        //                        Unique_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPVuvuzela:
+        //                        Vuvuzela_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPSpinnerCircle:
+        //                        Spinner_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPSpinnerDivided:
+        //                        ProgressDisk_Paint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPWin8Horizontal:
+        //                        WinHR_OnPaint(e);
+        //                        break;
+
+        //                    case ProgressBar.IPWin8Ring:
+        //                        WinRing_OnPaint(e);
+        //                        break;
+
+        //                }
+
+        //            }
+        //            break;
+
+        //    }
+        //    #endregion
+
+        //    #endregion
+
+
+        //    DrawImage(g, new Rectangle(0, 0, Width, Height));
+
+        //    //e.Graphics.DrawImage(b, 0, 0);
+
+        //    //g.Dispose();
+        //    //b.Dispose();
+
+        //    base.OnPaintBackground(e);
+
+        //}
+
+
+        #endregion
         /// <summary>
-        /// Handles the <see cref="E:PaintBackground" /> event.
+        /// Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.
         /// </summary>
-        /// <param name="e">The <see cref="PaintEventArgs"/> instance containing the event data.</param>
-        protected override void OnPaintBackground(PaintEventArgs e)
+        /// <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+        protected override void OnPaint(PaintEventArgs e)
         {
-            
+            base.OnPaint(e);
+
             //Bitmap b = new Bitmap(1, 1);
             Graphics g = e.Graphics;
-
-            if (AllowTransparency)
-            {
-                MakeTransparent(this, g);
-            }
-
             g.SmoothingMode = Smoothing;
             g.TextRenderingHint = TextRendering;
+            g.InterpolationMode = InterpolationMode;
+            g.CompositingQuality = CompositingQuality;
+            g.PixelOffsetMode = PixelOffsetMode;
 
+            
+            
+            
 
             #region Peace Animator Easing For Value
 
@@ -3219,7 +3611,7 @@ namespace Zeroit.Framework.ProgressThematic
 
             #endregion
 
-            
+
             #region Paint Codes
 
             #region New Concept Code
@@ -3417,9 +3809,9 @@ namespace Zeroit.Framework.ProgressThematic
             }
             #endregion
 
+
             #endregion
 
-            
             DrawImage(g, new Rectangle(0, 0, Width, Height));
 
             //e.Graphics.DrawImage(b, 0, 0);
@@ -3427,7 +3819,7 @@ namespace Zeroit.Framework.ProgressThematic
             //g.Dispose();
             //b.Dispose();
 
-            base.OnPaintBackground(e);
+            
 
         }
 
@@ -3454,356 +3846,6 @@ namespace Zeroit.Framework.ProgressThematic
             //ProgIndicator_animationSpeed.Start();
         }
 
-        /// <summary>
-        /// Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.
-        /// </summary>
-        /// <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        protected override void OnPaint(PaintEventArgs e)
-        {
-
-            
-
-            //Bitmap b = new Bitmap(1, 1);
-            Graphics g = e.Graphics;
-
-            if (AllowTransparency)
-            {
-                MakeTransparent(this, g);
-            }
-
-            g.SmoothingMode = Smoothing;
-            g.TextRenderingHint = TextRendering;
-
-
-            #region Peace Animator Easing For Value
-
-            switch (EasingType)
-            {
-                case PeaceAnimatorEasing.BounceEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.BounceEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.BounceEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.BounceEaseOutIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.BounceEaseOutIn;
-
-                    break;
-                case PeaceAnimatorEasing.CircularEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.CircularEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.CircularEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CircularEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.CubicEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.CubicEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.CubicEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.CubicEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.ExponentialEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.ExponentialEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.ExponentialEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.ExponentialEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.Liner:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
-
-                    break;
-                case PeaceAnimatorEasing.None:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.None;
-
-                    break;
-                case PeaceAnimatorEasing.QuadraticEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.QuadraticEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.QuadraticEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuadraticEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.QuarticEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.QuarticEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.QuarticEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuarticEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.QuinticEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.QuinticEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.QuinticEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.QuinticEaseOut;
-
-                    break;
-                case PeaceAnimatorEasing.SinusoidalEaseIn:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseIn;
-
-                    break;
-                case PeaceAnimatorEasing.SinusoidalEaseInOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseInOut;
-
-                    break;
-                case PeaceAnimatorEasing.SinusoidalEaseOut:
-                    peaceAnimator.OneD_Path_Easing = AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.SinusoidalEaseOut;
-
-                    break;
-                default:
-                    break;
-            }
-
-            #endregion
-
-
-            #region Paint Codes
-
-            #region New Concept Code
-            switch (ProgressType)
-            {
-                case ProgressType.Bar:
-                    {
-                        switch (SolidProgressBar)
-                        {
-                            case ProgressBar.RPExtendedProgress:
-                                Extended_Paint(e);
-                                break;
-
-                            case ProgressBar.RPIndicator:
-                                ZeroitIndicator_Paint(e);
-                                break;
-
-                            case ProgressBar.RPiTunes:
-                                iTunes_Paint(e);
-                                break;
-
-                            case ProgressBar.RPMaze:
-                                Maze_Paint(e);
-                                break;
-
-                            case ProgressBar.RPProgNormal:
-                                ProgressBarNormal_Paint(e);
-                                break;
-
-                            //case ProgressBar.RPProgBoxed:
-                            //    ProgressBarBoxed_Paint(e);
-                            //    break;
-
-                            //case ProgressBar.RPProgGradient:
-                            //    ProgressBarGradient_Paint(e);
-                            //    break;
-
-                            case ProgressBar.RPAlter:
-                                ProgressAlter_Paint(e);
-                                break;
-
-                            case ProgressBar.RPClear:
-                                ProgressBarClear_Paint(e);
-                                break;
-
-                            case ProgressBar.RPPerplex:
-                                ProgressBarPerplex_Paint(e);
-                                break;
-
-                            case ProgressBar.RPRect:
-                                ProgressRect_Paint(e);
-                                break;
-                            case ProgressBar.RPTransparent:
-                                Transparent_Paint(e);
-                                break;
-
-                            case ProgressBar.RPSplitter:
-                                ProgressBarSplitter_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPAwesome:
-                                ProgressAwesome_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPBarCircular:
-                                ZeroitProgressCircular_Paint(e);
-                                break;
-
-                            //case CircularProgress.CircularProgressv5aClock:
-                            //    CircularProgressv5aClock_Paint(e);
-                            //    break;
-
-                            case ProgressBar.CPBarCircularDefault:
-                                ZeroitProgressBarCircularDefault_Paint(e);
-                                break;
-
-                            case ProgressBar.CPv2:
-                                CPv2_Paint(e);
-                                break;
-
-                            case ProgressBar.CPv3:
-                                CPv3_Paint(e);
-                                break;
-
-                            case ProgressBar.CPv4:
-                                CPv4_Paint(e);
-                                break;
-
-                            case ProgressBar.CPv5:
-                                CPv5_Paint(e);
-                                break;
-
-                            case ProgressBar.CPGorgeous:
-                                Gorgeous_Paint(e);
-                                break;
-
-                            case ProgressBar.CPIgnito:
-                                Ignito_Paint(e);
-                                break;
-
-                            case ProgressBar.CPMulitCo:
-                                MultiCo_Paint(e);
-                                break;
-
-                            case ProgressBar.CPMultiCoExtended:
-                                MultiCoExtended_Paint(e);
-                                break;
-
-                            case ProgressBar.CPMultiCoV1:
-                                MCExV2_Paint(e);
-                                break;
-
-
-                            case ProgressBar.CPPerfect:
-                                ProgressBarPerfect_Paint(e);
-                                break;
-
-                            case ProgressBar.CPProgressPie:
-                                ProgressPie_Paint(e);
-                                break;
-
-                            case ProgressBar.CPRotatingArc:
-                                RotatingArc_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPRotatingCompass:
-                                RotatingCompass_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPSupreme:
-                                SP_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPDagger:
-                                Dagger_OnPaint(e);
-                                break;
-
-                            case ProgressBar.CPDaggerSmooth:
-                                DagSmoothOnPaint(e);
-                                break;
-
-                            case ProgressBar.CPDaggerV1:
-                                DagUpPaint(e);
-                                break;
-
-                            case ProgressBar.IPIndeterminate:
-                                CircularIndeterminatePaint(e);
-                                break;
-                            case ProgressBar.IPGoogle:
-                                Google_Paint(e);
-                                break;
-                            case ProgressBar.IPMacOSX:
-                                MacOSX_Paint(e);
-                                break;
-                            case ProgressBar.IPMacOSXOptimized:
-                                MacOSX_Optimized_Paint(e);
-                                break;
-                            case ProgressBar.IPMatrix:
-                                MacOSX_Matrix_Paint(e);
-                                break;
-
-                            case ProgressBar.IPV1:
-                                ProgIndicatorV1_OnPaint(e);
-                                break;
-
-                            case ProgressBar.IPUnique:
-                                Unique_OnPaint(e);
-                                break;
-
-                            case ProgressBar.IPVuvuzela:
-                                Vuvuzela_OnPaint(e);
-                                break;
-
-                            case ProgressBar.IPSpinnerCircle:
-                                Spinner_OnPaint(e);
-                                break;
-
-                            case ProgressBar.IPSpinnerDivided:
-                                ProgressDisk_Paint(e);
-                                break;
-
-                            case ProgressBar.IPWin8Horizontal:
-                                WinHR_OnPaint(e);
-                                break;
-
-                            case ProgressBar.IPWin8Ring:
-                                WinRing_OnPaint(e);
-                                break;
-
-                        }
-
-                    }
-                    break;
-
-            }
-            #endregion
-
-
-            #endregion
-
-            DrawImage(g, new Rectangle(0, 0, Width, Height));
-
-            //e.Graphics.DrawImage(b, 0, 0);
-
-            //g.Dispose();
-            //b.Dispose();
-
-            base.OnPaint(e);
-
-        }
 
         /// <summary>
         /// Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.
@@ -4162,12 +4204,7 @@ namespace Zeroit.Framework.ProgressThematic
 
         #endregion
 
-
-
-
-
-
-       
+        
         #region Include in Paint
 
         //-----------------------------Include in Paint--------------------------//

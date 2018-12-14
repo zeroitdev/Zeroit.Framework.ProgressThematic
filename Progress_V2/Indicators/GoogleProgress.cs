@@ -1342,8 +1342,8 @@ namespace Zeroit.Framework.ProgressThematic
             // graphics oriented property
             // is changed)
 
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             e.Graphics.Clear(BackColor);
 

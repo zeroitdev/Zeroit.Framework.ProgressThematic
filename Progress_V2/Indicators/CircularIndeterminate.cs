@@ -996,8 +996,8 @@ namespace Zeroit.Framework.ProgressThematic
         {
 
             //base.OnPaint(e);
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
 
             e.Graphics.Clear(BackColor);
             timer_indeterminate.Interval = progressInput.RefreshRate;

@@ -474,8 +474,8 @@ namespace Zeroit.Framework.ProgressThematic
         /// <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"></see> that contains the event data.</param>
         private void Spinner_OnPaint(PaintEventArgs e)
         {
-            e.Graphics.SmoothingMode = Smoothing;
-            e.Graphics.TextRenderingHint = TextRendering;
+            //e.Graphics.SmoothingMode = Smoothing;
+            //e.Graphics.TextRenderingHint = TextRendering;
             e.Graphics.Clear(BackColor);
             
             m_Timer.Interval = AnimationSpeed[0];

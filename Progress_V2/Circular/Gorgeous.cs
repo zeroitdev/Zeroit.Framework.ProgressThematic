@@ -29,7 +29,7 @@ namespace Zeroit.Framework.ProgressThematic
         /// <summary>
         /// The graphics
         /// </summary>
-        private Graphics graphics;
+        //private Graphics graphics;
 
         //private float Value = 70f;
         //private float Maximum = 100f;
@@ -589,9 +589,9 @@ namespace Zeroit.Framework.ProgressThematic
                     break;
             }
 
-            graphics = e.Graphics;
-            graphics.SmoothingMode = Smoothing;
-            graphics.TextRenderingHint = TextRendering;
+            Graphics graphics = e.Graphics;
+            //graphics.SmoothingMode = Smoothing;
+            //graphics.TextRenderingHint = TextRendering;
 
             graphics.Clear(BackColor);
             //graphics.TextRenderingHint = TextRenderingHint.AntiAlias;

@@ -2370,8 +2370,8 @@ namespace Zeroit.Framework.ProgressThematic
             //Bitmap B = new Bitmap(Width, Height);
 
             Graphics G = e.Graphics;
-            G.TextRenderingHint = TextRendering;
-            G.SmoothingMode = Smoothing;
+            //G.TextRenderingHint = TextRendering;
+            //G.SmoothingMode = Smoothing;
             G.Clear(BackColor);
 
             if (BackColor != Color.Transparent)
