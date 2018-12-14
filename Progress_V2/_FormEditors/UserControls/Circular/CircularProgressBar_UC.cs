@@ -80,61 +80,143 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         private void circular_ProgressBar_Color1_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
-                ZeroitThematicProgress1.Color1_Progress = colorSelector.Color;
+                colorSelector.Color = Color.Transparent;
 
-                circular_ProgressBar_Color1_Btn.BackColor = colorSelector.Color;
+                ZeroitThematicProgress1.Color1_Progress = Color.Transparent;
+
+                circular_ProgressBar_Color1_Btn.BackColor = Color.Transparent;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    if (colorSelector.Color == Color.FromArgb(1,2,3))
+                    {
+                        colorSelector.Color = Color.Transparent;
+                    }
+                    ZeroitThematicProgress1.Color1_Progress = colorSelector.Color;
+
+                    circular_ProgressBar_Color1_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 
         private void circular_ProgressBar_Color2_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
+
                 ZeroitThematicProgress1.Color2_Progress = colorSelector.Color;
 
                 circular_ProgressBar_Color2_Btn.BackColor = colorSelector.Color;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    ZeroitThematicProgress1.Color2_Progress = colorSelector.Color;
+
+                    circular_ProgressBar_Color2_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 
         private void circular_ProgressBar_FillEllipse1_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
+
                 ZeroitThematicProgress1.Color3_FillEllipse = colorSelector.Color;
 
                 circular_ProgressBar_FillEllipse1_Btn.BackColor = colorSelector.Color;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    ZeroitThematicProgress1.Color3_FillEllipse = colorSelector.Color;
+
+                    circular_ProgressBar_FillEllipse1_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 
         private void circular_ProgressBar_FillEllipse2_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
+
                 ZeroitThematicProgress1.Color4_FillEllipse = colorSelector.Color;
 
                 circular_ProgressBar_FillEllipse2_Btn.BackColor = colorSelector.Color;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    ZeroitThematicProgress1.Color4_FillEllipse = colorSelector.Color;
+
+                    circular_ProgressBar_FillEllipse2_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 
         private void circular_ProgressBar_InnerBorder_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
+
                 ZeroitThematicProgress1.Color5_ProgressInnerBorder = colorSelector.Color;
 
                 circular_ProgressBar_InnerBorder_Btn.BackColor = colorSelector.Color;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    ZeroitThematicProgress1.Color5_ProgressInnerBorder = colorSelector.Color;
+
+                    circular_ProgressBar_InnerBorder_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 
         private void circular_ProgressBar_Text_Btn_Click(object sender, EventArgs e)
         {
-            if (colorSelector.ShowDialog() == DialogResult.OK)
+            if (MouseButtons == MouseButtons.Right)
             {
+                colorSelector.Color = Color.Transparent;
+
                 ZeroitThematicProgress1.Color6_TextColor = colorSelector.Color;
 
                 circular_ProgressBar_Text_Btn.BackColor = colorSelector.Color;
+
+            }
+            else
+            {
+                if (colorSelector.ShowDialog() == DialogResult.OK)
+                {
+                    ZeroitThematicProgress1.Color6_TextColor = colorSelector.Color;
+
+                    circular_ProgressBar_Text_Btn.BackColor = colorSelector.Color;
+
+                }
             }
         }
 

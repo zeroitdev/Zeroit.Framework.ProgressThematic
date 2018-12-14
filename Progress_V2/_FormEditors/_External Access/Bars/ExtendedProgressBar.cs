@@ -12,6 +12,7 @@
 // <summary></summary>
 // ***********************************************************************
 using System;
+using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 
@@ -595,66 +596,137 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         #endregion
 
         #region Color Events
+
         private void Bars_Extended_CaptionColor_Btn_Click(object sender, EventArgs e)
         {
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
                 extended_UC.ZeroitThematicProgress1.CaptionColor = extended_UC.colorSelector.Color;
 
                 extended_UC.bars_Extended_CaptionColor_Btn.BackColor = extended_UC.colorSelector.Color;
 
             }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.CaptionColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_CaptionColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+                }
+            }
+            
         }
 
         private void Bars_Extended_SecondColor_Btn_Click(object sender, EventArgs e)
         {
 
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
+
                 extended_UC.ZeroitThematicProgress1.SecondColor = extended_UC.colorSelector.Color;
 
                 extended_UC.bars_Extended_SecondColor_Btn.BackColor = extended_UC.colorSelector.Color;
+            }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.SecondColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_SecondColor_Btn.BackColor = extended_UC.colorSelector.Color;
+                }
             }
         }
 
         private void Bars_Extended_BackColor_Btn_Click(object sender, EventArgs e)
         {
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
                 extended_UC.ZeroitThematicProgress1.ProgressBackColor = extended_UC.colorSelector.Color;
 
                 extended_UC.bars_Extended_BackColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+            }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.ProgressBackColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_BackColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+                }
             }
         }
 
         private void Bars_Extended_MainColor_Btn_Click(object sender, EventArgs e)
         {
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
                 extended_UC.ZeroitThematicProgress1.MainColor = extended_UC.colorSelector.Color;
 
                 extended_UC.bars_Extended_MainColor_Btn.BackColor = extended_UC.colorSelector.Color;
+            }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.MainColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_MainColor_Btn.BackColor = extended_UC.colorSelector.Color;
+                }
             }
         }
 
         private void Bars_Extended_EdgeColor_Btn_Click(object sender, EventArgs e)
         {
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
+
                 extended_UC.ZeroitThematicProgress1.EdgeColor = extended_UC.colorSelector.Color;
 
                 extended_UC.bars_Extended_EdgeColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+            }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.EdgeColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_EdgeColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+                }
             }
         }
 
         private void Bars_Extended_ShadowColor_Btn_Click(object sender, EventArgs e)
         {
-            if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (MouseButtons == System.Windows.Forms.MouseButtons.Right)
             {
+                extended_UC.colorSelector.Color = Color.Transparent;
+
                 extended_UC.ZeroitThematicProgress1.CaptionShadowColor = extended_UC.colorSelector.Color;
-                
+
                 extended_UC.bars_Extended_ShadowColor_Btn.BackColor = extended_UC.colorSelector.Color;
 
+            }
+            else
+            {
+                if (extended_UC.colorSelector.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    extended_UC.ZeroitThematicProgress1.CaptionShadowColor = extended_UC.colorSelector.Color;
+
+                    extended_UC.bars_Extended_ShadowColor_Btn.BackColor = extended_UC.colorSelector.Color;
+
+                }
             }
         }
 
