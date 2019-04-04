@@ -85,16 +85,17 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.okBtn = new System.Windows.Forms.Button();
-            this.cancelBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
             this.mainControl_CircularProgress_ComboBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.okBtn = new System.Windows.Forms.Button();
+            this.cancelBtn = new System.Windows.Forms.Button();
+            this.mainViewer = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.mainControl_IndicatorProgress_ComboBox = new System.Windows.Forms.ComboBox();
             this.mainControl_ProgressType_ComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.mainControl_IndicatorProgress_ComboBox = new System.Windows.Forms.ComboBox();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.thematic1501.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -109,7 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_ASA_Interval_Numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AI_Duration_Numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AA_Speed_Numeric)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.mainViewer.SuspendLayout();
             this.SuspendLayout();
             // 
             // thematic1501
@@ -117,10 +118,15 @@
             this.thematic1501.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.thematic1501.BorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.thematic1501.Colors = new Zeroit.Framework.ProgressThematic.ThemeManagers.Bloom[0];
+            this.thematic1501.Controls.Add(this.closeBtn);
             this.thematic1501.Controls.Add(this.groupBox1);
+            this.thematic1501.Controls.Add(this.mainControl_CircularProgress_ComboBox);
+            this.thematic1501.Controls.Add(this.label5);
             this.thematic1501.Controls.Add(this.okBtn);
             this.thematic1501.Controls.Add(this.cancelBtn);
-            this.thematic1501.Controls.Add(this.panel2);
+            this.thematic1501.Controls.Add(this.mainViewer);
+            this.thematic1501.Controls.Add(this.mainControl_ProgressType_ComboBox);
+            this.thematic1501.Controls.Add(this.label1);
             this.thematic1501.Customization = "";
             this.thematic1501.Dock = System.Windows.Forms.DockStyle.Fill;
             this.thematic1501.Font = new System.Drawing.Font("Verdana", 10F);
@@ -132,7 +138,7 @@
             this.thematic1501.NoRounding = false;
             this.thematic1501.Padding = new System.Windows.Forms.Padding(2, 36, 2, 2);
             this.thematic1501.Sizable = false;
-            this.thematic1501.Size = new System.Drawing.Size(1539, 815);
+            this.thematic1501.Size = new System.Drawing.Size(1284, 815);
             this.thematic1501.SmartBounds = true;
             this.thematic1501.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultLocation;
             this.thematic1501.TabIndex = 0;
@@ -184,8 +190,8 @@
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(235)))), ((int)(((byte)(0)))));
             this.groupBox1.Location = new System.Drawing.Point(13, 51);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(303, 709);
@@ -218,6 +224,7 @@
             // mainControl_Transparency_No_RadioBtn
             // 
             this.mainControl_Transparency_No_RadioBtn.AutoSize = true;
+            this.mainControl_Transparency_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_Transparency_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_Transparency_No_RadioBtn.Name = "mainControl_Transparency_No_RadioBtn";
             this.mainControl_Transparency_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -229,6 +236,7 @@
             // 
             this.mainControl_Transparency_Yes_RadioBtn.AutoSize = true;
             this.mainControl_Transparency_Yes_RadioBtn.Checked = true;
+            this.mainControl_Transparency_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_Transparency_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_Transparency_Yes_RadioBtn.Name = "mainControl_Transparency_Yes_RadioBtn";
             this.mainControl_Transparency_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -305,6 +313,7 @@
             // 
             this.mainControl_FixedSize_No_RadioBtn.AutoSize = true;
             this.mainControl_FixedSize_No_RadioBtn.Checked = true;
+            this.mainControl_FixedSize_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_FixedSize_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_FixedSize_No_RadioBtn.Name = "mainControl_FixedSize_No_RadioBtn";
             this.mainControl_FixedSize_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -316,6 +325,7 @@
             // mainControl_FixedSize_Yes_RadioBtn
             // 
             this.mainControl_FixedSize_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_FixedSize_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_FixedSize_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_FixedSize_Yes_RadioBtn.Name = "mainControl_FixedSize_Yes_RadioBtn";
             this.mainControl_FixedSize_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -558,7 +568,7 @@
             this.mainControl_PostFix_TextBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.mainControl_PostFix_TextBox.Location = new System.Drawing.Point(166, 530);
             this.mainControl_PostFix_TextBox.Name = "mainControl_PostFix_TextBox";
-            this.mainControl_PostFix_TextBox.Size = new System.Drawing.Size(131, 29);
+            this.mainControl_PostFix_TextBox.Size = new System.Drawing.Size(131, 25);
             this.mainControl_PostFix_TextBox.TabIndex = 121;
             this.mainControl_PostFix_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.mainControl_PostFix_TextBox.TextChanged += new System.EventHandler(this.mainControl_PostFix_TextBox_TextChanged);
@@ -589,6 +599,7 @@
             // 
             this.mainControl_ShowText_No_RadioBtn.AutoSize = true;
             this.mainControl_ShowText_No_RadioBtn.Checked = true;
+            this.mainControl_ShowText_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_ShowText_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_ShowText_No_RadioBtn.Name = "mainControl_ShowText_No_RadioBtn";
             this.mainControl_ShowText_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -600,6 +611,7 @@
             // mainControl_ShowText_Yes_RadioBtn
             // 
             this.mainControl_ShowText_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_ShowText_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_ShowText_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_ShowText_Yes_RadioBtn.Name = "mainControl_ShowText_Yes_RadioBtn";
             this.mainControl_ShowText_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -634,6 +646,7 @@
             // 
             this.mainControl_AnimateStartAngle_No_RadioBtn.AutoSize = true;
             this.mainControl_AnimateStartAngle_No_RadioBtn.Checked = true;
+            this.mainControl_AnimateStartAngle_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AnimateStartAngle_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_AnimateStartAngle_No_RadioBtn.Name = "mainControl_AnimateStartAngle_No_RadioBtn";
             this.mainControl_AnimateStartAngle_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -645,6 +658,7 @@
             // mainControl_AnimateStartAngle_Yes_RadioBtn
             // 
             this.mainControl_AnimateStartAngle_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_AnimateStartAngle_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AnimateStartAngle_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_AnimateStartAngle_Yes_RadioBtn.Name = "mainControl_AnimateStartAngle_Yes_RadioBtn";
             this.mainControl_AnimateStartAngle_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -679,6 +693,7 @@
             // 
             this.mainControl_AutoIncrement_No_RadioBtn.AutoSize = true;
             this.mainControl_AutoIncrement_No_RadioBtn.Checked = true;
+            this.mainControl_AutoIncrement_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AutoIncrement_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_AutoIncrement_No_RadioBtn.Name = "mainControl_AutoIncrement_No_RadioBtn";
             this.mainControl_AutoIncrement_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -690,6 +705,7 @@
             // mainControl_AutoIncrement_Yes_RadioBtn
             // 
             this.mainControl_AutoIncrement_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_AutoIncrement_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AutoIncrement_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_AutoIncrement_Yes_RadioBtn.Name = "mainControl_AutoIncrement_Yes_RadioBtn";
             this.mainControl_AutoIncrement_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -724,6 +740,7 @@
             // 
             this.mainControl_AutoAnimate_No_RadioBtn.AutoSize = true;
             this.mainControl_AutoAnimate_No_RadioBtn.Checked = true;
+            this.mainControl_AutoAnimate_No_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AutoAnimate_No_RadioBtn.Location = new System.Drawing.Point(75, 6);
             this.mainControl_AutoAnimate_No_RadioBtn.Name = "mainControl_AutoAnimate_No_RadioBtn";
             this.mainControl_AutoAnimate_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
@@ -735,6 +752,7 @@
             // mainControl_AutoAnimate_Yes_RadioBtn
             // 
             this.mainControl_AutoAnimate_Yes_RadioBtn.AutoSize = true;
+            this.mainControl_AutoAnimate_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.mainControl_AutoAnimate_Yes_RadioBtn.Location = new System.Drawing.Point(18, 6);
             this.mainControl_AutoAnimate_Yes_RadioBtn.Name = "mainControl_AutoAnimate_Yes_RadioBtn";
             this.mainControl_AutoAnimate_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
@@ -911,6 +929,34 @@
             this.label4.TabIndex = 105;
             this.label4.Text = "Speed";
             // 
+            // mainControl_CircularProgress_ComboBox
+            // 
+            this.mainControl_CircularProgress_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.mainControl_CircularProgress_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mainControl_CircularProgress_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainControl_CircularProgress_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.mainControl_CircularProgress_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.mainControl_CircularProgress_ComboBox.FormattingEnabled = true;
+            this.mainControl_CircularProgress_ComboBox.Location = new System.Drawing.Point(857, 772);
+            this.mainControl_CircularProgress_ComboBox.Name = "mainControl_CircularProgress_ComboBox";
+            this.mainControl_CircularProgress_ComboBox.Size = new System.Drawing.Size(134, 25);
+            this.mainControl_CircularProgress_ComboBox.TabIndex = 109;
+            this.mainControl_CircularProgress_ComboBox.Visible = false;
+            this.mainControl_CircularProgress_ComboBox.SelectedIndexChanged += new System.EventHandler(this.CircularBarTypeChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label5.Location = new System.Drawing.Point(698, 774);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 19);
+            this.label5.TabIndex = 108;
+            this.label5.Text = "Circular Progress";
+            this.label5.Visible = false;
+            // 
             // okBtn
             // 
             this.okBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(0)))), ((int)(((byte)(255)))));
@@ -941,21 +987,19 @@
             this.cancelBtn.UseVisualStyleBackColor = false;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
-            // panel2
+            // mainViewer
             // 
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.mainControl_CircularProgress_ComboBox);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.mainControl_ProgressType_ComboBox);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.mainControl_IndicatorProgress_ComboBox);
-            this.panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel2.Location = new System.Drawing.Point(321, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1092, 630);
-            this.panel2.TabIndex = 118;
-            this.panel2.Visible = false;
+            this.mainViewer.AutoSize = true;
+            this.mainViewer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.mainViewer.Controls.Add(this.label17);
+            this.mainViewer.Controls.Add(this.label7);
+            this.mainViewer.Controls.Add(this.mainControl_IndicatorProgress_ComboBox);
+            this.mainViewer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.mainViewer.Location = new System.Drawing.Point(322, 47);
+            this.mainViewer.Name = "mainViewer";
+            this.mainViewer.Size = new System.Drawing.Size(611, 523);
+            this.mainViewer.TabIndex = 118;
+            this.mainViewer.Visible = false;
             // 
             // label17
             // 
@@ -963,7 +1007,7 @@
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label17.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label17.Location = new System.Drawing.Point(241, 437);
+            this.label17.Location = new System.Drawing.Point(231, 409);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(187, 114);
             this.label17.TabIndex = 125;
@@ -971,46 +1015,33 @@
     "p Box - \r\n\r\nLocation : 13, 51";
             this.label17.Visible = false;
             // 
-            // mainControl_CircularProgress_ComboBox
-            // 
-            this.mainControl_CircularProgress_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.mainControl_CircularProgress_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mainControl_CircularProgress_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mainControl_CircularProgress_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.mainControl_CircularProgress_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.mainControl_CircularProgress_ComboBox.FormattingEnabled = true;
-            this.mainControl_CircularProgress_ComboBox.Location = new System.Drawing.Point(629, 434);
-            this.mainControl_CircularProgress_ComboBox.Name = "mainControl_CircularProgress_ComboBox";
-            this.mainControl_CircularProgress_ComboBox.Size = new System.Drawing.Size(134, 25);
-            this.mainControl_CircularProgress_ComboBox.TabIndex = 109;
-            this.mainControl_CircularProgress_ComboBox.Visible = false;
-            this.mainControl_CircularProgress_ComboBox.SelectedIndexChanged += new System.EventHandler(this.CircularBarTypeChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(470, 436);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 19);
-            this.label5.TabIndex = 108;
-            this.label5.Text = "Circular Progress";
-            this.label5.Visible = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(470, 502);
+            this.label7.Location = new System.Drawing.Point(315, 299);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 19);
             this.label7.TabIndex = 112;
             this.label7.Text = "Indicator Progress";
             this.label7.Visible = false;
+            // 
+            // mainControl_IndicatorProgress_ComboBox
+            // 
+            this.mainControl_IndicatorProgress_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.mainControl_IndicatorProgress_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.mainControl_IndicatorProgress_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mainControl_IndicatorProgress_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.mainControl_IndicatorProgress_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.mainControl_IndicatorProgress_ComboBox.FormattingEnabled = true;
+            this.mainControl_IndicatorProgress_ComboBox.Location = new System.Drawing.Point(474, 297);
+            this.mainControl_IndicatorProgress_ComboBox.Name = "mainControl_IndicatorProgress_ComboBox";
+            this.mainControl_IndicatorProgress_ComboBox.Size = new System.Drawing.Size(134, 25);
+            this.mainControl_IndicatorProgress_ComboBox.TabIndex = 113;
+            this.mainControl_IndicatorProgress_ComboBox.Visible = false;
+            this.mainControl_IndicatorProgress_ComboBox.SelectedIndexChanged += new System.EventHandler(this.IndicatorBarTypeChanged);
             // 
             // mainControl_ProgressType_ComboBox
             // 
@@ -1020,7 +1051,7 @@
             this.mainControl_ProgressType_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.mainControl_ProgressType_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.mainControl_ProgressType_ComboBox.FormattingEnabled = true;
-            this.mainControl_ProgressType_ComboBox.Location = new System.Drawing.Point(629, 368);
+            this.mainControl_ProgressType_ComboBox.Location = new System.Drawing.Point(557, 772);
             this.mainControl_ProgressType_ComboBox.Name = "mainControl_ProgressType_ComboBox";
             this.mainControl_ProgressType_ComboBox.Size = new System.Drawing.Size(134, 25);
             this.mainControl_ProgressType_ComboBox.TabIndex = 101;
@@ -1033,7 +1064,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(470, 370);
+            this.label1.Location = new System.Drawing.Point(466, 774);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 19);
             this.label1.TabIndex = 100;
@@ -1041,27 +1072,31 @@
             this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // mainControl_IndicatorProgress_ComboBox
+            // closeBtn
             // 
-            this.mainControl_IndicatorProgress_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
-            this.mainControl_IndicatorProgress_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.mainControl_IndicatorProgress_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mainControl_IndicatorProgress_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.mainControl_IndicatorProgress_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.mainControl_IndicatorProgress_ComboBox.FormattingEnabled = true;
-            this.mainControl_IndicatorProgress_ComboBox.Location = new System.Drawing.Point(629, 500);
-            this.mainControl_IndicatorProgress_ComboBox.Name = "mainControl_IndicatorProgress_ComboBox";
-            this.mainControl_IndicatorProgress_ComboBox.Size = new System.Drawing.Size(134, 25);
-            this.mainControl_IndicatorProgress_ComboBox.TabIndex = 113;
-            this.mainControl_IndicatorProgress_ComboBox.Visible = false;
-            this.mainControl_IndicatorProgress_ComboBox.SelectedIndexChanged += new System.EventHandler(this.IndicatorBarTypeChanged);
+            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
+            this.closeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 5F);
+            this.closeBtn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.closeBtn.Location = new System.Drawing.Point(1264, 4);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(17, 18);
+            this.closeBtn.TabIndex = 52;
+            this.closeBtn.Text = "X";
+            this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            this.closeBtn.MouseEnter += new System.EventHandler(this.closeBtn_MouseEnter);
+            this.closeBtn.MouseLeave += new System.EventHandler(this.closeBtn_MouseLeave);
             // 
             // ProgressDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(1539, 815);
+            this.ClientSize = new System.Drawing.Size(1284, 815);
             this.Controls.Add(this.thematic1501);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Crimson;
@@ -1069,6 +1104,7 @@
             this.Name = "ProgressDialog";
             this.Text = "ProgressDialog";
             this.thematic1501.ResumeLayout(false);
+            this.thematic1501.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -1089,8 +1125,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_ASA_Interval_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AI_Duration_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainControl_AA_Speed_Numeric)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.mainViewer.ResumeLayout(false);
+            this.mainViewer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1158,11 +1194,12 @@
         private System.Windows.Forms.Label label4;
         public System.Windows.Forms.Button okBtn;
         public System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel mainViewer;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.RadioButton mainControl_Transparency_No_RadioBtn;
         private System.Windows.Forms.RadioButton mainControl_Transparency_Yes_RadioBtn;
+        private System.Windows.Forms.Button closeBtn;
     }
 }

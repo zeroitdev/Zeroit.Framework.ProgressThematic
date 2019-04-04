@@ -42,6 +42,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// </summary>
         private void InitializeComponent()
         {
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgBar_Clear_UC));
             this.Preview_Btn = new System.Windows.Forms.Button();
             this.bars_Extended_GroupBox = new System.Windows.Forms.GroupBox();
             this.bars_Clear_Mode_ComboBox = new System.Windows.Forms.ComboBox();
@@ -67,9 +69,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(644, 15);
+            this.Preview_Btn.Location = new System.Drawing.Point(301, 27);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(118, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(56, 29);
             this.Preview_Btn.TabIndex = 109;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -88,11 +90,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label2);
             this.bars_Extended_GroupBox.Controls.Add(this.bars_Clear_BorderColor_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label4);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(623, 154);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(280, 209);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Clear ProgressBar";
@@ -102,12 +104,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Clear_Mode_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Clear_Mode_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Clear_Mode_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Clear_Mode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Clear_Mode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Clear_Mode_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Clear_Mode_ComboBox.FormattingEnabled = true;
-            this.bars_Clear_Mode_ComboBox.Location = new System.Drawing.Point(112, 52);
+            this.bars_Clear_Mode_ComboBox.Location = new System.Drawing.Point(88, 52);
             this.bars_Clear_Mode_ComboBox.Name = "bars_Clear_Mode_ComboBox";
-            this.bars_Clear_Mode_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Clear_Mode_ComboBox.Size = new System.Drawing.Size(54, 21);
             this.bars_Clear_Mode_ComboBox.TabIndex = 145;
             // 
             // label21
@@ -128,9 +130,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Clear_Gradient2_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Clear_Gradient2_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Clear_Gradient2_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Clear_Gradient2_Btn.Location = new System.Drawing.Point(354, 116);
+            this.bars_Clear_Gradient2_Btn.Location = new System.Drawing.Point(88, 170);
             this.bars_Clear_Gradient2_Btn.Name = "bars_Clear_Gradient2_Btn";
-            this.bars_Clear_Gradient2_Btn.Size = new System.Drawing.Size(58, 27);
+            this.bars_Clear_Gradient2_Btn.Size = new System.Drawing.Size(54, 27);
             this.bars_Clear_Gradient2_Btn.TabIndex = 143;
             this.bars_Clear_Gradient2_Btn.UseVisualStyleBackColor = false;
             this.bars_Clear_Gradient2_Btn.Click += new System.EventHandler(this.bars_Clear_Gradient2_Btn_Click);
@@ -141,7 +143,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label20.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label20.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label20.Location = new System.Drawing.Point(247, 119);
+            this.label20.Location = new System.Drawing.Point(8, 173);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(74, 19);
             this.label20.TabIndex = 142;
@@ -153,9 +155,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Clear_Gradient1_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Clear_Gradient1_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Clear_Gradient1_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Clear_Gradient1_Btn.Location = new System.Drawing.Point(112, 116);
+            this.bars_Clear_Gradient1_Btn.Location = new System.Drawing.Point(88, 116);
             this.bars_Clear_Gradient1_Btn.Name = "bars_Clear_Gradient1_Btn";
-            this.bars_Clear_Gradient1_Btn.Size = new System.Drawing.Size(104, 27);
+            this.bars_Clear_Gradient1_Btn.Size = new System.Drawing.Size(54, 27);
             this.bars_Clear_Gradient1_Btn.TabIndex = 131;
             this.bars_Clear_Gradient1_Btn.UseVisualStyleBackColor = false;
             this.bars_Clear_Gradient1_Btn.Click += new System.EventHandler(this.bars_Clear_Gradient1_Btn_Click);
@@ -178,9 +180,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Clear_GlowColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Clear_GlowColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Clear_GlowColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Clear_GlowColor_Btn.Location = new System.Drawing.Point(543, 50);
+            this.bars_Clear_GlowColor_Btn.Location = new System.Drawing.Point(226, 119);
             this.bars_Clear_GlowColor_Btn.Name = "bars_Clear_GlowColor_Btn";
-            this.bars_Clear_GlowColor_Btn.Size = new System.Drawing.Size(68, 27);
+            this.bars_Clear_GlowColor_Btn.Size = new System.Drawing.Size(41, 27);
             this.bars_Clear_GlowColor_Btn.TabIndex = 111;
             this.bars_Clear_GlowColor_Btn.UseVisualStyleBackColor = false;
             this.bars_Clear_GlowColor_Btn.Click += new System.EventHandler(this.bars_Clear_GlowColor_Btn_Click);
@@ -191,11 +193,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(451, 53);
+            this.label2.Location = new System.Drawing.Point(167, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(44, 38);
             this.label2.TabIndex = 110;
-            this.label2.Text = "Glow Color";
+            this.label2.Text = "Glow \r\nColor";
             // 
             // bars_Clear_BorderColor_Btn
             // 
@@ -203,9 +205,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Clear_BorderColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Clear_BorderColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Clear_BorderColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Clear_BorderColor_Btn.Location = new System.Drawing.Point(354, 52);
+            this.bars_Clear_BorderColor_Btn.Location = new System.Drawing.Point(226, 55);
             this.bars_Clear_BorderColor_Btn.Name = "bars_Clear_BorderColor_Btn";
-            this.bars_Clear_BorderColor_Btn.Size = new System.Drawing.Size(58, 25);
+            this.bars_Clear_BorderColor_Btn.Size = new System.Drawing.Size(41, 25);
             this.bars_Clear_BorderColor_Btn.TabIndex = 107;
             this.bars_Clear_BorderColor_Btn.UseVisualStyleBackColor = false;
             this.bars_Clear_BorderColor_Btn.Click += new System.EventHandler(this.bars_Clear_BorderColor_Btn_Click);
@@ -216,11 +218,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(247, 53);
+            this.label4.Location = new System.Drawing.Point(167, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 19);
+            this.label4.Size = new System.Drawing.Size(54, 38);
             this.label4.TabIndex = 105;
-            this.label4.Text = "Border Color";
+            this.label4.Text = "Border \r\nColor";
             // 
             // ZeroitThematicProgress1
             // 
@@ -230,7 +232,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
-        100,
+        1000,
         100,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
@@ -240,27 +242,50 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.AutoSpinStartInterval = 100;
             this.ZeroitThematicProgress1.AutoStartSpinner = false;
             this.ZeroitThematicProgress1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.ZeroitThematicProgress1.Bar1.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar1.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar1.Enabled = true;
-            this.ZeroitThematicProgress1.Bar1.FinishColor = System.Drawing.Color.LightGreen;
-            this.ZeroitThematicProgress1.Bar1.InactiveColor = System.Drawing.Color.LightGray;
-            this.ZeroitThematicProgress1.Bar2.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar2.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar2.FinishColor = System.Drawing.Color.LightGreen;
-            this.ZeroitThematicProgress1.Bar2.InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar1ActiveColor = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.Bar1BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar1Enabling = true;
+            this.ZeroitThematicProgress1.Bar1FinishColor = System.Drawing.Color.Lime;
+            this.ZeroitThematicProgress1.Bar1InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar1Maximum = 100;
+            this.ZeroitThematicProgress1.Bar1Smooth = 1;
+            this.ZeroitThematicProgress1.Bar1Value = 0;
+            this.ZeroitThematicProgress1.Bar2ActiveColor = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.Bar2BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar2Enabling = false;
+            this.ZeroitThematicProgress1.Bar2FinishColor = System.Drawing.Color.Lime;
+            this.ZeroitThematicProgress1.Bar2InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar2Maximum = 100;
+            this.ZeroitThematicProgress1.Bar2Smooth = 1;
+            this.ZeroitThematicProgress1.Bar2Value = 0;
             this.ZeroitThematicProgress1.Bar3.ActiveColor = System.Drawing.Color.LightSeaGreen;
             this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.LightGreen;
             this.ZeroitThematicProgress1.Bar3.InactiveColor = System.Drawing.Color.LightGray;
-            this.ZeroitThematicProgress1.Bar4.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar4.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar4.FinishColor = System.Drawing.Color.LightGreen;
-            this.ZeroitThematicProgress1.Bar4.InactiveColor = System.Drawing.Color.LightGray;
-            this.ZeroitThematicProgress1.Bar5.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar5.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar5.FinishColor = System.Drawing.Color.LightGreen;
-            this.ZeroitThematicProgress1.Bar5.InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar3ActiveColor = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.Bar3BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar3Enabling = false;
+            this.ZeroitThematicProgress1.Bar3FinishColor = System.Drawing.Color.Lime;
+            this.ZeroitThematicProgress1.Bar3InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar3Maximum = 100;
+            this.ZeroitThematicProgress1.Bar3Smooth = 1;
+            this.ZeroitThematicProgress1.Bar3Value = 0;
+            this.ZeroitThematicProgress1.Bar4ActiveColor = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.Bar4BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar4Enabling = false;
+            this.ZeroitThematicProgress1.Bar4FinishColor = System.Drawing.Color.Lime;
+            this.ZeroitThematicProgress1.Bar4InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar4Maximum = 100;
+            this.ZeroitThematicProgress1.Bar4Smooth = 1;
+            this.ZeroitThematicProgress1.Bar4Value = 0;
+            this.ZeroitThematicProgress1.Bar5ActiveColor = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.Bar5BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar5Enabling = false;
+            this.ZeroitThematicProgress1.Bar5FinishColor = System.Drawing.Color.Lime;
+            this.ZeroitThematicProgress1.Bar5InactiveColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.Bar5Maximum = 100;
+            this.ZeroitThematicProgress1.Bar5Smooth = 1;
+            this.ZeroitThematicProgress1.Bar5Value = 0;
             this.ZeroitThematicProgress1.BarBackgroundDark = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(200)))), ((int)(((byte)(201)))));
             this.ZeroitThematicProgress1.BarBackgroundLight = System.Drawing.Color.WhiteSmoke;
             this.ZeroitThematicProgress1.BarBorderColor = System.Drawing.Color.DarkGray;
@@ -280,6 +305,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -312,20 +338,31 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
+            this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
+            this.ZeroitThematicProgress1.CPv2_Color = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.CPv2_ColorEmpty = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.CPv2_ProgressWidth = 2;
             this.ZeroitThematicProgress1.CPv2_Shift = 0;
             this.ZeroitThematicProgress1.CPv2_ShowText = true;
             this.ZeroitThematicProgress1.CPv2_StartAngle = 80;
+            this.ZeroitThematicProgress1.CPv3_Color = System.Drawing.Color.LightSeaGreen;
+            this.ZeroitThematicProgress1.CPv3_ColorEmpty = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.CPv3_ProgressWidth = 2;
             this.ZeroitThematicProgress1.CPv3_Shift = 0;
             this.ZeroitThematicProgress1.CPv3_ShowText = true;
             this.ZeroitThematicProgress1.CPv3_StartAngle = -90;
             this.ZeroitThematicProgress1.CPv4_EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.ZeroitThematicProgress1.CPv4_FillEllipse = new System.Drawing.Color[] {
+        System.Drawing.Color.Gray,
+        System.Drawing.Color.Black};
             this.ZeroitThematicProgress1.CPv4_GradientAngle = 90F;
             this.ZeroitThematicProgress1.CPv4_InnerBorder = System.Drawing.Color.Black;
+            this.ZeroitThematicProgress1.CPv4_InnerBorderThickness = 1;
             this.ZeroitThematicProgress1.CPv4_OuterBorder = System.Drawing.Color.Black;
+            this.ZeroitThematicProgress1.CPv4_OuterBorderThickness = 1;
             this.ZeroitThematicProgress1.CPv4_ProgressBackGrad1 = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.CPv4_ProgressBackGrad2 = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.CPv4_ProgressGrad1 = System.Drawing.Color.DarkSlateGray;
@@ -340,6 +377,43 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CPv5_Reset = false;
             this.ZeroitThematicProgress1.CPv5_Text = "ZeroitThematicProgress1";
             this.ZeroitThematicProgress1.CustomFadeColor = System.Drawing.SystemColors.Control;
+            this.ZeroitThematicProgress1.DagAnimSpeed = 100;
+            this.ZeroitThematicProgress1.DagAnimUpSpeed = 100;
+            this.ZeroitThematicProgress1.DagDrawInnerCircle = true;
+            this.ZeroitThematicProgress1.DagFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
+            this.ZeroitThematicProgress1.DagFilledColorAlpha = 130;
+            this.ZeroitThematicProgress1.DagFilledThickness = 40;
+            this.ZeroitThematicProgress1.DagInnerBorder = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.DagInnerBorderWidth = 20;
+            this.ZeroitThematicProgress1.DagInnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ZeroitThematicProgress1.DagIsAnimated = false;
+            this.ZeroitThematicProgress1.DagSmoothAnimEndAngle = false;
+            this.ZeroitThematicProgress1.DagSmoothAnimSpeed = 5;
+            this.ZeroitThematicProgress1.DagSmoothEndAngle = 360;
+            this.ZeroitThematicProgress1.DagSmoothFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
+            this.ZeroitThematicProgress1.DagSmoothFilledColorAlpha = 130;
+            this.ZeroitThematicProgress1.DagSmoothFilledColorAlphaInner = 200;
+            this.ZeroitThematicProgress1.DagSmoothFilledThickness = 40;
+            this.ZeroitThematicProgress1.DagSmoothFilledThicknessInner = 30;
+            this.ZeroitThematicProgress1.DagSmoothInnerFilledColor = System.Drawing.Color.Orange;
+            this.ZeroitThematicProgress1.DagSmoothIsAnimated = false;
+            this.ZeroitThematicProgress1.DagSmoothRotate = false;
+            this.ZeroitThematicProgress1.DagSmoothUnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.ZeroitThematicProgress1.DagSmoothUnfilledThickness = 24;
+            this.ZeroitThematicProgress1.DagStartAngle = 270;
+            this.ZeroitThematicProgress1.DagStyled = false;
+            this.ZeroitThematicProgress1.DagUnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.ZeroitThematicProgress1.DagUnfilledThickness = 24;
+            this.ZeroitThematicProgress1.DagUpFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
+            this.ZeroitThematicProgress1.DagUpFilledColorAlpha = 130;
+            this.ZeroitThematicProgress1.DagUpFilledColorAlphaInner = 200;
+            this.ZeroitThematicProgress1.DagUpFilledThickness = 40;
+            this.ZeroitThematicProgress1.DagUpFilledThicknessInner = 30;
+            this.ZeroitThematicProgress1.DagUpInnerBorder = true;
+            this.ZeroitThematicProgress1.DagUpInnerFilledColor = System.Drawing.Color.Orange;
+            this.ZeroitThematicProgress1.DagUpIsAnimated = false;
+            this.ZeroitThematicProgress1.DagUpUnFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            this.ZeroitThematicProgress1.DagUpUnfilledThickness = 24;
             this.ZeroitThematicProgress1.DashSpace = 2;
             this.ZeroitThematicProgress1.DashWidth = 5;
             this.ZeroitThematicProgress1.DisplayProgress = false;
@@ -350,6 +424,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -359,11 +434,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.GoogleProgress_RefreshRate = 100;
+            this.ZeroitThematicProgress1.GorgeousDrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Gorgeous_drawMode.Solid;
             this.ZeroitThematicProgress1.Gradient = Zeroit.Framework.ProgressThematic.Maze_GradientType.None;
             this.ZeroitThematicProgress1.GradientColor = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(84)))), ((int)(((byte)(84))))),
@@ -374,6 +450,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -394,11 +471,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.LightGray};
             this.ZeroitThematicProgress1.IG_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Ignito_drawMode.Solid;
             this.ZeroitThematicProgress1.IG_EnableHatch = false;
+            this.ZeroitThematicProgress1.IG_GradientColors = new System.Drawing.Color[] {
+        System.Drawing.Color.AliceBlue,
+        System.Drawing.Color.Azure,
+        System.Drawing.Color.GreenYellow,
+        System.Drawing.Color.Orange};
             this.ZeroitThematicProgress1.IG_InnerBorder = 1F;
             this.ZeroitThematicProgress1.IG_InnerRotatingAnlge = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Ignito_innerRotatingAngle.AntiClockwise;
             this.ZeroitThematicProgress1.IG_OuterBorder = 1F;
             this.ZeroitThematicProgress1.IG_OutterRotatingAngle = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Ignito_outterRotatingAngle.Clockwise;
             this.ZeroitThematicProgress1.Image = null;
+            this.ZeroitThematicProgress1.ImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ZeroitThematicProgress1.ImageEnabled = false;
+            this.ZeroitThematicProgress1.ImageSize = new System.Drawing.Size(0, 0);
             this.ZeroitThematicProgress1.Info = "ZeroitThematicProgress1";
             this.ZeroitThematicProgress1.InnerBorder = 1;
             this.ZeroitThematicProgress1.Innercircle1HeightReduction = 10;
@@ -414,17 +499,21 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Innercircle6HeightReduction = 100;
             this.ZeroitThematicProgress1.Innercircle6WidthReduction = 100;
             this.ZeroitThematicProgress1.InnerCircleBorder = 10;
-            this.ZeroitThematicProgress1.InnerCircleRadius = 8;
+            this.ZeroitThematicProgress1.InnerCircleRadius = 5;
             this.ZeroitThematicProgress1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ZeroitThematicProgress1.InnerGridType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.ProgressBarBoxed_InnerGridTypes.Full;
             this.ZeroitThematicProgress1.InnerMargin = 2;
             this.ZeroitThematicProgress1.InnerRadius = 20;
             this.ZeroitThematicProgress1.InnerWidth = -1;
+            this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
+        System.Drawing.Color.Black,
+        System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(632, 76);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(289, 82);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -435,6 +524,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartAngle = 270F;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            this.ZeroitThematicProgress1.MacOSX_MaxSpokes = 12;
             this.ZeroitThematicProgress1.MacOSX_Optimized_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
@@ -482,10 +572,17 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.Tan,
         System.Drawing.Color.SlateGray};
             this.ZeroitThematicProgress1.MC_CorrectShift = 6;
+            this.ZeroitThematicProgress1.MC_CorrectShift_Height = 6;
             this.ZeroitThematicProgress1.MC_InnerBorder = 2;
+            this.ZeroitThematicProgress1.MC_InnerBorderColor = System.Drawing.Color.Black;
+            this.ZeroitThematicProgress1.MC_InnerColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.MC_NoOfRings = Zeroit.Framework.ProgressThematic.Rings.One;
+            this.ZeroitThematicProgress1.MC_Position_Horizontal = 0;
+            this.ZeroitThematicProgress1.MC_Position_Vertical = 0;
             this.ZeroitThematicProgress1.MC_RectShift = 3;
+            this.ZeroitThematicProgress1.MC_RectShift_Height = 3;
             this.ZeroitThematicProgress1.MC_Shift = 15;
+            this.ZeroitThematicProgress1.MC_Shift_Height = 15;
             this.ZeroitThematicProgress1.MC_ShowInnerBorder = true;
             this.ZeroitThematicProgress1.MCEx_Colors = new System.Drawing.Color[] {
         System.Drawing.Color.Red,
@@ -513,12 +610,18 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.Tan,
         System.Drawing.Color.SlateGray};
             this.ZeroitThematicProgress1.MCEx_CorrectShift = 6;
+            this.ZeroitThematicProgress1.MCEx_CorrectShift_Height = 6;
             this.ZeroitThematicProgress1.MCEx_InnerBorder = 2;
             this.ZeroitThematicProgress1.MCEx_InnerBorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.MCEx_InnerColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.MCEx_InnerShift = 3;
             this.ZeroitThematicProgress1.MCEx_NoOfRings = Zeroit.Framework.ProgressThematic.Rings.One;
+            this.ZeroitThematicProgress1.MCEx_Position_Horizontal = 0;
+            this.ZeroitThematicProgress1.MCEx_Position_Vertical = 0;
             this.ZeroitThematicProgress1.MCEx_RectShift = 3;
+            this.ZeroitThematicProgress1.MCEx_RectShift_Height = 3;
             this.ZeroitThematicProgress1.MCEx_Shift = 15;
+            this.ZeroitThematicProgress1.MCEx_Shift_Height = 15;
             this.ZeroitThematicProgress1.MCEx_ShowInnerBorder = true;
             this.ZeroitThematicProgress1.MCExV2_Colors = new System.Drawing.Color[] {
         System.Drawing.Color.Red,
@@ -546,8 +649,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.Tan,
         System.Drawing.Color.SlateGray};
             this.ZeroitThematicProgress1.MCExV2_CorrectShift = 6;
+            this.ZeroitThematicProgress1.MCExV2_CorrectShift_Height = 6;
             this.ZeroitThematicProgress1.MCExV2_Divisions = true;
             this.ZeroitThematicProgress1.MCExV2_DivisionsWidth = 5;
+            this.ZeroitThematicProgress1.MCExV2_DrawMode = Zeroit.Framework.ProgressThematic.drawMode.Solid;
             this.ZeroitThematicProgress1.MCExV2_GradientAngle = 90F;
             this.ZeroitThematicProgress1.MCExV2_GradientLine1 = new System.Drawing.Color[] {
         System.Drawing.Color.Red,
@@ -601,6 +706,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.Cyan};
             this.ZeroitThematicProgress1.MCExV2_InnerBorder = 2;
             this.ZeroitThematicProgress1.MCExV2_InnerBorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.MCExV2_InnerColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.MCExV2_InnerHole = System.Drawing.Color.Transparent;
             this.ZeroitThematicProgress1.MCExV2_InnerHoleGradCol = new System.Drawing.Color[] {
         System.Drawing.Color.Azure,
@@ -611,17 +717,25 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.MCExV2_OuterBorderEnd = System.Drawing.Drawing2D.LineCap.ArrowAnchor;
             this.ZeroitThematicProgress1.MCExV2_OuterBorderStart = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MCExV2_OuterBorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.ZeroitThematicProgress1.MCExV2_OuterBorderWidth = 2;
+            this.ZeroitThematicProgress1.MCExV2_OuterColor = new System.Drawing.Color[] {
+        System.Drawing.Color.Gray,
+        System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.MCExV2_Position_Horizontal = 0;
+            this.ZeroitThematicProgress1.MCExV2_Position_Vertical = 0;
             this.ZeroitThematicProgress1.MCExV2_RectShift = 3;
+            this.ZeroitThematicProgress1.MCExV2_RectShift_Height = 3;
             this.ZeroitThematicProgress1.MCExV2_RotatingBorder = true;
             this.ZeroitThematicProgress1.MCExV2_Shift = 15;
+            this.ZeroitThematicProgress1.MCExV2_Shift_Height = 15;
             this.ZeroitThematicProgress1.Minimum = 0F;
             this.ZeroitThematicProgress1.MinimumSize = new System.Drawing.Size(28, 28);
             this.ZeroitThematicProgress1.Mode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.coloringMode.Hatch;
             this.ZeroitThematicProgress1.Name = "ZeroitThematicProgress1";
-            this.ZeroitThematicProgress1.NumberSpoke = 10;
+            this.ZeroitThematicProgress1.NumberSpoke = 12;
             this.ZeroitThematicProgress1.Orientation = Zeroit.Framework.ProgressThematic.ProgressBarDirection.Horizontal;
             this.ZeroitThematicProgress1.OuterBorderWidth = 1;
-            this.ZeroitThematicProgress1.OuterCircleRadius = 10;
+            this.ZeroitThematicProgress1.OuterCircleRadius = 11;
             this.ZeroitThematicProgress1.OuterColor = System.Drawing.Color.Gray;
             this.ZeroitThematicProgress1.OuterMargin = -25;
             this.ZeroitThematicProgress1.OuterRadius = 74;
@@ -634,9 +748,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ZeroitThematicProgress1.Perplex_ColorGradient3 = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(195)))), ((int)(((byte)(30)))));
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
+            this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -661,16 +778,34 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressBarClear_ColorGradient2 = System.Drawing.Color.Red;
             this.ZeroitThematicProgress1.ProgressBarNormal_BorderColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.ProgressBarNormal_Step = 5;
+            this.ZeroitThematicProgress1.ProgressBarPerfect_CustomText = "Perfect";
             this.ZeroitThematicProgress1.ProgressBarStyle = Zeroit.Framework.ProgressThematic.ProgressStyle.Dashed;
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters2.DashOffset = 0.5F;
+            penParameters2.DashPattern = new float[] {
+        0.2F,
+        0.75F};
+            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters2.MiterLimit = 0.7F;
+            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters2.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
+            this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
+            this.ZeroitThematicProgress1.ProgressInput = new Zeroit.Framework.ProgressThematic.FormEditors.ProgressInput(System.Drawing.Color.Yellow, System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25))))), System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25))))), System.Drawing.Color.Red, Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.coloringMode.Hatch);
             this.ZeroitThematicProgress1.ProgressNormalType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.progressNormalType.Normal;
             this.ZeroitThematicProgress1.ProgressPerfect_CircleSize = 0.2F;
             this.ZeroitThematicProgress1.ProgressPerfect_NumberOfCircles = 100F;
             this.ZeroitThematicProgress1.ProgressPerfect_NumberOfVisibleCircles = 30;
             this.ZeroitThematicProgress1.ProgressPerfect_Percentage = 0F;
+            this.ZeroitThematicProgress1.ProgressPerfect_TextDisplay = Zeroit.Framework.ProgressThematic.TextDisplayModes1.None;
             this.ZeroitThematicProgress1.ProgressPie__ProgressShape = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.ProgressPie_ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressPie_FillEllipse1 = System.Drawing.Color.Transparent;
             this.ZeroitThematicProgress1.ProgressPie_FillEllipse2 = System.Drawing.Color.Transparent;
@@ -691,18 +826,21 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
             this.ZeroitThematicProgress1.RotatingAngle = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Gorgeous_rotatingAngle.Clockwise;
             this.ZeroitThematicProgress1.RotatingArc_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RotatingArc_drawMode.Default;
+            this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
+            this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -715,8 +853,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
             this.ZeroitThematicProgress1.Shape = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Vuvuzela_Shape.Arc;
             this.ZeroitThematicProgress1.ShiftInner = 26;
@@ -733,7 +872,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = false;
             this.ZeroitThematicProgress1.ShowValue = false;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(162, 37);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(73, 28);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -748,14 +887,22 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         System.Drawing.Color.Orange,
         System.Drawing.Color.DarkSlateGray};
             this.ZeroitThematicProgress1.SP_GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.ZeroitThematicProgress1.SP_Height_Tweak = 20;
             this.ZeroitThematicProgress1.SP_InnerBorder = 20;
             this.ZeroitThematicProgress1.SP_OuterBorder = 10;
             this.ZeroitThematicProgress1.SP_OuterColor = System.Drawing.Color.LightGray;
+            this.ZeroitThematicProgress1.SP_Position_Horizontal = 10;
+            this.ZeroitThematicProgress1.SP_Position_Vertical = 10;
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
+            this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
+            this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.ZeroitThematicProgress1.Splitter_BorderColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.SpokeColor = System.Drawing.Color.DarkGray;
-            this.ZeroitThematicProgress1.SpokeThickness = 4;
+            this.ZeroitThematicProgress1.SpokeThickness = 2;
             this.ZeroitThematicProgress1.StartAngle = 270;
             this.ZeroitThematicProgress1.StartingAngle = 270F;
             this.ZeroitThematicProgress1.StepInterval = 100;
@@ -768,8 +915,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
             this.ZeroitThematicProgress1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
             this.ZeroitThematicProgress1.SuperscriptText = "°C";
+            this.ZeroitThematicProgress1.Supreme_EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.ZeroitThematicProgress1.Supreme_StartAngle = 180F;
+            this.ZeroitThematicProgress1.Supreme_StartCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.ZeroitThematicProgress1.Supreme_SweepAngle = 360F;
+            this.ZeroitThematicProgress1.Supreme_Type = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.Supreme_type.Circle;
             this.ZeroitThematicProgress1.TabIndex = 113;
             this.ZeroitThematicProgress1.Text = "ZeroitThematicProgress1";
+            this.ZeroitThematicProgress1.TextAlign = System.Drawing.StringAlignment.Center;
             this.ZeroitThematicProgress1.TextAlignType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.TextAlignmentTypes.Center;
             this.ZeroitThematicProgress1.TextAntialias = true;
             this.ZeroitThematicProgress1.TextColorType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.TextColorTypes.Automatic;
@@ -784,6 +937,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.TransistionSegment = 0;
             this.ZeroitThematicProgress1.Transparent = false;
             this.ZeroitThematicProgress1.TransparentEasing = Zeroit.Framework.ProgressThematic.transparencyEasingType.BounceEaseIn;
+            this.ZeroitThematicProgress1.Unique_CustomText = "Unique";
             this.ZeroitThematicProgress1.Unique_NumberOfCircles = 100F;
             this.ZeroitThematicProgress1.Unique_Percentage = 0F;
             this.ZeroitThematicProgress1.Value = 10.8203F;
@@ -795,8 +949,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Vuvuzela_Circle5 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.Vuvuzela_CircleSize = 1;
             this.ZeroitThematicProgress1.Vuvuzela_FillPie = false;
+            this.ZeroitThematicProgress1.Vuvuzela_HorizontalSpacing = 0;
             this.ZeroitThematicProgress1.Vuvuzela_RotatingBorder = false;
             this.ZeroitThematicProgress1.Vuvuzela_RotatingCircle = System.Drawing.Color.Red;
+            this.ZeroitThematicProgress1.Vuvuzela_VerticalSpacing = 0;
             this.ZeroitThematicProgress1.WallColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.WallSize = 1;
             this.ZeroitThematicProgress1.WinHR_Animate = false;
@@ -812,7 +968,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "ProgBar_Clear_UC";
-            this.Size = new System.Drawing.Size(800, 166);
+            this.Size = new System.Drawing.Size(369, 222);
             this.bars_Extended_GroupBox.ResumeLayout(false);
             this.bars_Extended_GroupBox.PerformLayout();
             this.ResumeLayout(false);

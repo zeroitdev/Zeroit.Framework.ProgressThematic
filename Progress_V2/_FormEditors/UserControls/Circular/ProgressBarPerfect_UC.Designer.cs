@@ -94,9 +94,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(712, 17);
+            this.Preview_Btn.Location = new System.Drawing.Point(462, 14);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(59, 29);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -131,7 +131,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(655, 275);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(427, 275);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Perfect";
@@ -142,20 +142,20 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(224, 239);
+            this.label8.Location = new System.Drawing.Point(139, 230);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 19);
+            this.label8.Size = new System.Drawing.Size(61, 38);
             this.label8.TabIndex = 281;
-            this.label8.Text = "Custom Text";
+            this.label8.Text = "Custom \r\nText";
             // 
             // circular_Perfect_CustomText_TextBox
             // 
             this.circular_Perfect_CustomText_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_CustomText_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circular_Perfect_CustomText_TextBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Perfect_CustomText_TextBox.Location = new System.Drawing.Point(329, 233);
+            this.circular_Perfect_CustomText_TextBox.Location = new System.Drawing.Point(221, 233);
             this.circular_Perfect_CustomText_TextBox.Name = "circular_Perfect_CustomText_TextBox";
-            this.circular_Perfect_CustomText_TextBox.Size = new System.Drawing.Size(84, 29);
+            this.circular_Perfect_CustomText_TextBox.Size = new System.Drawing.Size(48, 29);
             this.circular_Perfect_CustomText_TextBox.TabIndex = 280;
             this.circular_Perfect_CustomText_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.circular_Perfect_CustomText_TextBox.TextChanged += new System.EventHandler(this.circular_Perfect_CustomText_TextBox_TextChanged);
@@ -165,19 +165,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.circular_Perfect_ShowPercentage_Yes_RadioBtn);
             this.panel1.Controls.Add(this.circular_Perfect_ShowPercentage_No_RadioBtn);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel1.Location = new System.Drawing.Point(540, 93);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel1.Location = new System.Drawing.Point(367, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 38);
+            this.panel1.Size = new System.Drawing.Size(54, 44);
             this.panel1.TabIndex = 279;
             // 
             // circular_Perfect_ShowPercentage_Yes_RadioBtn
             // 
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.AutoSize = true;
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Checked = true;
-            this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Name = "circular_Perfect_ShowPercentage_Yes_RadioBtn";
-            this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.TabIndex = 113;
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.TabStop = true;
             this.circular_Perfect_ShowPercentage_Yes_RadioBtn.Text = "Yes";
@@ -187,9 +187,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_Perfect_ShowPercentage_No_RadioBtn
             // 
             this.circular_Perfect_ShowPercentage_No_RadioBtn.AutoSize = true;
-            this.circular_Perfect_ShowPercentage_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_Perfect_ShowPercentage_No_RadioBtn.Location = new System.Drawing.Point(7, 22);
             this.circular_Perfect_ShowPercentage_No_RadioBtn.Name = "circular_Perfect_ShowPercentage_No_RadioBtn";
-            this.circular_Perfect_ShowPercentage_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_Perfect_ShowPercentage_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_Perfect_ShowPercentage_No_RadioBtn.TabIndex = 114;
             this.circular_Perfect_ShowPercentage_No_RadioBtn.Text = "No";
             this.circular_Perfect_ShowPercentage_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -200,7 +200,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(454, 93);
+            this.label7.Location = new System.Drawing.Point(283, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 38);
             this.label7.TabIndex = 278;
@@ -212,7 +212,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(454, 173);
+            this.label6.Location = new System.Drawing.Point(283, 173);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 19);
             this.label6.TabIndex = 277;
@@ -222,8 +222,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Perfect_Percentage_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_Percentage_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Perfect_Percentage_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_Percentage_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Perfect_Percentage_Numeric.Location = new System.Drawing.Point(329, 102);
+            this.circular_Perfect_Percentage_Numeric.Location = new System.Drawing.Point(221, 109);
             this.circular_Perfect_Percentage_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -235,7 +236,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Perfect_Percentage_Numeric.Name = "circular_Perfect_Percentage_Numeric";
-            this.circular_Perfect_Percentage_Numeric.Size = new System.Drawing.Size(84, 29);
+            this.circular_Perfect_Percentage_Numeric.Size = new System.Drawing.Size(48, 22);
             this.circular_Perfect_Percentage_Numeric.TabIndex = 276;
             this.circular_Perfect_Percentage_Numeric.Value = new decimal(new int[] {
             1000,
@@ -250,7 +251,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(224, 107);
+            this.label5.Location = new System.Drawing.Point(139, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 275;
@@ -262,7 +263,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(454, 236);
+            this.label4.Location = new System.Drawing.Point(283, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 19);
             this.label4.TabIndex = 274;
@@ -272,17 +273,27 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Perfect_NoOfVisibleCircles_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_NoOfVisibleCircles_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Perfect_NoOfVisibleCircles_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_NoOfVisibleCircles_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Perfect_NoOfVisibleCircles_Numeric.Location = new System.Drawing.Point(329, 169);
+            this.circular_Perfect_NoOfVisibleCircles_Numeric.Location = new System.Drawing.Point(221, 169);
             this.circular_Perfect_NoOfVisibleCircles_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            circular_Perfect_NoOfVisibleCircles_Numeric.Minimum = 1;
+            this.circular_Perfect_NoOfVisibleCircles_Numeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.circular_Perfect_NoOfVisibleCircles_Numeric.Name = "circular_Perfect_NoOfVisibleCircles_Numeric";
-            this.circular_Perfect_NoOfVisibleCircles_Numeric.Size = new System.Drawing.Size(84, 29);
+            this.circular_Perfect_NoOfVisibleCircles_Numeric.Size = new System.Drawing.Size(48, 22);
             this.circular_Perfect_NoOfVisibleCircles_Numeric.TabIndex = 273;
+            this.circular_Perfect_NoOfVisibleCircles_Numeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.circular_Perfect_NoOfVisibleCircles_Numeric.ValueChanged += new System.EventHandler(this.circular_Perfect_NoOfVisibleCircles_Numeric_ValueChanged);
             // 
             // label3
@@ -291,11 +302,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(224, 169);
+            this.label3.Location = new System.Drawing.Point(139, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 38);
+            this.label3.Size = new System.Drawing.Size(52, 57);
             this.label3.TabIndex = 272;
-            this.label3.Text = "No of Visible \r\nCircles";
+            this.label3.Text = "No of \r\nVisible \r\nCircles";
             // 
             // label1
             // 
@@ -303,27 +314,37 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(224, 38);
+            this.label1.Location = new System.Drawing.Point(139, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 19);
+            this.label1.Size = new System.Drawing.Size(46, 38);
             this.label1.TabIndex = 271;
-            this.label1.Text = "Circle Color";
+            this.label1.Text = "Circle \r\nColor";
             // 
             // circular_Perfect_NoOfCircles_Numeric
             // 
             this.circular_Perfect_NoOfCircles_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_NoOfCircles_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Perfect_NoOfCircles_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_NoOfCircles_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Perfect_NoOfCircles_Numeric.Location = new System.Drawing.Point(125, 170);
+            this.circular_Perfect_NoOfCircles_Numeric.Location = new System.Drawing.Point(83, 183);
             this.circular_Perfect_NoOfCircles_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.circular_Perfect_NoOfCircles_Numeric.Minimum = 1;
+            this.circular_Perfect_NoOfCircles_Numeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.circular_Perfect_NoOfCircles_Numeric.Name = "circular_Perfect_NoOfCircles_Numeric";
-            this.circular_Perfect_NoOfCircles_Numeric.Size = new System.Drawing.Size(65, 29);
+            this.circular_Perfect_NoOfCircles_Numeric.Size = new System.Drawing.Size(44, 22);
             this.circular_Perfect_NoOfCircles_Numeric.TabIndex = 249;
+            this.circular_Perfect_NoOfCircles_Numeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.circular_Perfect_NoOfCircles_Numeric.ValueChanged += new System.EventHandler(this.circular_Perfect_NoOfCircles_Numeric_ValueChanged);
             // 
             // label2
@@ -334,22 +355,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label2.Location = new System.Drawing.Point(10, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 19);
+            this.label2.Size = new System.Drawing.Size(48, 38);
             this.label2.TabIndex = 248;
-            this.label2.Text = "No of Circles";
+            this.label2.Text = "No of \r\nCircles";
             // 
             // circular_Perfect_CircleSize_Numeric
             // 
             this.circular_Perfect_CircleSize_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_CircleSize_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.circular_Perfect_CircleSize_Numeric.DecimalPlaces = 2;
+            this.circular_Perfect_CircleSize_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_CircleSize_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Perfect_CircleSize_Numeric.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.circular_Perfect_CircleSize_Numeric.Location = new System.Drawing.Point(125, 102);
+            this.circular_Perfect_CircleSize_Numeric.Location = new System.Drawing.Point(83, 109);
             this.circular_Perfect_CircleSize_Numeric.Maximum = new decimal(new int[] {
             1,
             0,
@@ -361,7 +383,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             65536});
             this.circular_Perfect_CircleSize_Numeric.Name = "circular_Perfect_CircleSize_Numeric";
-            this.circular_Perfect_CircleSize_Numeric.Size = new System.Drawing.Size(65, 29);
+            this.circular_Perfect_CircleSize_Numeric.Size = new System.Drawing.Size(44, 22);
             this.circular_Perfect_CircleSize_Numeric.TabIndex = 245;
             this.circular_Perfect_CircleSize_Numeric.Value = new decimal(new int[] {
             1,
@@ -376,23 +398,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label27.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label27.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label27.Location = new System.Drawing.Point(6, 102);
+            this.label27.Location = new System.Drawing.Point(6, 96);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(69, 19);
+            this.label27.Size = new System.Drawing.Size(46, 38);
             this.label27.TabIndex = 244;
-            this.label27.Text = "Circle Size";
+            this.label27.Text = "Circle \r\nSize";
             // 
             // circular_Perfect_Rotation_ComboBox
             // 
             this.circular_Perfect_Rotation_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_Rotation_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_Perfect_Rotation_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_Perfect_Rotation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_Perfect_Rotation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_Rotation_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Perfect_Rotation_ComboBox.FormattingEnabled = true;
-            this.circular_Perfect_Rotation_ComboBox.Location = new System.Drawing.Point(540, 170);
+            this.circular_Perfect_Rotation_ComboBox.Location = new System.Drawing.Point(367, 170);
             this.circular_Perfect_Rotation_ComboBox.Name = "circular_Perfect_Rotation_ComboBox";
-            this.circular_Perfect_Rotation_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Perfect_Rotation_ComboBox.Size = new System.Drawing.Size(54, 21);
             this.circular_Perfect_Rotation_ComboBox.TabIndex = 197;
             this.circular_Perfect_Rotation_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Perfect_Rotation_ComboBox_SelectedIndexChanged);
             // 
@@ -402,9 +424,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Perfect_CircleColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Perfect_CircleColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Perfect_CircleColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Perfect_CircleColor_Btn.Location = new System.Drawing.Point(329, 36);
+            this.circular_Perfect_CircleColor_Btn.Location = new System.Drawing.Point(221, 36);
             this.circular_Perfect_CircleColor_Btn.Name = "circular_Perfect_CircleColor_Btn";
-            this.circular_Perfect_CircleColor_Btn.Size = new System.Drawing.Size(84, 24);
+            this.circular_Perfect_CircleColor_Btn.Size = new System.Drawing.Size(48, 24);
             this.circular_Perfect_CircleColor_Btn.TabIndex = 185;
             this.circular_Perfect_CircleColor_Btn.UseVisualStyleBackColor = false;
             this.circular_Perfect_CircleColor_Btn.Click += new System.EventHandler(this.circular_Perfect_CircleColor_Btn_Click);
@@ -414,12 +436,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Perfect_TextDisplay_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_TextDisplay_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_Perfect_TextDisplay_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_Perfect_TextDisplay_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_Perfect_TextDisplay_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_TextDisplay_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Perfect_TextDisplay_ComboBox.FormattingEnabled = true;
-            this.circular_Perfect_TextDisplay_ComboBox.Location = new System.Drawing.Point(540, 233);
+            this.circular_Perfect_TextDisplay_ComboBox.Location = new System.Drawing.Point(367, 233);
             this.circular_Perfect_TextDisplay_ComboBox.Name = "circular_Perfect_TextDisplay_ComboBox";
-            this.circular_Perfect_TextDisplay_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Perfect_TextDisplay_ComboBox.Size = new System.Drawing.Size(54, 21);
             this.circular_Perfect_TextDisplay_ComboBox.TabIndex = 179;
             this.circular_Perfect_TextDisplay_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Perfect_TextDisplay_ComboBox_SelectedIndexChanged);
             // 
@@ -428,19 +450,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel2.Controls.Add(this.circular_Perfect_ShowText_Yes_RadioBtn);
             this.panel2.Controls.Add(this.circular_Perfect_ShowText_No_RadioBtn);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel2.Location = new System.Drawing.Point(541, 32);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel2.Location = new System.Drawing.Point(368, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(104, 38);
+            this.panel2.Size = new System.Drawing.Size(54, 44);
             this.panel2.TabIndex = 159;
             // 
             // circular_Perfect_ShowText_Yes_RadioBtn
             // 
             this.circular_Perfect_ShowText_Yes_RadioBtn.AutoSize = true;
             this.circular_Perfect_ShowText_Yes_RadioBtn.Checked = true;
-            this.circular_Perfect_ShowText_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_Perfect_ShowText_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_Perfect_ShowText_Yes_RadioBtn.Name = "circular_Perfect_ShowText_Yes_RadioBtn";
-            this.circular_Perfect_ShowText_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_Perfect_ShowText_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_Perfect_ShowText_Yes_RadioBtn.TabIndex = 113;
             this.circular_Perfect_ShowText_Yes_RadioBtn.TabStop = true;
             this.circular_Perfect_ShowText_Yes_RadioBtn.Text = "Yes";
@@ -450,9 +472,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_Perfect_ShowText_No_RadioBtn
             // 
             this.circular_Perfect_ShowText_No_RadioBtn.AutoSize = true;
-            this.circular_Perfect_ShowText_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_Perfect_ShowText_No_RadioBtn.Location = new System.Drawing.Point(6, 21);
             this.circular_Perfect_ShowText_No_RadioBtn.Name = "circular_Perfect_ShowText_No_RadioBtn";
-            this.circular_Perfect_ShowText_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_Perfect_ShowText_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_Perfect_ShowText_No_RadioBtn.TabIndex = 114;
             this.circular_Perfect_ShowText_No_RadioBtn.Text = "No";
             this.circular_Perfect_ShowText_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -461,15 +483,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Perfect_AnimationSpeed_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Perfect_AnimationSpeed_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Perfect_AnimationSpeed_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_Perfect_AnimationSpeed_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Perfect_AnimationSpeed_Numeric.Location = new System.Drawing.Point(125, 35);
+            this.circular_Perfect_AnimationSpeed_Numeric.Location = new System.Drawing.Point(83, 48);
             this.circular_Perfect_AnimationSpeed_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.circular_Perfect_AnimationSpeed_Numeric.Name = "circular_Perfect_AnimationSpeed_Numeric";
-            this.circular_Perfect_AnimationSpeed_Numeric.Size = new System.Drawing.Size(65, 29);
+            this.circular_Perfect_AnimationSpeed_Numeric.Size = new System.Drawing.Size(44, 22);
             this.circular_Perfect_AnimationSpeed_Numeric.TabIndex = 156;
             this.circular_Perfect_AnimationSpeed_Numeric.ValueChanged += new System.EventHandler(this.circular_Perfect_AnimationSpeed_Numeric_ValueChanged);
             // 
@@ -481,9 +504,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label23.Location = new System.Drawing.Point(6, 40);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(113, 19);
+            this.label23.Size = new System.Drawing.Size(76, 38);
             this.label23.TabIndex = 148;
-            this.label23.Text = "Animation Speed";
+            this.label23.Text = "Animation \r\nSpeed";
             // 
             // label14
             // 
@@ -491,7 +514,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label14.Location = new System.Drawing.Point(452, 38);
+            this.label14.Location = new System.Drawing.Point(281, 38);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(70, 19);
             this.label14.TabIndex = 130;
@@ -499,14 +522,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -532,8 +555,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Bar2Smooth = 1;
             this.ZeroitThematicProgress1.Bar2Value = 0;
             this.ZeroitThematicProgress1.Bar3.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.LightGreen;
+            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.Lime;
             this.ZeroitThematicProgress1.Bar3.InactiveColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.Bar3ActiveColor = System.Drawing.Color.LightSeaGreen;
             this.ZeroitThematicProgress1.Bar3BorderColor = System.Drawing.Color.Gray;
@@ -573,11 +596,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.BorderGradient = false;
             this.ZeroitThematicProgress1.BorderRoundCorners = false;
             this.ZeroitThematicProgress1.BorderSize = 0;
-            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.Single;
+            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.None;
             this.ZeroitThematicProgress1.Caption = "%";
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -610,6 +634,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -648,8 +673,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CPv5_Reset = false;
             this.ZeroitThematicProgress1.CPv5_Text = "ZeroitThematicProgress1";
             this.ZeroitThematicProgress1.CustomFadeColor = System.Drawing.SystemColors.Control;
-            this.ZeroitThematicProgress1.DagAnimSpeed = 100;
-            this.ZeroitThematicProgress1.DagAnimUpSpeed = 100;
+            this.ZeroitThematicProgress1.DagAnimSpeed = 5;
+            this.ZeroitThematicProgress1.DagAnimUpSpeed = 5;
             this.ZeroitThematicProgress1.DagDrawInnerCircle = true;
             this.ZeroitThematicProgress1.DagFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
             this.ZeroitThematicProgress1.DagFilledColorAlpha = 130;
@@ -695,6 +720,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -704,7 +730,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -720,6 +746,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -777,18 +804,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(670, 85);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(436, 58);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartAngle = 270F;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
@@ -796,18 +824,18 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.MacOSX_Optimized_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartAngle = 30F;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MacOSX_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_StartAngle = 270;
             this.ZeroitThematicProgress1.MacOSX_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MainColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.ZeroitThematicProgress1.Marquee = false;
-            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 2000F;
+            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 100F;
             this.ZeroitThematicProgress1.MarqueeSpeed = 100;
             this.ZeroitThematicProgress1.Maximum = 100F;
             this.ZeroitThematicProgress1.Maze_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -1006,7 +1034,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.OuterCircleRadius = 11;
             this.ZeroitThematicProgress1.OuterColor = System.Drawing.Color.Gray;
             this.ZeroitThematicProgress1.OuterMargin = -25;
-            this.ZeroitThematicProgress1.OuterRadius = 74;
+            this.ZeroitThematicProgress1.OuterRadius = 24;
             this.ZeroitThematicProgress1.OuterWidth = 26;
             this.ZeroitThematicProgress1.P_AnimationColor = System.Drawing.Color.DimGray;
             this.ZeroitThematicProgress1.P_BaseColor = System.Drawing.Color.DarkGray;
@@ -1018,8 +1046,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1065,7 +1095,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.ZeroitThematicProgress1.ProgressInput = new Zeroit.Framework.ProgressThematic.FormEditors.ProgressInput(100, System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0))))), 0.2F, 180F, 30, Zeroit.Framework.ProgressThematic.RotationType1.Clockwise, 0F, false, false, Zeroit.Framework.ProgressThematic.TextDisplayModes1.None);
+            this.ZeroitThematicProgress1.ProgressInput = new Zeroit.Framework.ProgressThematic.FormEditors.ProgressInput(100, System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0))))), 0.2F, 100F, 30, Zeroit.Framework.ProgressThematic.RotationType1.Clockwise, 0F, false, false, Zeroit.Framework.ProgressThematic.TextDisplayModes1.None);
             this.ZeroitThematicProgress1.ProgressNormalType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.progressNormalType.Normal;
             this.ZeroitThematicProgress1.ProgressPerfect_CircleColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ZeroitThematicProgress1.ProgressPerfect_CircleSize = 0.2F;
@@ -1093,12 +1123,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            //this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1107,6 +1137,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1119,7 +1150,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1138,7 +1169,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = false;
             this.ZeroitThematicProgress1.ShowValue = false;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(188, 195);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(116, 124);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1162,6 +1193,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1255,7 +1287,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "ProgressBarPerfect_UC";
-            this.Size = new System.Drawing.Size(870, 283);
+            this.Size = new System.Drawing.Size(555, 293);
             this.Load += new System.EventHandler(this.ProgressBarPerfect_UC_Load);
             this.bars_Extended_GroupBox.ResumeLayout(false);
             this.bars_Extended_GroupBox.PerformLayout();

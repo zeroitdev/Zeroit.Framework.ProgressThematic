@@ -42,7 +42,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// </summary>
         private void InitializeComponent()
         {
-            Zeroit.Framework.ProgressThematic.PenParameters penParameters1 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vuvuzela_UC));
             this.Preview_Btn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
@@ -96,9 +96,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(580, 18);
+            this.Preview_Btn.Location = new System.Drawing.Point(467, 16);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(86, 30);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -111,7 +111,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(219, 33);
+            this.label10.Location = new System.Drawing.Point(166, 33);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(54, 19);
             this.label10.TabIndex = 172;
@@ -122,10 +122,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Circle1_Btn.BackColor = System.Drawing.Color.Black;
             this.indicator_Vuvuzela_Circle1_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_Vuvuzela_Circle1_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_Vuvuzela_Circle1_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_Vuvuzela_Circle1_Btn.Location = new System.Drawing.Point(296, 30);
+            this.indicator_Vuvuzela_Circle1_Btn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.indicator_Vuvuzela_Circle1_Btn.Location = new System.Drawing.Point(236, 30);
             this.indicator_Vuvuzela_Circle1_Btn.Name = "indicator_Vuvuzela_Circle1_Btn";
-            this.indicator_Vuvuzela_Circle1_Btn.Size = new System.Drawing.Size(68, 30);
+            this.indicator_Vuvuzela_Circle1_Btn.Size = new System.Drawing.Size(45, 30);
             this.indicator_Vuvuzela_Circle1_Btn.TabIndex = 173;
             this.indicator_Vuvuzela_Circle1_Btn.UseVisualStyleBackColor = false;
             this.indicator_Vuvuzela_Circle1_Btn.Click += new System.EventHandler(this.indicator_Vuvuzela_Circle1_Btn_Click);
@@ -136,25 +136,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(8, 249);
+            this.label1.Location = new System.Drawing.Point(8, 213);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
+            this.label1.Size = new System.Drawing.Size(59, 38);
             this.label1.TabIndex = 219;
-            this.label1.Text = "Control Size";
+            this.label1.Text = "Control \r\nSize";
             // 
             // indicator_Vuvuzela_ControlSize_Numeric
             // 
             this.indicator_Vuvuzela_ControlSize_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_ControlSize_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_Vuvuzela_ControlSize_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_ControlSize_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_Vuvuzela_ControlSize_Numeric.Location = new System.Drawing.Point(96, 244);
+            this.indicator_Vuvuzela_ControlSize_Numeric.Location = new System.Drawing.Point(88, 216);
             this.indicator_Vuvuzela_ControlSize_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.indicator_Vuvuzela_ControlSize_Numeric.Name = "indicator_Vuvuzela_ControlSize_Numeric";
-            this.indicator_Vuvuzela_ControlSize_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_Vuvuzela_ControlSize_Numeric.Size = new System.Drawing.Size(54, 22);
             this.indicator_Vuvuzela_ControlSize_Numeric.TabIndex = 220;
             this.indicator_Vuvuzela_ControlSize_Numeric.ValueChanged += new System.EventHandler(this.indicator_Vuvuzela_ControlSize_Numeric_ValueChanged);
             // 
@@ -175,12 +176,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Shape_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_Shape_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_Vuvuzela_Shape_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_Vuvuzela_Shape_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_Vuvuzela_Shape_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_Shape_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_Vuvuzela_Shape_ComboBox.FormattingEnabled = true;
-            this.indicator_Vuvuzela_Shape_ComboBox.Location = new System.Drawing.Point(96, 33);
+            this.indicator_Vuvuzela_Shape_ComboBox.Location = new System.Drawing.Point(88, 33);
             this.indicator_Vuvuzela_Shape_ComboBox.Name = "indicator_Vuvuzela_Shape_ComboBox";
-            this.indicator_Vuvuzela_Shape_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_Vuvuzela_Shape_ComboBox.Size = new System.Drawing.Size(54, 21);
             this.indicator_Vuvuzela_Shape_ComboBox.TabIndex = 225;
             this.indicator_Vuvuzela_Shape_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_Vuvuzela_Shape_ComboBox_SelectedIndexChanged);
             // 
@@ -190,7 +191,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(219, 196);
+            this.label5.Location = new System.Drawing.Point(9, 266);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(44, 19);
             this.label5.TabIndex = 228;
@@ -200,8 +201,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_Vuvuzela_Angle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_Angle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_Vuvuzela_Angle_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_Angle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_Vuvuzela_Angle_Numeric.Location = new System.Drawing.Point(296, 190);
+            this.indicator_Vuvuzela_Angle_Numeric.Location = new System.Drawing.Point(88, 264);
             this.indicator_Vuvuzela_Angle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
@@ -213,7 +215,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.indicator_Vuvuzela_Angle_Numeric.Name = "indicator_Vuvuzela_Angle_Numeric";
-            this.indicator_Vuvuzela_Angle_Numeric.Size = new System.Drawing.Size(68, 29);
+            this.indicator_Vuvuzela_Angle_Numeric.Size = new System.Drawing.Size(54, 22);
             this.indicator_Vuvuzela_Angle_Numeric.TabIndex = 229;
             this.indicator_Vuvuzela_Angle_Numeric.ValueChanged += new System.EventHandler(this.indicator_Vuvuzela_Angle_Numeric_ValueChanged);
             // 
@@ -223,7 +225,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(390, 28);
+            this.label7.Location = new System.Drawing.Point(298, 30);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 38);
             this.label7.TabIndex = 232;
@@ -234,10 +236,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn);
             this.panel1.Controls.Add(this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel1.Location = new System.Drawing.Point(460, 28);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel1.Location = new System.Drawing.Point(368, 30);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 38);
+            this.panel1.Size = new System.Drawing.Size(57, 49);
             this.panel1.TabIndex = 233;
             // 
             // indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn
@@ -246,7 +248,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Checked = true;
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Name = "indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn";
-            this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.TabIndex = 113;
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.TabStop = true;
             this.indicator_Vuvuzela_RotatingBorder_Yes_RadioBtn.Text = "Yes";
@@ -256,9 +258,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // indicator_Vuvuzela_RotatingBorder_No_RadioBtn
             // 
             this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.AutoSize = true;
-            this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Location = new System.Drawing.Point(6, 26);
             this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Name = "indicator_Vuvuzela_RotatingBorder_No_RadioBtn";
-            this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.TabIndex = 114;
             this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.Text = "No";
             this.indicator_Vuvuzela_RotatingBorder_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -291,11 +293,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label1);
             this.bars_Extended_GroupBox.Controls.Add(this.indicator_Vuvuzela_Circle1_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label10);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(570, 279);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(434, 294);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Vuvuzela";
@@ -304,8 +306,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_Vuvuzela_VerticalSpacing_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_Vuvuzela_VerticalSpacing_Numeric.Location = new System.Drawing.Point(96, 190);
+            this.indicator_Vuvuzela_VerticalSpacing_Numeric.Location = new System.Drawing.Point(88, 168);
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -317,7 +320,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.Name = "indicator_Vuvuzela_VerticalSpacing_Numeric";
-            this.indicator_Vuvuzela_VerticalSpacing_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_Vuvuzela_VerticalSpacing_Numeric.Size = new System.Drawing.Size(54, 22);
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.TabIndex = 247;
             this.indicator_Vuvuzela_VerticalSpacing_Numeric.ValueChanged += new System.EventHandler(this.indicator_Vuvuzela_VerticalSpacing_Numeric_ValueChanged);
             // 
@@ -327,7 +330,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(8, 187);
+            this.label13.Location = new System.Drawing.Point(8, 162);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 38);
             this.label13.TabIndex = 246;
@@ -337,8 +340,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Location = new System.Drawing.Point(96, 135);
+            this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Location = new System.Drawing.Point(88, 120);
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -350,7 +354,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Name = "indicator_Vuvuzela_HorizontalSpacing_Numeric";
-            this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_Vuvuzela_HorizontalSpacing_Numeric.Size = new System.Drawing.Size(54, 22);
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.TabIndex = 245;
             this.indicator_Vuvuzela_HorizontalSpacing_Numeric.ValueChanged += new System.EventHandler(this.indicator_Vuvuzela_HorizontalSpacing_Numeric_ValueChanged);
             // 
@@ -360,7 +364,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(8, 131);
+            this.label12.Location = new System.Drawing.Point(8, 111);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 38);
             this.label12.TabIndex = 244;
@@ -370,15 +374,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_Vuvuzela_CircleSize_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_Vuvuzela_CircleSize_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_Vuvuzela_CircleSize_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_Vuvuzela_CircleSize_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_Vuvuzela_CircleSize_Numeric.Location = new System.Drawing.Point(96, 83);
+            this.indicator_Vuvuzela_CircleSize_Numeric.Location = new System.Drawing.Point(88, 72);
             this.indicator_Vuvuzela_CircleSize_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.indicator_Vuvuzela_CircleSize_Numeric.Name = "indicator_Vuvuzela_CircleSize_Numeric";
-            this.indicator_Vuvuzela_CircleSize_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_Vuvuzela_CircleSize_Numeric.Size = new System.Drawing.Size(54, 22);
             this.indicator_Vuvuzela_CircleSize_Numeric.TabIndex = 243;
             this.indicator_Vuvuzela_CircleSize_Numeric.ValueChanged += new System.EventHandler(this.indicator_Vuvuzela_CircleSize_Numeric_ValueChanged);
             // 
@@ -388,30 +393,30 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(8, 89);
+            this.label11.Location = new System.Drawing.Point(8, 68);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 19);
+            this.label11.Size = new System.Drawing.Size(46, 38);
             this.label11.TabIndex = 242;
-            this.label11.Text = "Circle Size";
+            this.label11.Text = "Circle \r\nSize";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel2.Controls.Add(this.indicator_Vuvuzela_FillPie_Yes_RadioBtn);
             this.panel2.Controls.Add(this.indicator_Vuvuzela_FillPie_No_RadioBtn);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel2.Location = new System.Drawing.Point(460, 72);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel2.Location = new System.Drawing.Point(368, 91);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(104, 38);
+            this.panel2.Size = new System.Drawing.Size(57, 49);
             this.panel2.TabIndex = 235;
             // 
             // indicator_Vuvuzela_FillPie_Yes_RadioBtn
             // 
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.AutoSize = true;
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Checked = true;
-            this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Name = "indicator_Vuvuzela_FillPie_Yes_RadioBtn";
-            this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.TabIndex = 113;
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.TabStop = true;
             this.indicator_Vuvuzela_FillPie_Yes_RadioBtn.Text = "Yes";
@@ -421,9 +426,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // indicator_Vuvuzela_FillPie_No_RadioBtn
             // 
             this.indicator_Vuvuzela_FillPie_No_RadioBtn.AutoSize = true;
-            this.indicator_Vuvuzela_FillPie_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.indicator_Vuvuzela_FillPie_No_RadioBtn.Location = new System.Drawing.Point(6, 29);
             this.indicator_Vuvuzela_FillPie_No_RadioBtn.Name = "indicator_Vuvuzela_FillPie_No_RadioBtn";
-            this.indicator_Vuvuzela_FillPie_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.indicator_Vuvuzela_FillPie_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.indicator_Vuvuzela_FillPie_No_RadioBtn.TabIndex = 114;
             this.indicator_Vuvuzela_FillPie_No_RadioBtn.Text = "No";
             this.indicator_Vuvuzela_FillPie_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -434,7 +439,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(390, 83);
+            this.label9.Location = new System.Drawing.Point(299, 100);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(47, 19);
             this.label9.TabIndex = 234;
@@ -446,9 +451,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Circle5_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_Vuvuzela_Circle5_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_Vuvuzela_Circle5_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_Vuvuzela_Circle5_Btn.Location = new System.Drawing.Point(460, 189);
+            this.indicator_Vuvuzela_Circle5_Btn.Location = new System.Drawing.Point(236, 207);
             this.indicator_Vuvuzela_Circle5_Btn.Name = "indicator_Vuvuzela_Circle5_Btn";
-            this.indicator_Vuvuzela_Circle5_Btn.Size = new System.Drawing.Size(99, 30);
+            this.indicator_Vuvuzela_Circle5_Btn.Size = new System.Drawing.Size(45, 30);
             this.indicator_Vuvuzela_Circle5_Btn.TabIndex = 241;
             this.indicator_Vuvuzela_Circle5_Btn.UseVisualStyleBackColor = false;
             this.indicator_Vuvuzela_Circle5_Btn.Click += new System.EventHandler(this.indicator_Vuvuzela_Circle5_Btn_Click);
@@ -459,7 +464,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(389, 195);
+            this.label6.Location = new System.Drawing.Point(165, 214);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(54, 19);
             this.label6.TabIndex = 240;
@@ -471,9 +476,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Circle4_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_Vuvuzela_Circle4_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_Vuvuzela_Circle4_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_Vuvuzela_Circle4_Btn.Location = new System.Drawing.Point(460, 135);
+            this.indicator_Vuvuzela_Circle4_Btn.Location = new System.Drawing.Point(236, 163);
             this.indicator_Vuvuzela_Circle4_Btn.Name = "indicator_Vuvuzela_Circle4_Btn";
-            this.indicator_Vuvuzela_Circle4_Btn.Size = new System.Drawing.Size(99, 29);
+            this.indicator_Vuvuzela_Circle4_Btn.Size = new System.Drawing.Size(45, 29);
             this.indicator_Vuvuzela_Circle4_Btn.TabIndex = 239;
             this.indicator_Vuvuzela_Circle4_Btn.UseVisualStyleBackColor = false;
             this.indicator_Vuvuzela_Circle4_Btn.Click += new System.EventHandler(this.indicator_Vuvuzela_Circle4_Btn_Click);
@@ -484,7 +489,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(389, 137);
+            this.label8.Location = new System.Drawing.Point(165, 167);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 19);
             this.label8.TabIndex = 238;
@@ -495,10 +500,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Circle3_Btn.BackColor = System.Drawing.Color.Black;
             this.indicator_Vuvuzela_Circle3_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_Vuvuzela_Circle3_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_Vuvuzela_Circle3_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_Vuvuzela_Circle3_Btn.Location = new System.Drawing.Point(296, 135);
+            this.indicator_Vuvuzela_Circle3_Btn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.indicator_Vuvuzela_Circle3_Btn.Location = new System.Drawing.Point(236, 119);
             this.indicator_Vuvuzela_Circle3_Btn.Name = "indicator_Vuvuzela_Circle3_Btn";
-            this.indicator_Vuvuzela_Circle3_Btn.Size = new System.Drawing.Size(68, 29);
+            this.indicator_Vuvuzela_Circle3_Btn.Size = new System.Drawing.Size(45, 29);
             this.indicator_Vuvuzela_Circle3_Btn.TabIndex = 237;
             this.indicator_Vuvuzela_Circle3_Btn.UseVisualStyleBackColor = false;
             this.indicator_Vuvuzela_Circle3_Btn.Click += new System.EventHandler(this.indicator_Vuvuzela_Circle3_Btn_Click);
@@ -509,7 +514,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(219, 137);
+            this.label4.Location = new System.Drawing.Point(166, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 19);
             this.label4.TabIndex = 236;
@@ -520,10 +525,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_Vuvuzela_Circle2_Btn.BackColor = System.Drawing.Color.Black;
             this.indicator_Vuvuzela_Circle2_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_Vuvuzela_Circle2_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_Vuvuzela_Circle2_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_Vuvuzela_Circle2_Btn.Location = new System.Drawing.Point(296, 79);
+            this.indicator_Vuvuzela_Circle2_Btn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.indicator_Vuvuzela_Circle2_Btn.Location = new System.Drawing.Point(236, 75);
             this.indicator_Vuvuzela_Circle2_Btn.Name = "indicator_Vuvuzela_Circle2_Btn";
-            this.indicator_Vuvuzela_Circle2_Btn.Size = new System.Drawing.Size(68, 29);
+            this.indicator_Vuvuzela_Circle2_Btn.Size = new System.Drawing.Size(45, 29);
             this.indicator_Vuvuzela_Circle2_Btn.TabIndex = 235;
             this.indicator_Vuvuzela_Circle2_Btn.UseVisualStyleBackColor = false;
             this.indicator_Vuvuzela_Circle2_Btn.Click += new System.EventHandler(this.indicator_Vuvuzela_Circle2_Btn_Click);
@@ -534,7 +539,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(219, 83);
+            this.label3.Location = new System.Drawing.Point(166, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 19);
             this.label3.TabIndex = 234;
@@ -542,14 +547,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -621,6 +626,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -653,6 +659,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -738,6 +745,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -747,7 +755,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -763,6 +771,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -820,11 +829,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(584, 98);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(443, 61);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -1061,8 +1071,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1092,19 +1104,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            penParameters1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            penParameters1.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
-            penParameters1.DashOffset = 0.5F;
-            penParameters1.DashPattern = new float[] {
+            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters2.DashOffset = 0.5F;
+            penParameters2.DashPattern = new float[] {
         0.2F,
         0.75F};
-            penParameters1.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            penParameters1.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-            penParameters1.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-            penParameters1.MiterLimit = 0.7F;
-            penParameters1.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
-            penParameters1.Width = 2F;
-            this.ZeroitThematicProgress1.ProgressEffects = penParameters1;
+            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters2.MiterLimit = 0.7F;
+            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters2.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -1135,12 +1147,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1149,6 +1161,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1161,7 +1174,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1204,6 +1217,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1276,7 +1290,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.Preview_Btn);
             this.DoubleBuffered = true;
             this.Name = "Vuvuzela_UC";
-            this.Size = new System.Drawing.Size(717, 287);
+            this.Size = new System.Drawing.Size(572, 302);
             ((System.ComponentModel.ISupportInitialize)(this.indicator_Vuvuzela_ControlSize_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator_Vuvuzela_Angle_Numeric)).EndInit();
             this.panel1.ResumeLayout(false);

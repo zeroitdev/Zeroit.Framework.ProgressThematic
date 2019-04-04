@@ -43,7 +43,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoogleProgress_UC));
-            Zeroit.Framework.ProgressThematic.PenParameters penParameters1 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
             this.Preview_Btn = new System.Windows.Forms.Button();
             this.bars_Extended_GroupBox = new System.Windows.Forms.GroupBox();
             this.indicator_GoogleProg_InnerRadius_Numeric = new System.Windows.Forms.NumericUpDown();
@@ -97,9 +97,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(744, 18);
+            this.Preview_Btn.Location = new System.Drawing.Point(482, 21);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(76, 30);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -140,11 +140,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label23);
             this.bars_Extended_GroupBox.Controls.Add(this.indicator_GoogleProg_AnnulusColor_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label10);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(708, 293);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(464, 314);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Google Progress";
@@ -153,15 +153,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_GoogleProg_InnerRadius_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_InnerRadius_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_InnerRadius_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_InnerRadius_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_InnerRadius_Numeric.Location = new System.Drawing.Point(130, 208);
+            this.indicator_GoogleProg_InnerRadius_Numeric.Location = new System.Drawing.Point(86, 235);
             this.indicator_GoogleProg_InnerRadius_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.indicator_GoogleProg_InnerRadius_Numeric.Name = "indicator_GoogleProg_InnerRadius_Numeric";
-            this.indicator_GoogleProg_InnerRadius_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_GoogleProg_InnerRadius_Numeric.Size = new System.Drawing.Size(60, 22);
             this.indicator_GoogleProg_InnerRadius_Numeric.TabIndex = 218;
             this.indicator_GoogleProg_InnerRadius_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_InnerRadius_Numeric_ValueChanged);
             // 
@@ -171,25 +172,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label15.Location = new System.Drawing.Point(9, 213);
+            this.label15.Location = new System.Drawing.Point(9, 229);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(85, 19);
+            this.label15.Size = new System.Drawing.Size(49, 38);
             this.label15.TabIndex = 217;
-            this.label15.Text = "Inner Radius";
+            this.label15.Text = "Inner \r\nRadius";
             // 
             // indicator_GoogleProg_OuterRadius_Numeric
             // 
             this.indicator_GoogleProg_OuterRadius_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_OuterRadius_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_OuterRadius_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_OuterRadius_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_OuterRadius_Numeric.Location = new System.Drawing.Point(130, 258);
+            this.indicator_GoogleProg_OuterRadius_Numeric.Location = new System.Drawing.Point(86, 277);
             this.indicator_GoogleProg_OuterRadius_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.indicator_GoogleProg_OuterRadius_Numeric.Name = "indicator_GoogleProg_OuterRadius_Numeric";
-            this.indicator_GoogleProg_OuterRadius_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_GoogleProg_OuterRadius_Numeric.Size = new System.Drawing.Size(60, 22);
             this.indicator_GoogleProg_OuterRadius_Numeric.TabIndex = 216;
             this.indicator_GoogleProg_OuterRadius_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_OuterRadius_Numeric_ValueChanged);
             // 
@@ -199,11 +201,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label14.Location = new System.Drawing.Point(9, 263);
+            this.label14.Location = new System.Drawing.Point(9, 271);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(89, 19);
+            this.label14.Size = new System.Drawing.Size(49, 38);
             this.label14.TabIndex = 215;
-            this.label14.Text = "Outer Radius";
+            this.label14.Text = "Outer \r\nRadius";
             // 
             // indicator_GoogleProg_TransitionColor_Btn
             // 
@@ -211,9 +213,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_TransitionColor_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_TransitionColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_TransitionColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_TransitionColor_Btn.Location = new System.Drawing.Point(628, 208);
+            this.indicator_GoogleProg_TransitionColor_Btn.Location = new System.Drawing.Point(409, 224);
             this.indicator_GoogleProg_TransitionColor_Btn.Name = "indicator_GoogleProg_TransitionColor_Btn";
-            this.indicator_GoogleProg_TransitionColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_TransitionColor_Btn.Size = new System.Drawing.Size(39, 24);
             this.indicator_GoogleProg_TransitionColor_Btn.TabIndex = 214;
             this.indicator_GoogleProg_TransitionColor_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_TransitionColor_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_TransitionColor_Btn_Click);
@@ -224,11 +226,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(509, 208);
+            this.label13.Location = new System.Drawing.Point(311, 229);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(105, 19);
+            this.label13.Size = new System.Drawing.Size(72, 38);
             this.label13.TabIndex = 213;
-            this.label13.Text = "Transition Color";
+            this.label13.Text = "Transition \r\nColor";
             // 
             // indicator_GoogleProg_IndicatorColor_Btn
             // 
@@ -236,9 +238,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_IndicatorColor_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_IndicatorColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_IndicatorColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_IndicatorColor_Btn.Location = new System.Drawing.Point(628, 44);
+            this.indicator_GoogleProg_IndicatorColor_Btn.Location = new System.Drawing.Point(409, 38);
             this.indicator_GoogleProg_IndicatorColor_Btn.Name = "indicator_GoogleProg_IndicatorColor_Btn";
-            this.indicator_GoogleProg_IndicatorColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_IndicatorColor_Btn.Size = new System.Drawing.Size(39, 24);
             this.indicator_GoogleProg_IndicatorColor_Btn.TabIndex = 212;
             this.indicator_GoogleProg_IndicatorColor_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_IndicatorColor_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_IndicatorColor_Btn_Click);
@@ -249,11 +251,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(509, 44);
+            this.label11.Location = new System.Drawing.Point(311, 35);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 19);
+            this.label11.Size = new System.Drawing.Size(67, 38);
             this.label11.TabIndex = 211;
-            this.label11.Text = "Indicator Color";
+            this.label11.Text = "Indicator \r\nColor";
             // 
             // indicator_GoogleProg_Background_Btn
             // 
@@ -261,9 +263,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_Background_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_Background_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_Background_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_Background_Btn.Location = new System.Drawing.Point(628, 123);
+            this.indicator_GoogleProg_Background_Btn.Location = new System.Drawing.Point(409, 134);
             this.indicator_GoogleProg_Background_Btn.Name = "indicator_GoogleProg_Background_Btn";
-            this.indicator_GoogleProg_Background_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_Background_Btn.Size = new System.Drawing.Size(39, 24);
             this.indicator_GoogleProg_Background_Btn.TabIndex = 210;
             this.indicator_GoogleProg_Background_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_Background_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_Background_Btn_Click);
@@ -274,7 +276,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(509, 124);
+            this.label12.Location = new System.Drawing.Point(311, 140);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(82, 19);
             this.label12.TabIndex = 209;
@@ -286,9 +288,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_InnerBorder_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_InnerBorder_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_InnerBorder_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_InnerBorder_Btn.Location = new System.Drawing.Point(628, 82);
+            this.indicator_GoogleProg_InnerBorder_Btn.Location = new System.Drawing.Point(409, 88);
             this.indicator_GoogleProg_InnerBorder_Btn.Name = "indicator_GoogleProg_InnerBorder_Btn";
-            this.indicator_GoogleProg_InnerBorder_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_InnerBorder_Btn.Size = new System.Drawing.Size(39, 24);
             this.indicator_GoogleProg_InnerBorder_Btn.TabIndex = 208;
             this.indicator_GoogleProg_InnerBorder_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_InnerBorder_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_InnerBorder_Btn_Click);
@@ -299,11 +301,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(509, 82);
+            this.label6.Location = new System.Drawing.Point(311, 79);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 19);
+            this.label6.Size = new System.Drawing.Size(50, 38);
             this.label6.TabIndex = 207;
-            this.label6.Text = "Inner Border";
+            this.label6.Text = "Inner \r\nBorder";
             // 
             // indicator_GoogleProg_IndicatorCol2_Btn
             // 
@@ -311,9 +313,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_IndicatorCol2_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_IndicatorCol2_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_IndicatorCol2_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_IndicatorCol2_Btn.Location = new System.Drawing.Point(628, 162);
+            this.indicator_GoogleProg_IndicatorCol2_Btn.Location = new System.Drawing.Point(409, 178);
             this.indicator_GoogleProg_IndicatorCol2_Btn.Name = "indicator_GoogleProg_IndicatorCol2_Btn";
-            this.indicator_GoogleProg_IndicatorCol2_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_IndicatorCol2_Btn.Size = new System.Drawing.Size(39, 24);
             this.indicator_GoogleProg_IndicatorCol2_Btn.TabIndex = 206;
             this.indicator_GoogleProg_IndicatorCol2_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_IndicatorCol2_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_IndicatorCol2_Btn_Click);
@@ -324,11 +326,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(509, 163);
+            this.label8.Location = new System.Drawing.Point(311, 172);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 19);
+            this.label8.Size = new System.Drawing.Size(67, 38);
             this.label8.TabIndex = 205;
-            this.label8.Text = "Indicator Color 2";
+            this.label8.Text = "Indicator \r\nColor 2";
             // 
             // indicator_GoogleProg_IndicatorCol1_Btn
             // 
@@ -336,9 +338,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_IndicatorCol1_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_IndicatorCol1_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_IndicatorCol1_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_IndicatorCol1_Btn.Location = new System.Drawing.Point(401, 164);
+            this.indicator_GoogleProg_IndicatorCol1_Btn.Location = new System.Drawing.Point(245, 184);
             this.indicator_GoogleProg_IndicatorCol1_Btn.Name = "indicator_GoogleProg_IndicatorCol1_Btn";
-            this.indicator_GoogleProg_IndicatorCol1_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_IndicatorCol1_Btn.Size = new System.Drawing.Size(43, 24);
             this.indicator_GoogleProg_IndicatorCol1_Btn.TabIndex = 204;
             this.indicator_GoogleProg_IndicatorCol1_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_IndicatorCol1_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_IndicatorCol1_Btn_Click);
@@ -349,11 +351,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(278, 164);
+            this.label4.Location = new System.Drawing.Point(170, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 19);
+            this.label4.Size = new System.Drawing.Size(67, 38);
             this.label4.TabIndex = 203;
-            this.label4.Text = "Indicator Color 1";
+            this.label4.Text = "Indicator \r\nColor 1";
             // 
             // indicator_GoogleProg_BicCirc2_Btn
             // 
@@ -361,9 +363,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_BicCirc2_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_BicCirc2_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_BicCirc2_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_BicCirc2_Btn.Location = new System.Drawing.Point(401, 123);
+            this.indicator_GoogleProg_BicCirc2_Btn.Location = new System.Drawing.Point(245, 136);
             this.indicator_GoogleProg_BicCirc2_Btn.Name = "indicator_GoogleProg_BicCirc2_Btn";
-            this.indicator_GoogleProg_BicCirc2_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_BicCirc2_Btn.Size = new System.Drawing.Size(43, 24);
             this.indicator_GoogleProg_BicCirc2_Btn.TabIndex = 202;
             this.indicator_GoogleProg_BicCirc2_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_BicCirc2_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_BicCirc2_Btn_Click);
@@ -374,25 +376,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(278, 124);
+            this.label5.Location = new System.Drawing.Point(170, 131);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(54, 38);
             this.label5.TabIndex = 201;
-            this.label5.Text = "Big Circle 2";
+            this.label5.Text = "Big \r\nCircle 2";
             // 
             // indicator_GoogleProg_RefreshRate_Numeric
             // 
             this.indicator_GoogleProg_RefreshRate_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_RefreshRate_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_RefreshRate_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_RefreshRate_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_RefreshRate_Numeric.Location = new System.Drawing.Point(130, 124);
+            this.indicator_GoogleProg_RefreshRate_Numeric.Location = new System.Drawing.Point(86, 132);
             this.indicator_GoogleProg_RefreshRate_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.indicator_GoogleProg_RefreshRate_Numeric.Name = "indicator_GoogleProg_RefreshRate_Numeric";
-            this.indicator_GoogleProg_RefreshRate_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_GoogleProg_RefreshRate_Numeric.Size = new System.Drawing.Size(60, 22);
             this.indicator_GoogleProg_RefreshRate_Numeric.TabIndex = 200;
             this.indicator_GoogleProg_RefreshRate_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_RefreshRate_Numeric_ValueChanged);
             // 
@@ -402,25 +405,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(8, 129);
+            this.label3.Location = new System.Drawing.Point(8, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 19);
+            this.label3.Size = new System.Drawing.Size(58, 38);
             this.label3.TabIndex = 199;
-            this.label3.Text = "Refresh Rate";
+            this.label3.Text = "Refresh \r\nRate";
             // 
             // indicator_GoogleProg_IndicatorAngularAdv_Numeric
             // 
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Location = new System.Drawing.Point(130, 164);
+            this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Location = new System.Drawing.Point(86, 184);
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Name = "indicator_GoogleProg_IndicatorAngularAdv_Numeric";
-            this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.Size = new System.Drawing.Size(60, 22);
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.TabIndex = 198;
             this.indicator_GoogleProg_IndicatorAngularAdv_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_IndicatorAngularAdv_Numeric_ValueChanged);
             // 
@@ -430,25 +434,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(9, 162);
+            this.label1.Location = new System.Drawing.Point(9, 168);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 38);
+            this.label1.Size = new System.Drawing.Size(67, 57);
             this.label1.TabIndex = 197;
-            this.label1.Text = "Indicator Angular\r\nAdvance";
+            this.label1.Text = "Indicator \r\nAngular\r\nAdvance";
             // 
             // indicator_GoogleProg_InnerBorder_Numeric
             // 
             this.indicator_GoogleProg_InnerBorder_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_InnerBorder_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_InnerBorder_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_InnerBorder_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_InnerBorder_Numeric.Location = new System.Drawing.Point(401, 208);
+            this.indicator_GoogleProg_InnerBorder_Numeric.Location = new System.Drawing.Point(245, 236);
             this.indicator_GoogleProg_InnerBorder_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.indicator_GoogleProg_InnerBorder_Numeric.Name = "indicator_GoogleProg_InnerBorder_Numeric";
-            this.indicator_GoogleProg_InnerBorder_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.indicator_GoogleProg_InnerBorder_Numeric.Size = new System.Drawing.Size(43, 22);
             this.indicator_GoogleProg_InnerBorder_Numeric.TabIndex = 196;
             this.indicator_GoogleProg_InnerBorder_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_InnerBorder_Numeric_ValueChanged);
             // 
@@ -458,23 +463,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(280, 213);
+            this.label7.Location = new System.Drawing.Point(170, 229);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 19);
+            this.label7.Size = new System.Drawing.Size(50, 38);
             this.label7.TabIndex = 195;
-            this.label7.Text = "Inner Border";
+            this.label7.Text = "Inner \r\nBorder";
             // 
             // indicator_GoogleProg_IndicatorType_ComboBox
             // 
             this.indicator_GoogleProg_IndicatorType_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_IndicatorType_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_GoogleProg_IndicatorType_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_GoogleProg_IndicatorType_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_GoogleProg_IndicatorType_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_IndicatorType_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_GoogleProg_IndicatorType_ComboBox.FormattingEnabled = true;
-            this.indicator_GoogleProg_IndicatorType_ComboBox.Location = new System.Drawing.Point(130, 41);
+            this.indicator_GoogleProg_IndicatorType_ComboBox.Location = new System.Drawing.Point(86, 42);
             this.indicator_GoogleProg_IndicatorType_ComboBox.Name = "indicator_GoogleProg_IndicatorType_ComboBox";
-            this.indicator_GoogleProg_IndicatorType_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_GoogleProg_IndicatorType_ComboBox.Size = new System.Drawing.Size(60, 21);
             this.indicator_GoogleProg_IndicatorType_ComboBox.TabIndex = 188;
             this.indicator_GoogleProg_IndicatorType_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_GoogleProg_IndicatorType_ComboBox_SelectedIndexChanged);
             // 
@@ -484,11 +489,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(5, 42);
+            this.label9.Location = new System.Drawing.Point(5, 35);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(95, 19);
+            this.label9.Size = new System.Drawing.Size(67, 38);
             this.label9.TabIndex = 187;
-            this.label9.Text = "Indicator Type";
+            this.label9.Text = "Indicator \r\nType";
             // 
             // indicator_GoogleProg_BicCirc1_Btn
             // 
@@ -496,9 +501,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_BicCirc1_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_BicCirc1_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_BicCirc1_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_BicCirc1_Btn.Location = new System.Drawing.Point(401, 84);
+            this.indicator_GoogleProg_BicCirc1_Btn.Location = new System.Drawing.Point(245, 89);
             this.indicator_GoogleProg_BicCirc1_Btn.Name = "indicator_GoogleProg_BicCirc1_Btn";
-            this.indicator_GoogleProg_BicCirc1_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_BicCirc1_Btn.Size = new System.Drawing.Size(43, 24);
             this.indicator_GoogleProg_BicCirc1_Btn.TabIndex = 182;
             this.indicator_GoogleProg_BicCirc1_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_BicCirc1_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_BicCirc1_Btn_Click);
@@ -509,18 +514,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(278, 84);
+            this.label2.Location = new System.Drawing.Point(170, 85);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(54, 38);
             this.label2.TabIndex = 181;
-            this.label2.Text = "Big Circle 1";
+            this.label2.Text = "Big \r\nCircle 1";
             // 
             // indicator_GoogleProg_ColorAngle_Numeric
             // 
             this.indicator_GoogleProg_ColorAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_GoogleProg_ColorAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_GoogleProg_ColorAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_GoogleProg_ColorAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_GoogleProg_ColorAngle_Numeric.Location = new System.Drawing.Point(130, 84);
+            this.indicator_GoogleProg_ColorAngle_Numeric.Location = new System.Drawing.Point(86, 86);
             this.indicator_GoogleProg_ColorAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
@@ -532,7 +538,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.indicator_GoogleProg_ColorAngle_Numeric.Name = "indicator_GoogleProg_ColorAngle_Numeric";
-            this.indicator_GoogleProg_ColorAngle_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_GoogleProg_ColorAngle_Numeric.Size = new System.Drawing.Size(60, 22);
             this.indicator_GoogleProg_ColorAngle_Numeric.TabIndex = 156;
             this.indicator_GoogleProg_ColorAngle_Numeric.ValueChanged += new System.EventHandler(this.indicator_GoogleProg_ColorAngle_Numeric_ValueChanged);
             // 
@@ -542,11 +548,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(7, 89);
+            this.label23.Location = new System.Drawing.Point(6, 79);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(81, 19);
+            this.label23.Size = new System.Drawing.Size(46, 38);
             this.label23.TabIndex = 148;
-            this.label23.Text = "Color Angle";
+            this.label23.Text = "Color \r\nAngle";
             // 
             // indicator_GoogleProg_AnnulusColor_Btn
             // 
@@ -554,9 +560,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_GoogleProg_AnnulusColor_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_GoogleProg_AnnulusColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_GoogleProg_AnnulusColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_GoogleProg_AnnulusColor_Btn.Location = new System.Drawing.Point(401, 43);
+            this.indicator_GoogleProg_AnnulusColor_Btn.Location = new System.Drawing.Point(245, 39);
             this.indicator_GoogleProg_AnnulusColor_Btn.Name = "indicator_GoogleProg_AnnulusColor_Btn";
-            this.indicator_GoogleProg_AnnulusColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_GoogleProg_AnnulusColor_Btn.Size = new System.Drawing.Size(43, 24);
             this.indicator_GoogleProg_AnnulusColor_Btn.TabIndex = 173;
             this.indicator_GoogleProg_AnnulusColor_Btn.UseVisualStyleBackColor = false;
             this.indicator_GoogleProg_AnnulusColor_Btn.Click += new System.EventHandler(this.indicator_GoogleProg_AnnulusColor_Btn_Click);
@@ -567,22 +573,22 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(278, 44);
+            this.label10.Location = new System.Drawing.Point(168, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(96, 19);
+            this.label10.Size = new System.Drawing.Size(63, 38);
             this.label10.TabIndex = 172;
-            this.label10.Text = "Annulus Color";
+            this.label10.Text = "Annulus \r\nColor";
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -654,6 +660,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -686,6 +693,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -771,6 +779,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -780,7 +789,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -796,6 +805,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -853,11 +863,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(722, 94);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(473, 94);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -1082,7 +1093,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.OuterCircleRadius = 11;
             this.ZeroitThematicProgress1.OuterColor = System.Drawing.Color.Gray;
             this.ZeroitThematicProgress1.OuterMargin = -25;
-            this.ZeroitThematicProgress1.OuterRadius = 74;
+            this.ZeroitThematicProgress1.OuterRadius = 48;
             this.ZeroitThematicProgress1.OuterWidth = 26;
             this.ZeroitThematicProgress1.P_AnimationColor = System.Drawing.Color.DimGray;
             this.ZeroitThematicProgress1.P_BaseColor = System.Drawing.Color.DarkGray;
@@ -1094,8 +1105,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1125,23 +1138,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            penParameters1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            penParameters1.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
-            penParameters1.DashOffset = 0.5F;
-            penParameters1.DashPattern = new float[] {
+            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters2.DashOffset = 0.5F;
+            penParameters2.DashPattern = new float[] {
         0.2F,
         0.75F};
-            penParameters1.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            penParameters1.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-            penParameters1.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-            penParameters1.MiterLimit = 0.7F;
-            penParameters1.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
-            penParameters1.Width = 2F;
-            this.ZeroitThematicProgress1.ProgressEffects = penParameters1;
+            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters2.MiterLimit = 0.7F;
+            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters2.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
-            this.ZeroitThematicProgress1.ProgressInput = new Zeroit.Framework.ProgressThematic.FormEditors.ProgressInput(System.Drawing.Color.PaleTurquoise, System.Drawing.SystemColors.Control, 0, 10, System.Drawing.Color.White, Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GoogleProgress_INDICATORTYPES.ANIMATED, 20, 74, 100, 175F, System.Drawing.Color.Gray, System.Drawing.Color.Red, System.Drawing.Color.Yellow, System.Drawing.Color.Gray, System.Drawing.Color.DarkBlue, System.Drawing.Color.DarkBlue, 1);
+            this.ZeroitThematicProgress1.ProgressInput = new Zeroit.Framework.ProgressThematic.FormEditors.ProgressInput(System.Drawing.Color.PaleTurquoise, System.Drawing.SystemColors.Control, 0, 10, System.Drawing.Color.White, Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GoogleProgress_INDICATORTYPES.ANIMATED, 20, 48, 100, 175F, System.Drawing.Color.Gray, System.Drawing.Color.Red, System.Drawing.Color.Yellow, System.Drawing.Color.Gray, System.Drawing.Color.DarkBlue, System.Drawing.Color.DarkBlue, 1);
             this.ZeroitThematicProgress1.ProgressNormalType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.progressNormalType.Normal;
             this.ZeroitThematicProgress1.ProgressPerfect_CircleSize = 0.2F;
             this.ZeroitThematicProgress1.ProgressPerfect_NumberOfCircles = 100F;
@@ -1168,12 +1181,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1182,6 +1195,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1194,7 +1208,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1213,7 +1227,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = false;
             this.ZeroitThematicProgress1.ShowValue = false;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(148, 148);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(96, 96);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1237,6 +1251,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1309,7 +1324,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.Preview_Btn);
             this.DoubleBuffered = true;
             this.Name = "GoogleProgress_UC";
-            this.Size = new System.Drawing.Size(881, 301);
+            this.Size = new System.Drawing.Size(580, 324);
             this.bars_Extended_GroupBox.ResumeLayout(false);
             this.bars_Extended_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.indicator_GoogleProg_InnerRadius_Numeric)).EndInit();

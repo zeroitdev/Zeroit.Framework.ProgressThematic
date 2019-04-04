@@ -42,7 +42,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// </summary>
         private void InitializeComponent()
         {
-            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters1 = new Zeroit.Framework.ProgressThematic.PenParameters();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacOSX_UC));
             this.ZeroitThematicProgress1 = new Zeroit.Framework.ProgressThematic.ZeroitThematicProgress();
             this.indicator_MacOSX_CircleCount_Numeric = new System.Windows.Forms.NumericUpDown();
@@ -83,14 +83,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -162,6 +162,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -194,6 +195,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -279,6 +281,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -288,7 +291,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -304,6 +307,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -361,11 +365,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(634, 71);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(320, 58);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Stop;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -393,7 +398,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Marquee = false;
             this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 100F;
             this.ZeroitThematicProgress1.MarqueeSpeed = 100;
-            this.ZeroitThematicProgress1.Maximum = 12F;
+            this.ZeroitThematicProgress1.Maximum = 100F;
             this.ZeroitThematicProgress1.Maze_BackgroundColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.Maze_BorderColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Maze_SolidColor = System.Drawing.SystemColors.Highlight;
@@ -602,8 +607,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -633,19 +640,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
-            penParameters2.DashOffset = 0.5F;
-            penParameters2.DashPattern = new float[] {
+            penParameters1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters1.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters1.DashOffset = 0.5F;
+            penParameters1.DashPattern = new float[] {
         0.2F,
         0.75F};
-            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-            penParameters2.MiterLimit = 0.7F;
-            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
-            penParameters2.Width = 2F;
-            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
+            penParameters1.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters1.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters1.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters1.MiterLimit = 0.7F;
+            penParameters1.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters1.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters1;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -676,12 +683,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -690,6 +697,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -702,7 +710,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -721,7 +729,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = false;
             this.ZeroitThematicProgress1.ShowValue = false;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(86, 86);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(108, 106);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -745,6 +753,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -811,15 +820,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_MacOSX_CircleCount_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_CircleCount_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_MacOSX_CircleCount_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_CircleCount_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_MacOSX_CircleCount_Numeric.Location = new System.Drawing.Point(532, 140);
+            this.indicator_MacOSX_CircleCount_Numeric.Location = new System.Drawing.Point(256, 167);
             this.indicator_MacOSX_CircleCount_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.indicator_MacOSX_CircleCount_Numeric.Name = "indicator_MacOSX_CircleCount_Numeric";
-            this.indicator_MacOSX_CircleCount_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.indicator_MacOSX_CircleCount_Numeric.Size = new System.Drawing.Size(42, 22);
             this.indicator_MacOSX_CircleCount_Numeric.TabIndex = 226;
             this.indicator_MacOSX_CircleCount_Numeric.ValueChanged += new System.EventHandler(this.indicator_MacOSX_CircleCount_Numeric_ValueChanged);
             // 
@@ -829,23 +839,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(418, 145);
+            this.label5.Location = new System.Drawing.Point(176, 159);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 19);
+            this.label5.Size = new System.Drawing.Size(47, 38);
             this.label5.TabIndex = 225;
-            this.label5.Text = "Circle Count";
+            this.label5.Text = "Circle \r\nCount";
             // 
             // indicator_MacOSX_EndCap_ComboBox
             // 
             this.indicator_MacOSX_EndCap_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_EndCap_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_MacOSX_EndCap_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_MacOSX_EndCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_MacOSX_EndCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_EndCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_MacOSX_EndCap_ComboBox.FormattingEnabled = true;
-            this.indicator_MacOSX_EndCap_ComboBox.Location = new System.Drawing.Point(289, 42);
+            this.indicator_MacOSX_EndCap_ComboBox.Location = new System.Drawing.Point(87, 167);
             this.indicator_MacOSX_EndCap_ComboBox.Name = "indicator_MacOSX_EndCap_ComboBox";
-            this.indicator_MacOSX_EndCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_MacOSX_EndCap_ComboBox.Size = new System.Drawing.Size(57, 21);
             this.indicator_MacOSX_EndCap_ComboBox.TabIndex = 224;
             this.indicator_MacOSX_EndCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_MacOSX_EndCap_ComboBox_SelectedIndexChanged);
             // 
@@ -855,7 +865,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(211, 43);
+            this.label2.Location = new System.Drawing.Point(5, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 19);
             this.label2.TabIndex = 223;
@@ -866,12 +876,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_MacOSX_StartCap_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_StartCap_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_MacOSX_StartCap_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_MacOSX_StartCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_MacOSX_StartCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_StartCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_MacOSX_StartCap_ComboBox.FormattingEnabled = true;
-            this.indicator_MacOSX_StartCap_ComboBox.Location = new System.Drawing.Point(87, 144);
+            this.indicator_MacOSX_StartCap_ComboBox.Location = new System.Drawing.Point(87, 117);
             this.indicator_MacOSX_StartCap_ComboBox.Name = "indicator_MacOSX_StartCap_ComboBox";
-            this.indicator_MacOSX_StartCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_MacOSX_StartCap_ComboBox.Size = new System.Drawing.Size(57, 21);
             this.indicator_MacOSX_StartCap_ComboBox.TabIndex = 222;
             this.indicator_MacOSX_StartCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_MacOSX_StartCap_ComboBox_SelectedIndexChanged);
             // 
@@ -881,7 +891,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(5, 145);
+            this.label4.Location = new System.Drawing.Point(5, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(66, 19);
             this.label4.TabIndex = 221;
@@ -891,15 +901,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_MacOSX_StartAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_StartAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_MacOSX_StartAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_StartAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_MacOSX_StartAngle_Numeric.Location = new System.Drawing.Point(532, 90);
+            this.indicator_MacOSX_StartAngle_Numeric.Location = new System.Drawing.Point(256, 115);
             this.indicator_MacOSX_StartAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.indicator_MacOSX_StartAngle_Numeric.Name = "indicator_MacOSX_StartAngle_Numeric";
-            this.indicator_MacOSX_StartAngle_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.indicator_MacOSX_StartAngle_Numeric.Size = new System.Drawing.Size(42, 22);
             this.indicator_MacOSX_StartAngle_Numeric.TabIndex = 220;
             this.indicator_MacOSX_StartAngle_Numeric.ValueChanged += new System.EventHandler(this.indicator_MacOSX_StartAngle_Numeric_ValueChanged);
             // 
@@ -909,23 +920,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(418, 95);
+            this.label1.Location = new System.Drawing.Point(176, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 19);
+            this.label1.Size = new System.Drawing.Size(44, 38);
             this.label1.TabIndex = 219;
-            this.label1.Text = "Start Angle";
+            this.label1.Text = "Start \r\nAngle";
             // 
             // indicator_MacOSX_Rotation_ComboBox
             // 
             this.indicator_MacOSX_Rotation_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_Rotation_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_MacOSX_Rotation_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_MacOSX_Rotation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_MacOSX_Rotation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_Rotation_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_MacOSX_Rotation_ComboBox.FormattingEnabled = true;
-            this.indicator_MacOSX_Rotation_ComboBox.Location = new System.Drawing.Point(87, 92);
+            this.indicator_MacOSX_Rotation_ComboBox.Location = new System.Drawing.Point(87, 76);
             this.indicator_MacOSX_Rotation_ComboBox.Name = "indicator_MacOSX_Rotation_ComboBox";
-            this.indicator_MacOSX_Rotation_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_MacOSX_Rotation_ComboBox.Size = new System.Drawing.Size(57, 21);
             this.indicator_MacOSX_Rotation_ComboBox.TabIndex = 218;
             this.indicator_MacOSX_Rotation_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_MacOSX_Rotation_ComboBox_SelectedIndexChanged);
             // 
@@ -935,7 +946,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(5, 93);
+            this.label3.Location = new System.Drawing.Point(5, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 19);
             this.label3.TabIndex = 217;
@@ -946,12 +957,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_MacOSX_Automatic_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_Automatic_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.indicator_MacOSX_Automatic_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.indicator_MacOSX_Automatic_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.indicator_MacOSX_Automatic_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_Automatic_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.indicator_MacOSX_Automatic_ComboBox.FormattingEnabled = true;
-            this.indicator_MacOSX_Automatic_ComboBox.Location = new System.Drawing.Point(87, 41);
+            this.indicator_MacOSX_Automatic_ComboBox.Location = new System.Drawing.Point(87, 32);
             this.indicator_MacOSX_Automatic_ComboBox.Name = "indicator_MacOSX_Automatic_ComboBox";
-            this.indicator_MacOSX_Automatic_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.indicator_MacOSX_Automatic_ComboBox.Size = new System.Drawing.Size(57, 21);
             this.indicator_MacOSX_Automatic_ComboBox.TabIndex = 188;
             this.indicator_MacOSX_Automatic_ComboBox.SelectedIndexChanged += new System.EventHandler(this.indicator_MacOSX_Automatic_ComboBox_SelectedIndexChanged);
             // 
@@ -961,7 +972,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(5, 42);
+            this.label9.Location = new System.Drawing.Point(5, 33);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 19);
             this.label9.TabIndex = 187;
@@ -971,15 +982,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_MacOSX_Interval_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_Interval_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_MacOSX_Interval_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_Interval_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_MacOSX_Interval_Numeric.Location = new System.Drawing.Point(289, 90);
+            this.indicator_MacOSX_Interval_Numeric.Location = new System.Drawing.Point(256, 32);
             this.indicator_MacOSX_Interval_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.indicator_MacOSX_Interval_Numeric.Name = "indicator_MacOSX_Interval_Numeric";
-            this.indicator_MacOSX_Interval_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_MacOSX_Interval_Numeric.Size = new System.Drawing.Size(42, 22);
             this.indicator_MacOSX_Interval_Numeric.TabIndex = 156;
             this.indicator_MacOSX_Interval_Numeric.ValueChanged += new System.EventHandler(this.indicator_MacOSX_Interval_Numeric_ValueChanged);
             // 
@@ -989,7 +1001,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(212, 95);
+            this.label23.Location = new System.Drawing.Point(176, 33);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(55, 19);
             this.label23.TabIndex = 148;
@@ -1001,9 +1013,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.indicator_MacOSX_TickColor_Btn.FlatAppearance.BorderSize = 0;
             this.indicator_MacOSX_TickColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.indicator_MacOSX_TickColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.indicator_MacOSX_TickColor_Btn.Location = new System.Drawing.Point(532, 38);
+            this.indicator_MacOSX_TickColor_Btn.Location = new System.Drawing.Point(87, 213);
             this.indicator_MacOSX_TickColor_Btn.Name = "indicator_MacOSX_TickColor_Btn";
-            this.indicator_MacOSX_TickColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.indicator_MacOSX_TickColor_Btn.Size = new System.Drawing.Size(57, 24);
             this.indicator_MacOSX_TickColor_Btn.TabIndex = 173;
             this.indicator_MacOSX_TickColor_Btn.UseVisualStyleBackColor = false;
             this.indicator_MacOSX_TickColor_Btn.Click += new System.EventHandler(this.indicator_MacOSX_TickColor_Btn_Click);
@@ -1014,11 +1026,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(419, 39);
+            this.label10.Location = new System.Drawing.Point(6, 202);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 19);
+            this.label10.Size = new System.Drawing.Size(42, 38);
             this.label10.TabIndex = 172;
-            this.label10.Text = "Tick Color";
+            this.label10.Text = "Tick \r\nColor";
             // 
             // bars_Extended_GroupBox
             // 
@@ -1040,11 +1052,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label23);
             this.bars_Extended_GroupBox.Controls.Add(this.indicator_MacOSX_TickColor_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label10);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 4);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(619, 178);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(311, 243);
             this.bars_Extended_GroupBox.TabIndex = 226;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Mac OSX";
@@ -1053,15 +1065,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.indicator_MacOSX_MaxSpokes_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.indicator_MacOSX_MaxSpokes_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.indicator_MacOSX_MaxSpokes_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.indicator_MacOSX_MaxSpokes_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.indicator_MacOSX_MaxSpokes_Numeric.Location = new System.Drawing.Point(289, 140);
+            this.indicator_MacOSX_MaxSpokes_Numeric.Location = new System.Drawing.Point(256, 78);
             this.indicator_MacOSX_MaxSpokes_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.indicator_MacOSX_MaxSpokes_Numeric.Name = "indicator_MacOSX_MaxSpokes_Numeric";
-            this.indicator_MacOSX_MaxSpokes_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.indicator_MacOSX_MaxSpokes_Numeric.Size = new System.Drawing.Size(42, 22);
             this.indicator_MacOSX_MaxSpokes_Numeric.TabIndex = 228;
             this.indicator_MacOSX_MaxSpokes_Numeric.ValueChanged += new System.EventHandler(this.indicator_MacOSX_MaxSpokes_Numeric_ValueChanged);
             // 
@@ -1071,7 +1084,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(209, 134);
+            this.label6.Location = new System.Drawing.Point(176, 68);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 38);
             this.label6.TabIndex = 227;
@@ -1085,9 +1098,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(628, 18);
+            this.Preview_Btn.Location = new System.Drawing.Point(336, 16);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(79, 27);
             this.Preview_Btn.TabIndex = 225;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -1185,7 +1198,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "MacOSX_UC";
-            this.Size = new System.Drawing.Size(736, 186);
+            this.Size = new System.Drawing.Size(434, 250);
             ((System.ComponentModel.ISupportInitialize)(this.indicator_MacOSX_CircleCount_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator_MacOSX_StartAngle_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.indicator_MacOSX_Interval_Numeric)).EndInit();

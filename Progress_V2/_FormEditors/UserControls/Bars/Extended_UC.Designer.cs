@@ -43,12 +43,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// </summary>
         private void InitializeComponent()
         {
-            Zeroit.Framework.ProgressThematic.PenParameters penParameters1 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Extended_UC));
             this.Preview_Btn = new System.Windows.Forms.Button();
-            this.bars_Extended_GroupBox = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.bars_Extended_EdgeWidth_Numeric = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.bars_Extended_ShadowOffset_Numeric = new System.Windows.Forms.NumericUpDown();
             this.bars_Extended_SecondColor_Btn = new System.Windows.Forms.Button();
@@ -103,8 +100,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4 = new System.Windows.Forms.Label();
             this.colorSelector = new System.Windows.Forms.ColorDialog();
             this.ZeroitThematicProgress1 = new Zeroit.Framework.ProgressThematic.ZeroitThematicProgress();
-            this.bars_Extended_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_EdgeWidth_Numeric)).BeginInit();
+            this.bars_Extended_GroupBox = new System.Windows.Forms.GroupBox();
+            this.bars_Extended_EdgeWidth_Numeric = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_ShadowOffset_Numeric)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_FloodPercent_Numeric)).BeginInit();
@@ -115,6 +113,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_BarOffset_Numeric)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.bars_Extended_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_EdgeWidth_Numeric)).BeginInit();
             this.SuspendLayout();
             // 
             // Preview_Btn
@@ -125,99 +125,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(751, 17);
+            this.Preview_Btn.Location = new System.Drawing.Point(494, 17);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(53, 35);
             this.Preview_Btn.TabIndex = 109;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
             this.Preview_Btn.MouseEnter += new System.EventHandler(this.Preview_Btn_MouseEnter);
             this.Preview_Btn.MouseLeave += new System.EventHandler(this.Preview_Btn_MouseLeave);
-            // 
-            // bars_Extended_GroupBox
-            // 
-            this.bars_Extended_GroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.bars_Extended_GroupBox.Controls.Add(this.label8);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_EdgeWidth_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.label25);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_ShadowOffset_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_SecondColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.label24);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BarStyle_ComboBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label23);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BackColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.label22);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Orientation_ComboBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label21);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_MainColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.label20);
-            this.bars_Extended_GroupBox.Controls.Add(this.panel4);
-            this.bars_Extended_GroupBox.Controls.Add(this.label19);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_FloodStyle_ComboBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label17);
-            this.bars_Extended_GroupBox.Controls.Add(this.label16);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_FloodPercent_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.label15);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Step_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_EdgeColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.label14);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Edge_ComboBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label13);
-            this.bars_Extended_GroupBox.Controls.Add(this.label12);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_DashWidth_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.label11);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_DashSpace_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.panel3);
-            this.bars_Extended_GroupBox.Controls.Add(this.label9);
-            this.bars_Extended_GroupBox.Controls.Add(this.label7);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BarOffset_Numeric);
-            this.bars_Extended_GroupBox.Controls.Add(this.panel2);
-            this.bars_Extended_GroupBox.Controls.Add(this.label6);
-            this.bars_Extended_GroupBox.Controls.Add(this.panel1);
-            this.bars_Extended_GroupBox.Controls.Add(this.label5);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_ShadowColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.label2);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_CaptionMode_ComboBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label1);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_CaptionColor_Btn);
-            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Caption_TextBox);
-            this.bars_Extended_GroupBox.Controls.Add(this.label3);
-            this.bars_Extended_GroupBox.Controls.Add(this.label4);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
-            this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(719, 329);
-            this.bars_Extended_GroupBox.TabIndex = 111;
-            this.bars_Extended_GroupBox.TabStop = false;
-            this.bars_Extended_GroupBox.Text = "Extended ProgressBar";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(10, 298);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 19);
-            this.label8.TabIndex = 155;
-            this.label8.Text = "Edge Width";
-            // 
-            // bars_Extended_EdgeWidth_Numeric
-            // 
-            this.bars_Extended_EdgeWidth_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.bars_Extended_EdgeWidth_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bars_Extended_EdgeWidth_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_EdgeWidth_Numeric.Location = new System.Drawing.Point(115, 295);
-            this.bars_Extended_EdgeWidth_Numeric.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.bars_Extended_EdgeWidth_Numeric.Name = "bars_Extended_EdgeWidth_Numeric";
-            this.bars_Extended_EdgeWidth_Numeric.Size = new System.Drawing.Size(104, 29);
-            this.bars_Extended_EdgeWidth_Numeric.TabIndex = 154;
             // 
             // label25
             // 
@@ -225,25 +140,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label25.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label25.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label25.Location = new System.Drawing.Point(10, 262);
+            this.label25.Location = new System.Drawing.Point(152, 259);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(98, 19);
+            this.label25.Size = new System.Drawing.Size(61, 38);
             this.label25.TabIndex = 153;
-            this.label25.Text = "Shadow Offset";
+            this.label25.Text = "Shadow \r\nOffset";
             // 
             // bars_Extended_ShadowOffset_Numeric
             // 
             this.bars_Extended_ShadowOffset_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_ShadowOffset_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_ShadowOffset_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_ShadowOffset_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_ShadowOffset_Numeric.Location = new System.Drawing.Point(115, 259);
+            this.bars_Extended_ShadowOffset_Numeric.Location = new System.Drawing.Point(240, 267);
             this.bars_Extended_ShadowOffset_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_ShadowOffset_Numeric.Name = "bars_Extended_ShadowOffset_Numeric";
-            this.bars_Extended_ShadowOffset_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_ShadowOffset_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_ShadowOffset_Numeric.TabIndex = 152;
             // 
             // bars_Extended_SecondColor_Btn
@@ -252,9 +168,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_SecondColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_SecondColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_SecondColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_SecondColor_Btn.Location = new System.Drawing.Point(360, 221);
+            this.bars_Extended_SecondColor_Btn.Location = new System.Drawing.Point(78, 225);
             this.bars_Extended_SecondColor_Btn.Name = "bars_Extended_SecondColor_Btn";
-            this.bars_Extended_SecondColor_Btn.Size = new System.Drawing.Size(74, 27);
+            this.bars_Extended_SecondColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_SecondColor_Btn.TabIndex = 151;
             this.bars_Extended_SecondColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -264,23 +180,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label24.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label24.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label24.Location = new System.Drawing.Point(239, 224);
+            this.label24.Location = new System.Drawing.Point(9, 219);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(90, 19);
+            this.label24.Size = new System.Drawing.Size(57, 38);
             this.label24.TabIndex = 150;
-            this.label24.Text = "Second Color";
+            this.label24.Text = "Second \r\nColor";
             // 
             // bars_Extended_BarStyle_ComboBox
             // 
             this.bars_Extended_BarStyle_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_BarStyle_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Extended_BarStyle_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Extended_BarStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_BarStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_BarStyle_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_BarStyle_ComboBox.FormattingEnabled = true;
-            this.bars_Extended_BarStyle_ComboBox.Location = new System.Drawing.Point(360, 37);
+            this.bars_Extended_BarStyle_ComboBox.Location = new System.Drawing.Point(78, 28);
             this.bars_Extended_BarStyle_ComboBox.Name = "bars_Extended_BarStyle_ComboBox";
-            this.bars_Extended_BarStyle_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Extended_BarStyle_ComboBox.Size = new System.Drawing.Size(55, 21);
             this.bars_Extended_BarStyle_ComboBox.TabIndex = 149;
             // 
             // label23
@@ -289,7 +205,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(239, 43);
+            this.label23.Location = new System.Drawing.Point(9, 29);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(62, 19);
             this.label23.TabIndex = 148;
@@ -301,9 +217,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_BackColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_BackColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_BackColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_BackColor_Btn.Location = new System.Drawing.Point(360, 185);
+            this.bars_Extended_BackColor_Btn.Location = new System.Drawing.Point(78, 184);
             this.bars_Extended_BackColor_Btn.Name = "bars_Extended_BackColor_Btn";
-            this.bars_Extended_BackColor_Btn.Size = new System.Drawing.Size(74, 27);
+            this.bars_Extended_BackColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_BackColor_Btn.TabIndex = 147;
             this.bars_Extended_BackColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -313,23 +229,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label22.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label22.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label22.Location = new System.Drawing.Point(239, 188);
+            this.label22.Location = new System.Drawing.Point(9, 179);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(74, 19);
+            this.label22.Size = new System.Drawing.Size(42, 38);
             this.label22.TabIndex = 146;
-            this.label22.Text = "Back Color";
+            this.label22.Text = "Back \r\nColor";
             // 
             // bars_Extended_Orientation_ComboBox
             // 
             this.bars_Extended_Orientation_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_Orientation_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Extended_Orientation_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Extended_Orientation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_Orientation_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_Orientation_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_Orientation_ComboBox.FormattingEnabled = true;
-            this.bars_Extended_Orientation_ComboBox.Location = new System.Drawing.Point(114, 37);
+            this.bars_Extended_Orientation_ComboBox.Location = new System.Drawing.Point(240, 28);
             this.bars_Extended_Orientation_ComboBox.Name = "bars_Extended_Orientation_ComboBox";
-            this.bars_Extended_Orientation_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Extended_Orientation_ComboBox.Size = new System.Drawing.Size(56, 21);
             this.bars_Extended_Orientation_ComboBox.Sorted = true;
             this.bars_Extended_Orientation_ComboBox.TabIndex = 145;
             // 
@@ -339,7 +255,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label21.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label21.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label21.Location = new System.Drawing.Point(10, 40);
+            this.label21.Location = new System.Drawing.Point(152, 29);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(79, 19);
             this.label21.TabIndex = 144;
@@ -351,9 +267,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_MainColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_MainColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_MainColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_MainColor_Btn.Location = new System.Drawing.Point(360, 148);
+            this.bars_Extended_MainColor_Btn.Location = new System.Drawing.Point(78, 143);
             this.bars_Extended_MainColor_Btn.Name = "bars_Extended_MainColor_Btn";
-            this.bars_Extended_MainColor_Btn.Size = new System.Drawing.Size(74, 27);
+            this.bars_Extended_MainColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_MainColor_Btn.TabIndex = 143;
             this.bars_Extended_MainColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -363,29 +279,31 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label20.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label20.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label20.Location = new System.Drawing.Point(239, 151);
+            this.label20.Location = new System.Drawing.Point(9, 138);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(77, 19);
+            this.label20.Size = new System.Drawing.Size(44, 38);
             this.label20.TabIndex = 142;
-            this.label20.Text = "Main Color";
+            this.label20.Text = "Main \r\nColor";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.bars_Extended_Invert_Yes_RadioBtn);
             this.panel4.Controls.Add(this.bars_Extended_Invert_No_RadioBtn);
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel4.Location = new System.Drawing.Point(607, 142);
+            this.panel4.Location = new System.Drawing.Point(394, 180);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(104, 38);
+            this.panel4.Size = new System.Drawing.Size(61, 50);
             this.panel4.TabIndex = 141;
             // 
             // bars_Extended_Invert_Yes_RadioBtn
             // 
             this.bars_Extended_Invert_Yes_RadioBtn.AutoSize = true;
             this.bars_Extended_Invert_Yes_RadioBtn.Checked = true;
+            this.bars_Extended_Invert_Yes_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_Invert_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.bars_Extended_Invert_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.bars_Extended_Invert_Yes_RadioBtn.Name = "bars_Extended_Invert_Yes_RadioBtn";
-            this.bars_Extended_Invert_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.bars_Extended_Invert_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_Invert_Yes_RadioBtn.TabIndex = 113;
             this.bars_Extended_Invert_Yes_RadioBtn.TabStop = true;
             this.bars_Extended_Invert_Yes_RadioBtn.Text = "Yes";
@@ -394,9 +312,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // bars_Extended_Invert_No_RadioBtn
             // 
             this.bars_Extended_Invert_No_RadioBtn.AutoSize = true;
-            this.bars_Extended_Invert_No_RadioBtn.Location = new System.Drawing.Point(52, 6);
+            this.bars_Extended_Invert_No_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_Invert_No_RadioBtn.ForeColor = System.Drawing.Color.White;
+            this.bars_Extended_Invert_No_RadioBtn.Location = new System.Drawing.Point(6, 29);
             this.bars_Extended_Invert_No_RadioBtn.Name = "bars_Extended_Invert_No_RadioBtn";
-            this.bars_Extended_Invert_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.bars_Extended_Invert_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_Invert_No_RadioBtn.TabIndex = 114;
             this.bars_Extended_Invert_No_RadioBtn.Text = "No";
             this.bars_Extended_Invert_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -407,7 +327,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label19.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label19.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label19.Location = new System.Drawing.Point(482, 149);
+            this.label19.Location = new System.Drawing.Point(320, 198);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(45, 19);
             this.label19.TabIndex = 140;
@@ -418,12 +338,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_FloodStyle_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_FloodStyle_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Extended_FloodStyle_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Extended_FloodStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_FloodStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_FloodStyle_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_FloodStyle_ComboBox.FormattingEnabled = true;
-            this.bars_Extended_FloodStyle_ComboBox.Location = new System.Drawing.Point(608, 189);
+            this.bars_Extended_FloodStyle_ComboBox.Location = new System.Drawing.Point(394, 237);
             this.bars_Extended_FloodStyle_ComboBox.Name = "bars_Extended_FloodStyle_ComboBox";
-            this.bars_Extended_FloodStyle_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Extended_FloodStyle_ComboBox.Size = new System.Drawing.Size(61, 21);
             this.bars_Extended_FloodStyle_ComboBox.TabIndex = 137;
             // 
             // label17
@@ -432,11 +352,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label17.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label17.Location = new System.Drawing.Point(481, 189);
+            this.label17.Location = new System.Drawing.Point(320, 228);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(76, 19);
+            this.label17.Size = new System.Drawing.Size(47, 38);
             this.label17.TabIndex = 136;
-            this.label17.Text = "Flood Style";
+            this.label17.Text = "Flood \r\nStyle";
             // 
             // label16
             // 
@@ -444,25 +364,26 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label16.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label16.Location = new System.Drawing.Point(10, 226);
+            this.label16.Location = new System.Drawing.Point(152, 215);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 19);
+            this.label16.Size = new System.Drawing.Size(54, 38);
             this.label16.TabIndex = 135;
-            this.label16.Text = "Flood Percent";
+            this.label16.Text = "Flood \r\nPercent";
             // 
             // bars_Extended_FloodPercent_Numeric
             // 
             this.bars_Extended_FloodPercent_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_FloodPercent_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_FloodPercent_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_FloodPercent_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_FloodPercent_Numeric.Location = new System.Drawing.Point(115, 223);
+            this.bars_Extended_FloodPercent_Numeric.Location = new System.Drawing.Point(240, 222);
             this.bars_Extended_FloodPercent_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_FloodPercent_Numeric.Name = "bars_Extended_FloodPercent_Numeric";
-            this.bars_Extended_FloodPercent_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_FloodPercent_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_FloodPercent_Numeric.TabIndex = 134;
             // 
             // label15
@@ -471,7 +392,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label15.Location = new System.Drawing.Point(10, 188);
+            this.label15.Location = new System.Drawing.Point(152, 179);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(36, 19);
             this.label15.TabIndex = 133;
@@ -481,15 +402,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.bars_Extended_Step_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_Step_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_Step_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_Step_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_Step_Numeric.Location = new System.Drawing.Point(115, 186);
+            this.bars_Extended_Step_Numeric.Location = new System.Drawing.Point(240, 181);
             this.bars_Extended_Step_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_Step_Numeric.Name = "bars_Extended_Step_Numeric";
-            this.bars_Extended_Step_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_Step_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_Step_Numeric.TabIndex = 132;
             // 
             // bars_Extended_EdgeColor_Btn
@@ -498,9 +420,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_EdgeColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_EdgeColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_EdgeColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_EdgeColor_Btn.Location = new System.Drawing.Point(360, 108);
+            this.bars_Extended_EdgeColor_Btn.Location = new System.Drawing.Point(78, 104);
             this.bars_Extended_EdgeColor_Btn.Name = "bars_Extended_EdgeColor_Btn";
-            this.bars_Extended_EdgeColor_Btn.Size = new System.Drawing.Size(74, 27);
+            this.bars_Extended_EdgeColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_EdgeColor_Btn.TabIndex = 131;
             this.bars_Extended_EdgeColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -510,23 +432,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label14.Location = new System.Drawing.Point(239, 111);
+            this.label14.Location = new System.Drawing.Point(9, 99);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 19);
+            this.label14.Size = new System.Drawing.Size(43, 38);
             this.label14.TabIndex = 130;
-            this.label14.Text = "Edge Color";
+            this.label14.Text = "Edge \r\nColor";
             // 
             // bars_Extended_Edge_ComboBox
             // 
             this.bars_Extended_Edge_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_Edge_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Extended_Edge_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Extended_Edge_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_Edge_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_Edge_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_Edge_ComboBox.FormattingEnabled = true;
-            this.bars_Extended_Edge_ComboBox.Location = new System.Drawing.Point(608, 222);
+            this.bars_Extended_Edge_ComboBox.Location = new System.Drawing.Point(394, 269);
             this.bars_Extended_Edge_ComboBox.Name = "bars_Extended_Edge_ComboBox";
-            this.bars_Extended_Edge_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Extended_Edge_ComboBox.Size = new System.Drawing.Size(61, 21);
             this.bars_Extended_Edge_ComboBox.TabIndex = 129;
             // 
             // label13
@@ -535,7 +457,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(481, 222);
+            this.label13.Location = new System.Drawing.Point(320, 270);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(39, 19);
             this.label13.TabIndex = 128;
@@ -547,7 +469,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(10, 153);
+            this.label12.Location = new System.Drawing.Point(152, 144);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(81, 19);
             this.label12.TabIndex = 127;
@@ -557,15 +479,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.bars_Extended_DashWidth_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_DashWidth_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_DashWidth_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_DashWidth_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_DashWidth_Numeric.Location = new System.Drawing.Point(115, 148);
+            this.bars_Extended_DashWidth_Numeric.Location = new System.Drawing.Point(240, 143);
             this.bars_Extended_DashWidth_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_DashWidth_Numeric.Name = "bars_Extended_DashWidth_Numeric";
-            this.bars_Extended_DashWidth_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_DashWidth_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_DashWidth_Numeric.TabIndex = 126;
             // 
             // label11
@@ -574,7 +497,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(10, 111);
+            this.label11.Location = new System.Drawing.Point(152, 102);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(79, 19);
             this.label11.TabIndex = 125;
@@ -584,15 +507,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.bars_Extended_DashSpace_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_DashSpace_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_DashSpace_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_DashSpace_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_DashSpace_Numeric.Location = new System.Drawing.Point(115, 107);
+            this.bars_Extended_DashSpace_Numeric.Location = new System.Drawing.Point(240, 102);
             this.bars_Extended_DashSpace_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_DashSpace_Numeric.Name = "bars_Extended_DashSpace_Numeric";
-            this.bars_Extended_DashSpace_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_DashSpace_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_DashSpace_Numeric.TabIndex = 124;
             // 
             // panel3
@@ -600,18 +524,20 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel3.Controls.Add(this.bars_Extended_ChangeByMouse_Yes_RadioBtn);
             this.panel3.Controls.Add(this.bars_Extended_ChangeByMouse_No_RadioBtn);
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel3.Location = new System.Drawing.Point(607, 104);
+            this.panel3.Location = new System.Drawing.Point(394, 126);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(104, 38);
+            this.panel3.Size = new System.Drawing.Size(61, 48);
             this.panel3.TabIndex = 117;
             // 
             // bars_Extended_ChangeByMouse_Yes_RadioBtn
             // 
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.AutoSize = true;
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Checked = true;
+            this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_ChangeByMouse_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Name = "bars_Extended_ChangeByMouse_Yes_RadioBtn";
-            this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.TabIndex = 113;
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.TabStop = true;
             this.bars_Extended_ChangeByMouse_Yes_RadioBtn.Text = "Yes";
@@ -620,9 +546,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // bars_Extended_ChangeByMouse_No_RadioBtn
             // 
             this.bars_Extended_ChangeByMouse_No_RadioBtn.AutoSize = true;
-            this.bars_Extended_ChangeByMouse_No_RadioBtn.Location = new System.Drawing.Point(52, 6);
+            this.bars_Extended_ChangeByMouse_No_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_ChangeByMouse_No_RadioBtn.ForeColor = System.Drawing.Color.White;
+            this.bars_Extended_ChangeByMouse_No_RadioBtn.Location = new System.Drawing.Point(6, 29);
             this.bars_Extended_ChangeByMouse_No_RadioBtn.Name = "bars_Extended_ChangeByMouse_No_RadioBtn";
-            this.bars_Extended_ChangeByMouse_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.bars_Extended_ChangeByMouse_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_ChangeByMouse_No_RadioBtn.TabIndex = 114;
             this.bars_Extended_ChangeByMouse_No_RadioBtn.Text = "No";
             this.bars_Extended_ChangeByMouse_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -633,11 +561,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(482, 110);
+            this.label9.Location = new System.Drawing.Point(319, 132);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 19);
+            this.label9.Size = new System.Drawing.Size(70, 38);
             this.label9.TabIndex = 116;
-            this.label9.Text = "Change By Mouse";
+            this.label9.Text = "Change \r\nBy Mouse";
             // 
             // label7
             // 
@@ -645,7 +573,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(10, 75);
+            this.label7.Location = new System.Drawing.Point(152, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 19);
             this.label7.TabIndex = 119;
@@ -655,15 +583,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.bars_Extended_BarOffset_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_BarOffset_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_BarOffset_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_BarOffset_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_BarOffset_Numeric.Location = new System.Drawing.Point(115, 70);
+            this.bars_Extended_BarOffset_Numeric.Location = new System.Drawing.Point(240, 65);
             this.bars_Extended_BarOffset_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
             0,
             0});
             this.bars_Extended_BarOffset_Numeric.Name = "bars_Extended_BarOffset_Numeric";
-            this.bars_Extended_BarOffset_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.bars_Extended_BarOffset_Numeric.Size = new System.Drawing.Size(56, 22);
             this.bars_Extended_BarOffset_Numeric.TabIndex = 118;
             // 
             // panel2
@@ -671,18 +600,20 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel2.Controls.Add(this.bars_Extended_AntiAlias_Yes_RadioBtn);
             this.panel2.Controls.Add(this.bars_Extended_AntiAlias_No_RadioBtn);
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel2.Location = new System.Drawing.Point(607, 29);
+            this.panel2.Location = new System.Drawing.Point(394, 18);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(104, 38);
+            this.panel2.Size = new System.Drawing.Size(61, 49);
             this.panel2.TabIndex = 117;
             // 
             // bars_Extended_AntiAlias_Yes_RadioBtn
             // 
             this.bars_Extended_AntiAlias_Yes_RadioBtn.AutoSize = true;
             this.bars_Extended_AntiAlias_Yes_RadioBtn.Checked = true;
+            this.bars_Extended_AntiAlias_Yes_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_AntiAlias_Yes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.bars_Extended_AntiAlias_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.bars_Extended_AntiAlias_Yes_RadioBtn.Name = "bars_Extended_AntiAlias_Yes_RadioBtn";
-            this.bars_Extended_AntiAlias_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.bars_Extended_AntiAlias_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_AntiAlias_Yes_RadioBtn.TabIndex = 113;
             this.bars_Extended_AntiAlias_Yes_RadioBtn.TabStop = true;
             this.bars_Extended_AntiAlias_Yes_RadioBtn.Text = "Yes";
@@ -691,9 +622,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // bars_Extended_AntiAlias_No_RadioBtn
             // 
             this.bars_Extended_AntiAlias_No_RadioBtn.AutoSize = true;
-            this.bars_Extended_AntiAlias_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.bars_Extended_AntiAlias_No_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_AntiAlias_No_RadioBtn.ForeColor = System.Drawing.Color.White;
+            this.bars_Extended_AntiAlias_No_RadioBtn.Location = new System.Drawing.Point(6, 29);
             this.bars_Extended_AntiAlias_No_RadioBtn.Name = "bars_Extended_AntiAlias_No_RadioBtn";
-            this.bars_Extended_AntiAlias_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.bars_Extended_AntiAlias_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_AntiAlias_No_RadioBtn.TabIndex = 114;
             this.bars_Extended_AntiAlias_No_RadioBtn.Text = "No";
             this.bars_Extended_AntiAlias_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -704,29 +637,31 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(480, 40);
+            this.label6.Location = new System.Drawing.Point(316, 25);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 19);
+            this.label6.Size = new System.Drawing.Size(68, 38);
             this.label6.TabIndex = 116;
-            this.label6.Text = "Text Anti-Alias";
+            this.label6.Text = "Text \r\nAnti-Alias";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.bars_Extended_ShadowYes_RadioBtn);
             this.panel1.Controls.Add(this.bars_Extended_ShadowNo_RadioBtn);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel1.Location = new System.Drawing.Point(607, 66);
+            this.panel1.Location = new System.Drawing.Point(394, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 38);
+            this.panel1.Size = new System.Drawing.Size(61, 49);
             this.panel1.TabIndex = 115;
             // 
             // bars_Extended_ShadowYes_RadioBtn
             // 
             this.bars_Extended_ShadowYes_RadioBtn.AutoSize = true;
             this.bars_Extended_ShadowYes_RadioBtn.Checked = true;
+            this.bars_Extended_ShadowYes_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_ShadowYes_RadioBtn.ForeColor = System.Drawing.Color.White;
             this.bars_Extended_ShadowYes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.bars_Extended_ShadowYes_RadioBtn.Name = "bars_Extended_ShadowYes_RadioBtn";
-            this.bars_Extended_ShadowYes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.bars_Extended_ShadowYes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_ShadowYes_RadioBtn.TabIndex = 113;
             this.bars_Extended_ShadowYes_RadioBtn.TabStop = true;
             this.bars_Extended_ShadowYes_RadioBtn.Text = "Yes";
@@ -735,9 +670,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // bars_Extended_ShadowNo_RadioBtn
             // 
             this.bars_Extended_ShadowNo_RadioBtn.AutoSize = true;
-            this.bars_Extended_ShadowNo_RadioBtn.Location = new System.Drawing.Point(52, 6);
+            this.bars_Extended_ShadowNo_RadioBtn.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_ShadowNo_RadioBtn.ForeColor = System.Drawing.Color.White;
+            this.bars_Extended_ShadowNo_RadioBtn.Location = new System.Drawing.Point(6, 26);
             this.bars_Extended_ShadowNo_RadioBtn.Name = "bars_Extended_ShadowNo_RadioBtn";
-            this.bars_Extended_ShadowNo_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.bars_Extended_ShadowNo_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.bars_Extended_ShadowNo_RadioBtn.TabIndex = 114;
             this.bars_Extended_ShadowNo_RadioBtn.Text = "No";
             this.bars_Extended_ShadowNo_RadioBtn.UseVisualStyleBackColor = true;
@@ -748,7 +685,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(482, 75);
+            this.label5.Location = new System.Drawing.Point(320, 87);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 19);
             this.label5.TabIndex = 112;
@@ -760,9 +697,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_ShadowColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_ShadowColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_ShadowColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_ShadowColor_Btn.Location = new System.Drawing.Point(360, 71);
+            this.bars_Extended_ShadowColor_Btn.Location = new System.Drawing.Point(78, 63);
             this.bars_Extended_ShadowColor_Btn.Name = "bars_Extended_ShadowColor_Btn";
-            this.bars_Extended_ShadowColor_Btn.Size = new System.Drawing.Size(74, 27);
+            this.bars_Extended_ShadowColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_ShadowColor_Btn.TabIndex = 111;
             this.bars_Extended_ShadowColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -772,23 +709,23 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(239, 74);
+            this.label2.Location = new System.Drawing.Point(9, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 19);
+            this.label2.Size = new System.Drawing.Size(61, 38);
             this.label2.TabIndex = 110;
-            this.label2.Text = "Shadow Color";
+            this.label2.Text = "Shadow \r\nColor";
             // 
             // bars_Extended_CaptionMode_ComboBox
             // 
             this.bars_Extended_CaptionMode_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_CaptionMode_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.bars_Extended_CaptionMode_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bars_Extended_CaptionMode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_CaptionMode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_CaptionMode_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_CaptionMode_ComboBox.FormattingEnabled = true;
-            this.bars_Extended_CaptionMode_ComboBox.Location = new System.Drawing.Point(608, 263);
+            this.bars_Extended_CaptionMode_ComboBox.Location = new System.Drawing.Point(394, 306);
             this.bars_Extended_CaptionMode_ComboBox.Name = "bars_Extended_CaptionMode_ComboBox";
-            this.bars_Extended_CaptionMode_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.bars_Extended_CaptionMode_ComboBox.Size = new System.Drawing.Size(61, 21);
             this.bars_Extended_CaptionMode_ComboBox.TabIndex = 109;
             // 
             // label1
@@ -797,11 +734,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(481, 264);
+            this.label1.Location = new System.Drawing.Point(320, 301);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 19);
+            this.label1.Size = new System.Drawing.Size(61, 38);
             this.label1.TabIndex = 108;
-            this.label1.Text = "Caption Mode";
+            this.label1.Text = "Caption \r\nMode";
             // 
             // bars_Extended_CaptionColor_Btn
             // 
@@ -809,9 +746,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_CaptionColor_Btn.FlatAppearance.BorderSize = 0;
             this.bars_Extended_CaptionColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bars_Extended_CaptionColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.bars_Extended_CaptionColor_Btn.Location = new System.Drawing.Point(360, 262);
+            this.bars_Extended_CaptionColor_Btn.Location = new System.Drawing.Point(78, 267);
             this.bars_Extended_CaptionColor_Btn.Name = "bars_Extended_CaptionColor_Btn";
-            this.bars_Extended_CaptionColor_Btn.Size = new System.Drawing.Size(74, 25);
+            this.bars_Extended_CaptionColor_Btn.Size = new System.Drawing.Size(55, 25);
             this.bars_Extended_CaptionColor_Btn.TabIndex = 107;
             this.bars_Extended_CaptionColor_Btn.UseVisualStyleBackColor = false;
             // 
@@ -819,11 +756,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.bars_Extended_Caption_TextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.bars_Extended_Caption_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.bars_Extended_Caption_TextBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_Caption_TextBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.bars_Extended_Caption_TextBox.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.bars_Extended_Caption_TextBox.Location = new System.Drawing.Point(360, 298);
+            this.bars_Extended_Caption_TextBox.Location = new System.Drawing.Point(78, 309);
             this.bars_Extended_Caption_TextBox.Name = "bars_Extended_Caption_TextBox";
-            this.bars_Extended_Caption_TextBox.Size = new System.Drawing.Size(74, 25);
+            this.bars_Extended_Caption_TextBox.Size = new System.Drawing.Size(55, 22);
             this.bars_Extended_Caption_TextBox.TabIndex = 106;
             this.bars_Extended_Caption_TextBox.Text = "Progress";
             this.bars_Extended_Caption_TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -834,7 +771,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(241, 301);
+            this.label3.Location = new System.Drawing.Point(9, 311);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 103;
@@ -846,22 +783,22 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(239, 263);
+            this.label4.Location = new System.Drawing.Point(9, 261);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 19);
+            this.label4.Size = new System.Drawing.Size(61, 38);
             this.label4.TabIndex = 105;
-            this.label4.Text = "Caption Color";
+            this.label4.Text = "Caption \r\nColor";
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -887,8 +824,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Bar2Smooth = 1;
             this.ZeroitThematicProgress1.Bar2Value = 0;
             this.ZeroitThematicProgress1.Bar3.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.LightGreen;
+            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.Lime;
             this.ZeroitThematicProgress1.Bar3.InactiveColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.Bar3ActiveColor = System.Drawing.Color.LightSeaGreen;
             this.ZeroitThematicProgress1.Bar3BorderColor = System.Drawing.Color.Gray;
@@ -928,11 +865,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.BorderGradient = false;
             this.ZeroitThematicProgress1.BorderRoundCorners = false;
             this.ZeroitThematicProgress1.BorderSize = 0;
-            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.Single;
+            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.None;
             this.ZeroitThematicProgress1.Caption = "%";
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -965,6 +903,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -1003,8 +942,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CPv5_Reset = false;
             this.ZeroitThematicProgress1.CPv5_Text = "ZeroitThematicProgress1";
             this.ZeroitThematicProgress1.CustomFadeColor = System.Drawing.SystemColors.Control;
-            this.ZeroitThematicProgress1.DagAnimSpeed = 100;
-            this.ZeroitThematicProgress1.DagAnimUpSpeed = 100;
+            this.ZeroitThematicProgress1.DagAnimSpeed = 5;
+            this.ZeroitThematicProgress1.DagAnimUpSpeed = 5;
             this.ZeroitThematicProgress1.DagDrawInnerCircle = true;
             this.ZeroitThematicProgress1.DagFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
             this.ZeroitThematicProgress1.DagFilledColorAlpha = 130;
@@ -1050,6 +989,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = false;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -1059,7 +999,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -1075,6 +1015,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -1132,18 +1073,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(730, 104);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(470, 59);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartAngle = 270F;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
@@ -1151,18 +1093,18 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.MacOSX_Optimized_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartAngle = 30F;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MacOSX_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_StartAngle = 270;
             this.ZeroitThematicProgress1.MacOSX_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MainColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.ZeroitThematicProgress1.Marquee = false;
-            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 2000F;
+            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 100F;
             this.ZeroitThematicProgress1.MarqueeSpeed = 100;
             this.ZeroitThematicProgress1.Maximum = 100F;
             this.ZeroitThematicProgress1.Maze_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -1361,7 +1303,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.OuterCircleRadius = 11;
             this.ZeroitThematicProgress1.OuterColor = System.Drawing.Color.Gray;
             this.ZeroitThematicProgress1.OuterMargin = -25;
-            this.ZeroitThematicProgress1.OuterRadius = 74;
+            this.ZeroitThematicProgress1.OuterRadius = 24;
             this.ZeroitThematicProgress1.OuterWidth = 26;
             this.ZeroitThematicProgress1.P_AnimationColor = System.Drawing.Color.DimGray;
             this.ZeroitThematicProgress1.P_BaseColor = System.Drawing.Color.DarkGray;
@@ -1373,8 +1315,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1404,19 +1348,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            penParameters1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            penParameters1.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
-            penParameters1.DashOffset = 0.5F;
-            penParameters1.DashPattern = new float[] {
+            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters2.DashOffset = 0.5F;
+            penParameters2.DashPattern = new float[] {
         0.2F,
         0.75F};
-            penParameters1.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            penParameters1.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-            penParameters1.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-            penParameters1.MiterLimit = 0.7F;
-            penParameters1.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
-            penParameters1.Width = 2F;
-            this.ZeroitThematicProgress1.ProgressEffects = penParameters1;
+            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters2.MiterLimit = 0.7F;
+            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters2.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -1447,12 +1391,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            //this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1461,6 +1405,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1473,7 +1418,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1492,7 +1437,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = true;
             this.ZeroitThematicProgress1.ShowValue = true;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(133, 37);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(101, 28);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1516,6 +1461,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1578,20 +1524,103 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.WinRing_Animate = false;
             this.ZeroitThematicProgress1.WinRing_Refresh_Rate = 100;
             // 
+            // bars_Extended_GroupBox
+            // 
+            this.bars_Extended_GroupBox.Controls.Add(this.panel2);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Orientation_ComboBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.label13);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BarStyle_ComboBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Edge_ComboBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.label14);
+            this.bars_Extended_GroupBox.Controls.Add(this.panel3);
+            this.bars_Extended_GroupBox.Controls.Add(this.label12);
+            this.bars_Extended_GroupBox.Controls.Add(this.label1);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_EdgeColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.label9);
+            this.bars_Extended_GroupBox.Controls.Add(this.label25);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_CaptionMode_ComboBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_SecondColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.label17);
+            this.bars_Extended_GroupBox.Controls.Add(this.label21);
+            this.bars_Extended_GroupBox.Controls.Add(this.label5);
+            this.bars_Extended_GroupBox.Controls.Add(this.label4);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_FloodStyle_ComboBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_DashSpace_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.panel1);
+            this.bars_Extended_GroupBox.Controls.Add(this.label24);
+            this.bars_Extended_GroupBox.Controls.Add(this.label19);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BarOffset_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.panel4);
+            this.bars_Extended_GroupBox.Controls.Add(this.label20);
+            this.bars_Extended_GroupBox.Controls.Add(this.label6);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Step_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.label3);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_DashWidth_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_MainColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.label15);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_ShadowColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.label7);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_Caption_TextBox);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_EdgeWidth_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.label23);
+            this.bars_Extended_GroupBox.Controls.Add(this.label8);
+            this.bars_Extended_GroupBox.Controls.Add(this.label2);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_ShadowOffset_Numeric);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_CaptionColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.label16);
+            this.bars_Extended_GroupBox.Controls.Add(this.label22);
+            this.bars_Extended_GroupBox.Controls.Add(this.label11);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_BackColor_Btn);
+            this.bars_Extended_GroupBox.Controls.Add(this.bars_Extended_FloodPercent_Numeric);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 3);
+            this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(461, 352);
+            this.bars_Extended_GroupBox.TabIndex = 158;
+            this.bars_Extended_GroupBox.TabStop = false;
+            this.bars_Extended_GroupBox.Text = "Extended ProgressBar";
+            // 
+            // bars_Extended_EdgeWidth_Numeric
+            // 
+            this.bars_Extended_EdgeWidth_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.bars_Extended_EdgeWidth_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.bars_Extended_EdgeWidth_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.bars_Extended_EdgeWidth_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.bars_Extended_EdgeWidth_Numeric.Location = new System.Drawing.Point(240, 309);
+            this.bars_Extended_EdgeWidth_Numeric.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.bars_Extended_EdgeWidth_Numeric.Name = "bars_Extended_EdgeWidth_Numeric";
+            this.bars_Extended_EdgeWidth_Numeric.Size = new System.Drawing.Size(56, 22);
+            this.bars_Extended_EdgeWidth_Numeric.TabIndex = 154;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label8.Location = new System.Drawing.Point(152, 303);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 38);
+            this.label8.TabIndex = 155;
+            this.label8.Text = "Edge \r\nWidth";
+            // 
             // Extended_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.Controls.Add(this.Preview_Btn);
             this.Controls.Add(this.ZeroitThematicProgress1);
             this.Controls.Add(this.bars_Extended_GroupBox);
-            this.Controls.Add(this.Preview_Btn);
             this.DoubleBuffered = true;
             this.Name = "Extended_UC";
-            this.Size = new System.Drawing.Size(878, 341);
-            this.bars_Extended_GroupBox.ResumeLayout(false);
-            this.bars_Extended_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_EdgeWidth_Numeric)).EndInit();
+            this.Size = new System.Drawing.Size(577, 360);
             ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_ShadowOffset_Numeric)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -1606,6 +1635,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.bars_Extended_GroupBox.ResumeLayout(false);
+            this.bars_Extended_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bars_Extended_EdgeWidth_Numeric)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1665,10 +1697,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         public System.Windows.Forms.NumericUpDown bars_Extended_DashWidth_Numeric;
         public System.Windows.Forms.NumericUpDown bars_Extended_DashSpace_Numeric;
         public System.Windows.Forms.NumericUpDown bars_Extended_BarOffset_Numeric;
-        public System.Windows.Forms.GroupBox bars_Extended_GroupBox;
         public System.Windows.Forms.ColorDialog colorSelector;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.NumericUpDown bars_Extended_EdgeWidth_Numeric;
         public ZeroitThematicProgress ZeroitThematicProgress1;
+        private System.Windows.Forms.GroupBox bars_Extended_GroupBox;
+        public System.Windows.Forms.NumericUpDown bars_Extended_EdgeWidth_Numeric;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -123,9 +123,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(692, 16);
+            this.Preview_Btn.Location = new System.Drawing.Point(497, 14);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(72, 33);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -262,11 +262,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label2);
             this.bars_Extended_GroupBox.Controls.Add(this.circular_DaggerSmooth_UnfilledColor_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label4);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(643, 345);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(460, 305);
             this.bars_Extended_GroupBox.TabIndex = 113;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Dagger Smooth";
@@ -276,19 +276,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel4.Controls.Add(this.circular_DaggerSmooth_Rotate_Yes_RadioBtn);
             this.panel4.Controls.Add(this.circular_DaggerSmooth_Rotate_No_RadioBtn);
-            this.panel4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel4.Location = new System.Drawing.Point(530, 158);
+            this.panel4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel4.Location = new System.Drawing.Point(389, 152);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(104, 38);
+            this.panel4.Size = new System.Drawing.Size(62, 48);
             this.panel4.TabIndex = 163;
             // 
             // circular_DaggerSmooth_Rotate_Yes_RadioBtn
             // 
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.AutoSize = true;
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Checked = true;
-            this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Name = "circular_DaggerSmooth_Rotate_Yes_RadioBtn";
-            this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerSmooth_Rotate_Yes_RadioBtn.Text = "Yes";
@@ -298,9 +298,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerSmooth_Rotate_No_RadioBtn
             // 
             this.circular_DaggerSmooth_Rotate_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerSmooth_Rotate_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerSmooth_Rotate_No_RadioBtn.Location = new System.Drawing.Point(6, 25);
             this.circular_DaggerSmooth_Rotate_No_RadioBtn.Name = "circular_DaggerSmooth_Rotate_No_RadioBtn";
-            this.circular_DaggerSmooth_Rotate_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerSmooth_Rotate_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_Rotate_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerSmooth_Rotate_No_RadioBtn.Text = "No";
             this.circular_DaggerSmooth_Rotate_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -311,7 +311,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(433, 168);
+            this.label1.Location = new System.Drawing.Point(301, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 19);
             this.label1.TabIndex = 162;
@@ -322,19 +322,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn);
             this.panel1.Controls.Add(this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel1.Location = new System.Drawing.Point(530, 100);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel1.Location = new System.Drawing.Point(389, 100);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 38);
+            this.panel1.Size = new System.Drawing.Size(62, 40);
             this.panel1.TabIndex = 161;
             // 
             // circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn
             // 
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.AutoSize = true;
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Checked = true;
-            this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Name = "circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn";
-            this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerSmooth_AnimateEndAngle_Yes_RadioBtn.Text = "Yes";
@@ -344,9 +344,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn
             // 
             this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Location = new System.Drawing.Point(6, 21);
             this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Name = "circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn";
-            this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.Text = "No";
             this.circular_DaggerSmooth_AnimateEndAngle_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label21.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label21.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label21.Location = new System.Drawing.Point(433, 102);
+            this.label21.Location = new System.Drawing.Point(301, 102);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(87, 38);
             this.label21.TabIndex = 160;
@@ -379,15 +379,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Location = new System.Drawing.Point(106, 105);
+            this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Location = new System.Drawing.Point(89, 105);
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Name = "circular_DaggerSmooth_InnerFilledThickness_Numeric";
-            this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_InnerFilledThickness_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.TabIndex = 197;
             this.circular_DaggerSmooth_InnerFilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_InnerFilledThickness_Numeric_ValueChanged);
             // 
@@ -397,7 +398,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label18.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label18.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label18.Location = new System.Drawing.Point(214, 101);
+            this.label18.Location = new System.Drawing.Point(149, 101);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 38);
             this.label18.TabIndex = 196;
@@ -407,15 +408,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_OuterTransparency_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_OuterTransparency_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_OuterTransparency_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_OuterTransparency_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_OuterTransparency_Numeric.Location = new System.Drawing.Point(311, 106);
+            this.circular_DaggerSmooth_OuterTransparency_Numeric.Location = new System.Drawing.Point(246, 106);
             this.circular_DaggerSmooth_OuterTransparency_Numeric.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.circular_DaggerSmooth_OuterTransparency_Numeric.Name = "circular_DaggerSmooth_OuterTransparency_Numeric";
-            this.circular_DaggerSmooth_OuterTransparency_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_OuterTransparency_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_OuterTransparency_Numeric.TabIndex = 195;
             this.circular_DaggerSmooth_OuterTransparency_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_OuterTransparency_Numeric_ValueChanged);
             // 
@@ -425,9 +427,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerSmooth_InnerFilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerSmooth_InnerFilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerSmooth_InnerFilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerSmooth_InnerFilledColor_Btn.Location = new System.Drawing.Point(530, 212);
+            this.circular_DaggerSmooth_InnerFilledColor_Btn.Location = new System.Drawing.Point(246, 264);
             this.circular_DaggerSmooth_InnerFilledColor_Btn.Name = "circular_DaggerSmooth_InnerFilledColor_Btn";
-            this.circular_DaggerSmooth_InnerFilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerSmooth_InnerFilledColor_Btn.Size = new System.Drawing.Size(42, 31);
             this.circular_DaggerSmooth_InnerFilledColor_Btn.TabIndex = 194;
             this.circular_DaggerSmooth_InnerFilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerSmooth_InnerFilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerSmooth_InnerFilledColor_Btn_Click);
@@ -438,7 +440,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label17.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label17.Location = new System.Drawing.Point(433, 213);
+            this.label17.Location = new System.Drawing.Point(149, 261);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(80, 38);
             this.label17.TabIndex = 193;
@@ -451,7 +453,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerSmooth_BorderWidth_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerSmooth_BorderWidth_Numeric.Location = new System.Drawing.Point(106, 425);
             this.circular_DaggerSmooth_BorderWidth_Numeric.Name = "circular_DaggerSmooth_BorderWidth_Numeric";
-            this.circular_DaggerSmooth_BorderWidth_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_BorderWidth_Numeric.Size = new System.Drawing.Size(62, 25);
             this.circular_DaggerSmooth_BorderWidth_Numeric.TabIndex = 192;
             this.circular_DaggerSmooth_BorderWidth_Numeric.Visible = false;
             // 
@@ -526,7 +528,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(9, 158);
+            this.label3.Location = new System.Drawing.Point(9, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 38);
             this.label3.TabIndex = 178;
@@ -536,15 +538,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_UnfilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_UnfilledThickness_Numeric.Location = new System.Drawing.Point(106, 160);
+            this.circular_DaggerSmooth_UnfilledThickness_Numeric.Location = new System.Drawing.Point(89, 155);
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.Name = "circular_DaggerSmooth_UnfilledThickness_Numeric";
-            this.circular_DaggerSmooth_UnfilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_UnfilledThickness_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.TabIndex = 177;
             this.circular_DaggerSmooth_UnfilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_UnfilledThickness_Numeric_ValueChanged);
             // 
@@ -564,15 +567,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_FilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_FilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_FilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_FilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_FilledThickness_Numeric.Location = new System.Drawing.Point(106, 46);
+            this.circular_DaggerSmooth_FilledThickness_Numeric.Location = new System.Drawing.Point(89, 46);
             this.circular_DaggerSmooth_FilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerSmooth_FilledThickness_Numeric.Name = "circular_DaggerSmooth_FilledThickness_Numeric";
-            this.circular_DaggerSmooth_FilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_FilledThickness_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_FilledThickness_Numeric.TabIndex = 168;
             this.circular_DaggerSmooth_FilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_FilledThickness_Numeric_ValueChanged);
             // 
@@ -582,7 +586,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(214, 43);
+            this.label7.Location = new System.Drawing.Point(149, 43);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 38);
             this.label7.TabIndex = 167;
@@ -592,15 +596,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_InnerTransparency_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_InnerTransparency_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_InnerTransparency_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_InnerTransparency_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_InnerTransparency_Numeric.Location = new System.Drawing.Point(311, 46);
+            this.circular_DaggerSmooth_InnerTransparency_Numeric.Location = new System.Drawing.Point(246, 46);
             this.circular_DaggerSmooth_InnerTransparency_Numeric.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.circular_DaggerSmooth_InnerTransparency_Numeric.Name = "circular_DaggerSmooth_InnerTransparency_Numeric";
-            this.circular_DaggerSmooth_InnerTransparency_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_InnerTransparency_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_InnerTransparency_Numeric.TabIndex = 166;
             this.circular_DaggerSmooth_InnerTransparency_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_InnerTransparency_Numeric_ValueChanged);
             // 
@@ -610,7 +615,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(9, 213);
+            this.label6.Location = new System.Drawing.Point(9, 203);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 38);
             this.label6.TabIndex = 165;
@@ -620,15 +625,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_AnimationSpeed_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_AnimationSpeed_Numeric.Location = new System.Drawing.Point(106, 217);
+            this.circular_DaggerSmooth_AnimationSpeed_Numeric.Location = new System.Drawing.Point(89, 207);
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.Name = "circular_DaggerSmooth_AnimationSpeed_Numeric";
-            this.circular_DaggerSmooth_AnimationSpeed_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_AnimationSpeed_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.TabIndex = 164;
             this.circular_DaggerSmooth_AnimationSpeed_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_AnimationSpeed_Numeric_ValueChanged);
             // 
@@ -637,19 +643,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel2.Controls.Add(this.circular_DaggerSmooth_Animated_Yes_RadioBtn);
             this.panel2.Controls.Add(this.circular_DaggerSmooth_Animated_No_RadioBtn);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel2.Location = new System.Drawing.Point(530, 41);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel2.Location = new System.Drawing.Point(389, 41);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(104, 38);
+            this.panel2.Size = new System.Drawing.Size(62, 40);
             this.panel2.TabIndex = 159;
             // 
             // circular_DaggerSmooth_Animated_Yes_RadioBtn
             // 
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.AutoSize = true;
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Checked = true;
-            this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Name = "circular_DaggerSmooth_Animated_Yes_RadioBtn";
-            this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerSmooth_Animated_Yes_RadioBtn.Text = "Yes";
@@ -659,9 +665,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerSmooth_Animated_No_RadioBtn
             // 
             this.circular_DaggerSmooth_Animated_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerSmooth_Animated_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerSmooth_Animated_No_RadioBtn.Location = new System.Drawing.Point(6, 22);
             this.circular_DaggerSmooth_Animated_No_RadioBtn.Name = "circular_DaggerSmooth_Animated_No_RadioBtn";
-            this.circular_DaggerSmooth_Animated_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerSmooth_Animated_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerSmooth_Animated_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerSmooth_Animated_No_RadioBtn.Text = "No";
             this.circular_DaggerSmooth_Animated_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -670,15 +676,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerSmooth_EndAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerSmooth_EndAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerSmooth_EndAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerSmooth_EndAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerSmooth_EndAngle_Numeric.Location = new System.Drawing.Point(311, 160);
+            this.circular_DaggerSmooth_EndAngle_Numeric.Location = new System.Drawing.Point(246, 155);
             this.circular_DaggerSmooth_EndAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.circular_DaggerSmooth_EndAngle_Numeric.Name = "circular_DaggerSmooth_EndAngle_Numeric";
-            this.circular_DaggerSmooth_EndAngle_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerSmooth_EndAngle_Numeric.Size = new System.Drawing.Size(42, 22);
             this.circular_DaggerSmooth_EndAngle_Numeric.TabIndex = 156;
             this.circular_DaggerSmooth_EndAngle_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerSmooth_EndAngle_Numeric_ValueChanged);
             // 
@@ -688,7 +695,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(214, 165);
+            this.label23.Location = new System.Drawing.Point(149, 157);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(71, 19);
             this.label23.TabIndex = 148;
@@ -700,7 +707,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label14.Location = new System.Drawing.Point(432, 46);
+            this.label14.Location = new System.Drawing.Point(300, 46);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 19);
             this.label14.TabIndex = 130;
@@ -712,9 +719,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerSmooth_FilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerSmooth_FilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerSmooth_FilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerSmooth_FilledColor_Btn.Location = new System.Drawing.Point(311, 215);
+            this.circular_DaggerSmooth_FilledColor_Btn.Location = new System.Drawing.Point(246, 200);
             this.circular_DaggerSmooth_FilledColor_Btn.Name = "circular_DaggerSmooth_FilledColor_Btn";
-            this.circular_DaggerSmooth_FilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerSmooth_FilledColor_Btn.Size = new System.Drawing.Size(42, 31);
             this.circular_DaggerSmooth_FilledColor_Btn.TabIndex = 111;
             this.circular_DaggerSmooth_FilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerSmooth_FilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerSmooth_FilledColor_Btn_Click);
@@ -725,7 +732,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(214, 212);
+            this.label2.Location = new System.Drawing.Point(149, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 38);
             this.label2.TabIndex = 110;
@@ -737,9 +744,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerSmooth_UnfilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerSmooth_UnfilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerSmooth_UnfilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerSmooth_UnfilledColor_Btn.Location = new System.Drawing.Point(311, 284);
+            this.circular_DaggerSmooth_UnfilledColor_Btn.Location = new System.Drawing.Point(89, 267);
             this.circular_DaggerSmooth_UnfilledColor_Btn.Name = "circular_DaggerSmooth_UnfilledColor_Btn";
-            this.circular_DaggerSmooth_UnfilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerSmooth_UnfilledColor_Btn.Size = new System.Drawing.Size(42, 31);
             this.circular_DaggerSmooth_UnfilledColor_Btn.TabIndex = 107;
             this.circular_DaggerSmooth_UnfilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerSmooth_UnfilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerSmooth_UnfilledColor_Btn_Click);
@@ -750,7 +757,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(213, 280);
+            this.label4.Location = new System.Drawing.Point(10, 260);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 38);
             this.label4.TabIndex = 105;
@@ -758,14 +765,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -837,6 +844,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -869,6 +877,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -954,6 +963,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -963,7 +973,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -979,6 +989,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -1036,11 +1047,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(659, 105);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(469, 68);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -1277,8 +1289,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1351,12 +1365,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1365,6 +1379,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1377,7 +1392,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1396,7 +1411,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = true;
             this.ZeroitThematicProgress1.ShowValue = true;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(178, 200);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(112, 121);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1420,6 +1435,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1491,7 +1507,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "DaggerSmooth_UC";
-            this.Size = new System.Drawing.Size(845, 356);
+            this.Size = new System.Drawing.Size(588, 314);
             ((System.ComponentModel.ISupportInitialize)(this.circular_Gorgeous_Border_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circular_Gorgeous_ShiftInner_Numeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circular_Gorgeous_ShiftInnerCover_Numeric)).EndInit();

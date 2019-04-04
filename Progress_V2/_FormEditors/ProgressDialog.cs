@@ -277,198 +277,265 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         private void SelectedBar()
         {
+            mainViewer.Visible = true;
             if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                 (int)ProgressBar.RPExtendedProgress)
             {
+                
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(extended_UC);
                 extended_UC.Visible = true;
-                extended_UC.Location = new Point(321, 45);
+                //extended_UC.Width = mainViewer.Width;
+                //extended_UC.Dock = DockStyle.Fill;
+                //extended_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPIndicator)
             {
+                
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(indicator_UC);
                 indicator_UC.Visible = true;
-                indicator_UC.Location = new Point(321, 45);
+                //indicator_UC.Width = mainViewer.Width;
+                //indicator_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPiTunes)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(iTunes_UC);
                 iTunes_UC.Visible = true;
-                iTunes_UC.Location = new Point(321, 45);
+                //iTunes_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPMaze)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(maze_UC);
                 maze_UC.Visible = true;
-                maze_UC.Location = new Point(321, 45);
+                //maze_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPProgNormal)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(antonio_Normal_UC);
                 antonio_Normal_UC.Visible = true;
-                antonio_Normal_UC.Location = new Point(321, 45);
+                //antonio_Normal_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPAlter)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(alter_UC);
                 alter_UC.Visible = true;
-                alter_UC.Location = new Point(321, 45);
+                //alter_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPClear)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(clear_UC);
                 clear_UC.Visible = true;
-                clear_UC.Location = new Point(321, 45);
+                //clear_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPPerplex)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(perplex_UC);
                 perplex_UC.Visible = true;
-                perplex_UC.Location = new Point(321, 45);
+                //perplex_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPRect)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(rect_UC);
                 rect_UC.Visible = true;
-                rect_UC.Location = new Point(321, 45);
+                //rect_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPSplitter)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(splitter_UC);
                 splitter_UC.Visible = true;
-                splitter_UC.Location = new Point(321, 45);
+                //splitter_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.RPTransparent)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(transparent_UC);
                 transparent_UC.Visible = true;
-                transparent_UC.Location = new Point(321, 45);
+                //transparent_UC.Location = new Point(321, 45);
             }
         
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                 (int)ProgressBar.CPBarCircular)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressBar_UC);
                 circularProgressBar_UC.Visible = true;
-                circularProgressBar_UC.Location = new Point(321, 45);
+                //circularProgressBar_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPBarCircularDefault)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressBarDefault_UC);
                 circularProgressBarDefault_UC.Visible = true;
-                circularProgressBarDefault_UC.Location = new Point(321, 45);
+                //circularProgressBarDefault_UC.Location = new Point(321, 45);
             }
 
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPv2)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressV2_UC);
                 circularProgressV2_UC.Visible = true;
-                circularProgressV2_UC.Location = new Point(321, 45);
+                //circularProgressV2_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPv3)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressV3_UC);
                 circularProgressV3_UC.Visible = true;
-                circularProgressV3_UC.Location = new Point(321, 45);
+                //circularProgressV3_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPv4)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressV4_UC);
                 circularProgressV4_UC.Visible = true;
-                circularProgressV4_UC.Location = new Point(321, 45);
+                //circularProgressV4_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPv5)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularProgressV5_UC);
                 circularProgressV5_UC.Visible = true;
-                circularProgressV5_UC.Location = new Point(321, 45);
+                //circularProgressV5_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPGorgeous)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(gorgeous_UC);
                 gorgeous_UC.Visible = true;
-                gorgeous_UC.Location = new Point(321, 45);
+                //gorgeous_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPIgnito)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(ignito_UC);
                 ignito_UC.Visible = true;
-                ignito_UC.Location = new Point(321, 45);
+                //ignito_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPAwesome)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(progressAwesome_UC);
                 progressAwesome_UC.Visible = true;
-                progressAwesome_UC.Location = new Point(321, 45);
+                //progressAwesome_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPPerfect)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(progressBarPerfect_UC);
                 progressBarPerfect_UC.Visible = true;
-                progressBarPerfect_UC.Location = new Point(321, 45);
+                //progressBarPerfect_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPProgressPie)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(progressBarPie_UC);
                 progressBarPie_UC.Visible = true;
-                progressBarPie_UC.Location = new Point(321, 45);
+                //progressBarPie_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPRotatingArc)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(rotatingArc_UC);
                 rotatingArc_UC.Visible = true;
-                rotatingArc_UC.Location = new Point(321, 45);
+                //rotatingArc_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPRotatingCompass)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(rotatingCompass_UC);
                 rotatingCompass_UC.Visible = true;
-                rotatingCompass_UC.Location = new Point(321, 45);
+                //rotatingCompass_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPSupreme)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(supreme_UC);
                 supreme_UC.Visible = true;
-                supreme_UC.Location = new Point(321, 45);
+                //supreme_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPMulitCo)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(zeroitMultiCo_UC);
                 zeroitMultiCo_UC.Visible = true;
-                zeroitMultiCo_UC.Location = new Point(321, 45);
+                //zeroitMultiCo_UC.Location = new Point(321, 45);
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPMultiCoExtended)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(zeroitMultiCoExtended_UC);
                 zeroitMultiCoExtended_UC.Visible = true;
-                zeroitMultiCoExtended_UC.Location = new Point(321, 45);
+                //zeroitMultiCoExtended_UC.Location = new Point(321, 45);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPMultiCoV1)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(zeroitMultiCoExtendedV1_UC);
                 zeroitMultiCoExtendedV1_UC.Visible = true;
-                zeroitMultiCoExtendedV1_UC.Location = new Point(321, 45);
+                //zeroitMultiCoExtendedV1_UC.Location = new Point(321, 45);
             }
         
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                 (int)ProgressBar.IPIndeterminate)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(circularIndeterminate_UC);
                 circularIndeterminate_UC.Visible = true;
-                circularIndeterminate_UC.Location = new Point(321, 45);
+                //circularIndeterminate_UC.Location = new Point(321, 45);
 
                 circularIndeterminate_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 circularIndeterminate_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPIndeterminate;
+                circularIndeterminate_UC.ZeroitThematicProgress1.BackgroundColor = Color.FromArgb(25, 25, 25);
             }
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPGoogle)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(googleProgress_UC);
                 googleProgress_UC.Visible = true;
-                googleProgress_UC.Location = new Point(321, 45);
+                //googleProgress_UC.Location = new Point(321, 45);
 
                 googleProgress_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 googleProgress_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPGoogle;
@@ -476,8 +543,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPMacOSX)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(macOSX_UC);
                 macOSX_UC.Visible = true;
-                macOSX_UC.Location = new Point(321, 45);
+                //macOSX_UC.Location = new Point(321, 45);
 
                 macOSX_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 macOSX_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPMacOSX;
@@ -485,8 +554,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPMacOSXOptimized)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(macOSX_Optimized_UC);
                 macOSX_Optimized_UC.Visible = true;
-                macOSX_Optimized_UC.Location = new Point(321, 45);
+                //macOSX_Optimized_UC.Location = new Point(321, 45);
 
                 macOSX_Optimized_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 macOSX_Optimized_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPMacOSXOptimized;
@@ -494,8 +565,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPMatrix)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(matrix_UC);
                 matrix_UC.Visible = true;
-                matrix_UC.Location = new Point(321, 45);
+                //matrix_UC.Location = new Point(321, 45);
 
                 matrix_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 matrix_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPMatrix;
@@ -503,8 +576,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPV1)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(progressIndicator_UC);
                 progressIndicator_UC.Visible = true;
-                progressIndicator_UC.Location = new Point(321, 45);
+                //progressIndicator_UC.Location = new Point(321, 45);
 
                 progressIndicator_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 progressIndicator_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPV1;
@@ -512,8 +587,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPUnique)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(progressIndicatorUnique_UC);
                 progressIndicatorUnique_UC.Visible = true;
-                progressIndicatorUnique_UC.Location = new Point(321, 45);
+                //progressIndicatorUnique_UC.Location = new Point(321, 45);
 
                 progressIndicatorUnique_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 progressIndicatorUnique_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPUnique;
@@ -521,8 +598,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPSpinnerCircle)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(spinnerCircle_UC);
                 spinnerCircle_UC.Visible = true;
-                spinnerCircle_UC.Location = new Point(321, 45);
+                //spinnerCircle_UC.Location = new Point(321, 45);
 
                 spinnerCircle_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 spinnerCircle_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPSpinnerCircle;
@@ -534,8 +613,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPVuvuzela)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(vuvuzela_UC);
                 vuvuzela_UC.Visible = true;
-                vuvuzela_UC.Location = new Point(321, 45);
+                //vuvuzela_UC.Location = new Point(321, 45);
 
                 vuvuzela_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 vuvuzela_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPVuvuzela;
@@ -543,8 +624,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPWin8Horizontal)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(winHorizontal_UC);
                 winHorizontal_UC.Visible = true;
-                winHorizontal_UC.Location = new Point(321, 45);
+                //winHorizontal_UC.Location = new Point(321, 45);
 
                 winHorizontal_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 winHorizontal_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPWin8Horizontal;
@@ -552,8 +635,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.IPWin8Ring)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(winRing_UC);
                 winRing_UC.Visible = true;
-                winRing_UC.Location = new Point(321, 45);
+                //winRing_UC.Location = new Point(321, 45);
 
                 winRing_UC.ZeroitThematicProgress1.ProgressType = ProgressType.Bar;
                 winRing_UC.ZeroitThematicProgress1.SolidProgressBar = ProgressBar.IPWin8Ring;
@@ -562,24 +647,30 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPDagger)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(dagger_UC);
                 dagger_UC.Visible = true;
-                dagger_UC.Location = new Point(321, 45);
+                //dagger_UC.Location = new Point(321, 45);
                 
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPDaggerV1)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(daggerV2_UC);
                 daggerV2_UC.Visible = true;
-                daggerV2_UC.Location = new Point(321, 45);
+                //daggerV2_UC.Location = new Point(321, 45);
 
             }
 
             else if (mainControl_BarProgress_ComboBox.SelectedIndex ==
                      (int)ProgressBar.CPDaggerSmooth)
             {
+                mainViewer.Controls.Clear();
+                mainViewer.Controls.Add(daggerSmooth_UC);
                 daggerSmooth_UC.Visible = true;
-                daggerSmooth_UC.Location = new Point(321, 45);
+                //daggerSmooth_UC.Location = new Point(321, 45);
 
             }
         }
@@ -2259,7 +2350,30 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
         private void closeBtn_Click(object sender, EventArgs e)
         {
+            this.Dispose();
             this.Close();
+        }
+
+        /// <summary>
+        /// Handles the MouseEnter event of the closeBtn control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void closeBtn_MouseEnter(object sender, EventArgs e)
+        {
+            closeBtn.BackColor = Color.Red;
+            closeBtn.FlatAppearance.BorderSize = 0;
+        }
+
+        /// <summary>
+        /// Handles the MouseLeave event of the closeBtn control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+        private void closeBtn_MouseLeave(object sender, EventArgs e)
+        {
+            closeBtn.FlatAppearance.BorderSize = 1;
+            closeBtn.BackColor = Color.FromArgb(22, 22, 22);
         }
 
 
@@ -2370,5 +2484,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         {
             UserControl_Transparency();
         }
+
+        
+
+        
     }
 }

@@ -110,9 +110,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(727, 15);
+            this.Preview_Btn.Location = new System.Drawing.Point(471, 17);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(69, 29);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -163,7 +163,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(677, 400);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(424, 400);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Supreme";
@@ -172,8 +172,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Supreme_VerticalTweak_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_VerticalTweak_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_VerticalTweak_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_VerticalTweak_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_VerticalTweak_Numeric.Location = new System.Drawing.Point(115, 355);
+            this.circular_Supreme_VerticalTweak_Numeric.Location = new System.Drawing.Point(84, 348);
             this.circular_Supreme_VerticalTweak_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -185,7 +186,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_VerticalTweak_Numeric.Name = "circular_Supreme_VerticalTweak_Numeric";
-            this.circular_Supreme_VerticalTweak_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.circular_Supreme_VerticalTweak_Numeric.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_VerticalTweak_Numeric.TabIndex = 216;
             this.circular_Supreme_VerticalTweak_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_VerticalTweak_Numeric_ValueChanged);
             // 
@@ -205,8 +206,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Supreme_HorizontalTweak_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_HorizontalTweak_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_HorizontalTweak_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_HorizontalTweak_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_HorizontalTweak_Numeric.Location = new System.Drawing.Point(115, 297);
+            this.circular_Supreme_HorizontalTweak_Numeric.Location = new System.Drawing.Point(84, 296);
             this.circular_Supreme_HorizontalTweak_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -218,7 +220,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_HorizontalTweak_Numeric.Name = "circular_Supreme_HorizontalTweak_Numeric";
-            this.circular_Supreme_HorizontalTweak_Numeric.Size = new System.Drawing.Size(104, 29);
+            this.circular_Supreme_HorizontalTweak_Numeric.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_HorizontalTweak_Numeric.TabIndex = 214;
             this.circular_Supreme_HorizontalTweak_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_HorizontalTweak_Numeric_ValueChanged);
             // 
@@ -238,8 +240,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Supreme_HeightTweak_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_HeightTweak_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_HeightTweak_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_HeightTweak_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_HeightTweak_Numeric.Location = new System.Drawing.Point(590, 296);
+            this.circular_Supreme_HeightTweak_Numeric.Location = new System.Drawing.Point(377, 297);
             this.circular_Supreme_HeightTweak_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -251,7 +254,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_HeightTweak_Numeric.Name = "circular_Supreme_HeightTweak_Numeric";
-            this.circular_Supreme_HeightTweak_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_HeightTweak_Numeric.Size = new System.Drawing.Size(39, 25);
             this.circular_Supreme_HeightTweak_Numeric.TabIndex = 212;
             this.circular_Supreme_HeightTweak_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_HeightTweak_Numeric_ValueChanged);
             // 
@@ -261,18 +264,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label15.Location = new System.Drawing.Point(487, 301);
+            this.label15.Location = new System.Drawing.Point(311, 293);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(91, 19);
+            this.label15.Size = new System.Drawing.Size(54, 38);
             this.label15.TabIndex = 211;
-            this.label15.Text = "Height Tweek";
+            this.label15.Text = "Height \r\nTweek";
             // 
             // circular_Supreme_WidthTweak_Numeric
             // 
             this.circular_Supreme_WidthTweak_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_WidthTweak_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_WidthTweak_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_WidthTweak_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_WidthTweak_Numeric.Location = new System.Drawing.Point(375, 297);
+            this.circular_Supreme_WidthTweak_Numeric.Location = new System.Drawing.Point(247, 296);
             this.circular_Supreme_WidthTweak_Numeric.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -284,7 +288,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_WidthTweak_Numeric.Name = "circular_Supreme_WidthTweak_Numeric";
-            this.circular_Supreme_WidthTweak_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_WidthTweak_Numeric.Size = new System.Drawing.Size(41, 25);
             this.circular_Supreme_WidthTweak_Numeric.TabIndex = 210;
             this.circular_Supreme_WidthTweak_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_WidthTweak_Numeric_ValueChanged);
             // 
@@ -294,11 +298,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label16.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label16.Location = new System.Drawing.Point(252, 302);
+            this.label16.Location = new System.Drawing.Point(167, 295);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 19);
+            this.label16.Size = new System.Drawing.Size(50, 38);
             this.label16.TabIndex = 209;
-            this.label16.Text = "Width Tweak";
+            this.label16.Text = "Width \r\nTweak";
             // 
             // circular_Supreme_EndCap_ComboBox
             // 
@@ -308,9 +312,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_EndCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_EndCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Supreme_EndCap_ComboBox.FormattingEnabled = true;
-            this.circular_Supreme_EndCap_ComboBox.Location = new System.Drawing.Point(115, 246);
+            this.circular_Supreme_EndCap_ComboBox.Location = new System.Drawing.Point(84, 245);
             this.circular_Supreme_EndCap_ComboBox.Name = "circular_Supreme_EndCap_ComboBox";
-            this.circular_Supreme_EndCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Supreme_EndCap_ComboBox.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_EndCap_ComboBox.TabIndex = 208;
             this.circular_Supreme_EndCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Supreme_EndCap_ComboBox_SelectedIndexChanged);
             // 
@@ -334,9 +338,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_StartCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_StartCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Supreme_StartCap_ComboBox.FormattingEnabled = true;
-            this.circular_Supreme_StartCap_ComboBox.Location = new System.Drawing.Point(115, 194);
+            this.circular_Supreme_StartCap_ComboBox.Location = new System.Drawing.Point(84, 193);
             this.circular_Supreme_StartCap_ComboBox.Name = "circular_Supreme_StartCap_ComboBox";
-            this.circular_Supreme_StartCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Supreme_StartCap_ComboBox.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_StartCap_ComboBox.TabIndex = 206;
             this.circular_Supreme_StartCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Supreme_StartCap_ComboBox_SelectedIndexChanged);
             // 
@@ -360,9 +364,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_Type_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_Type_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Supreme_Type_ComboBox.FormattingEnabled = true;
-            this.circular_Supreme_Type_ComboBox.Location = new System.Drawing.Point(115, 40);
+            this.circular_Supreme_Type_ComboBox.Location = new System.Drawing.Point(84, 39);
             this.circular_Supreme_Type_ComboBox.Name = "circular_Supreme_Type_ComboBox";
-            this.circular_Supreme_Type_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Supreme_Type_ComboBox.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_Type_ComboBox.TabIndex = 204;
             this.circular_Supreme_Type_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Supreme_Type_ComboBox_SelectedIndexChanged);
             // 
@@ -382,8 +386,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Supreme_SweepAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_SweepAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_SweepAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_SweepAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_SweepAngle_Numeric.Location = new System.Drawing.Point(590, 190);
+            this.circular_Supreme_SweepAngle_Numeric.Location = new System.Drawing.Point(377, 191);
             this.circular_Supreme_SweepAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
@@ -395,7 +400,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_SweepAngle_Numeric.Name = "circular_Supreme_SweepAngle_Numeric";
-            this.circular_Supreme_SweepAngle_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_SweepAngle_Numeric.Size = new System.Drawing.Size(39, 25);
             this.circular_Supreme_SweepAngle_Numeric.TabIndex = 202;
             this.circular_Supreme_SweepAngle_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_SweepAngle_Numeric_ValueChanged);
             // 
@@ -405,18 +410,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(487, 195);
+            this.label11.Location = new System.Drawing.Point(311, 184);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(87, 19);
+            this.label11.Size = new System.Drawing.Size(52, 38);
             this.label11.TabIndex = 201;
-            this.label11.Text = "Sweep Angle";
+            this.label11.Text = "Sweep \r\nAngle";
             // 
             // circular_Supreme_StartAngle_Numeric
             // 
             this.circular_Supreme_StartAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_StartAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_StartAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_StartAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_StartAngle_Numeric.Location = new System.Drawing.Point(375, 191);
+            this.circular_Supreme_StartAngle_Numeric.Location = new System.Drawing.Point(247, 187);
             this.circular_Supreme_StartAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
@@ -428,7 +434,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_StartAngle_Numeric.Name = "circular_Supreme_StartAngle_Numeric";
-            this.circular_Supreme_StartAngle_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_StartAngle_Numeric.Size = new System.Drawing.Size(41, 25);
             this.circular_Supreme_StartAngle_Numeric.TabIndex = 200;
             this.circular_Supreme_StartAngle_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_StartAngle_Numeric_ValueChanged);
             // 
@@ -438,18 +444,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(252, 197);
+            this.label8.Location = new System.Drawing.Point(167, 187);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(77, 19);
+            this.label8.Size = new System.Drawing.Size(44, 38);
             this.label8.TabIndex = 199;
-            this.label8.Text = "Start Angle";
+            this.label8.Text = "Start \r\nAngle";
             // 
             // circular_Supreme_Angle_Numeric
             // 
             this.circular_Supreme_Angle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_Angle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_Angle_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_Angle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_Angle_Numeric.Location = new System.Drawing.Point(375, 133);
+            this.circular_Supreme_Angle_Numeric.Location = new System.Drawing.Point(247, 136);
             this.circular_Supreme_Angle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
@@ -461,7 +468,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             0,
             -2147483648});
             this.circular_Supreme_Angle_Numeric.Name = "circular_Supreme_Angle_Numeric";
-            this.circular_Supreme_Angle_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_Angle_Numeric.Size = new System.Drawing.Size(41, 25);
             this.circular_Supreme_Angle_Numeric.TabIndex = 198;
             this.circular_Supreme_Angle_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_Angle_Numeric_ValueChanged);
             // 
@@ -471,7 +478,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(252, 139);
+            this.label1.Location = new System.Drawing.Point(167, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 19);
             this.label1.TabIndex = 197;
@@ -481,10 +488,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_Supreme_InnerBorder_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_InnerBorder_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_InnerBorder_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_InnerBorder_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_InnerBorder_Numeric.Location = new System.Drawing.Point(590, 243);
+            this.circular_Supreme_InnerBorder_Numeric.Location = new System.Drawing.Point(377, 244);
             this.circular_Supreme_InnerBorder_Numeric.Name = "circular_Supreme_InnerBorder_Numeric";
-            this.circular_Supreme_InnerBorder_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_InnerBorder_Numeric.Size = new System.Drawing.Size(39, 25);
             this.circular_Supreme_InnerBorder_Numeric.TabIndex = 196;
             this.circular_Supreme_InnerBorder_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_InnerBorder_Numeric_ValueChanged);
             // 
@@ -494,11 +502,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(487, 248);
+            this.label7.Location = new System.Drawing.Point(311, 241);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 19);
+            this.label7.Size = new System.Drawing.Size(50, 38);
             this.label7.TabIndex = 195;
-            this.label7.Text = "Inner Border";
+            this.label7.Text = "Inner \r\nBorder";
             // 
             // circular_Supreme_GradientMode_ComboBox
             // 
@@ -508,9 +516,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_GradientMode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_GradientMode_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Supreme_GradientMode_ComboBox.FormattingEnabled = true;
-            this.circular_Supreme_GradientMode_ComboBox.Location = new System.Drawing.Point(115, 137);
+            this.circular_Supreme_GradientMode_ComboBox.Location = new System.Drawing.Point(84, 136);
             this.circular_Supreme_GradientMode_ComboBox.Name = "circular_Supreme_GradientMode_ComboBox";
-            this.circular_Supreme_GradientMode_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Supreme_GradientMode_ComboBox.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_GradientMode_ComboBox.TabIndex = 194;
             this.circular_Supreme_GradientMode_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Supreme_GradientMode_ComboBox_SelectedIndexChanged);
             // 
@@ -522,9 +530,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label4.Location = new System.Drawing.Point(5, 137);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 19);
+            this.label4.Size = new System.Drawing.Size(66, 38);
             this.label4.TabIndex = 193;
-            this.label4.Text = "Gradient Mode";
+            this.label4.Text = "Gradient \r\nMode";
             // 
             // circular_Supreme_ProgressColor_Btn
             // 
@@ -532,9 +540,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_ProgressColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Supreme_ProgressColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Supreme_ProgressColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Supreme_ProgressColor_Btn.Location = new System.Drawing.Point(590, 85);
+            this.circular_Supreme_ProgressColor_Btn.Location = new System.Drawing.Point(377, 86);
             this.circular_Supreme_ProgressColor_Btn.Name = "circular_Supreme_ProgressColor_Btn";
-            this.circular_Supreme_ProgressColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.circular_Supreme_ProgressColor_Btn.Size = new System.Drawing.Size(39, 24);
             this.circular_Supreme_ProgressColor_Btn.TabIndex = 192;
             this.circular_Supreme_ProgressColor_Btn.UseVisualStyleBackColor = false;
             this.circular_Supreme_ProgressColor_Btn.Click += new System.EventHandler(this.circular_Supreme_ProgressColor_Btn_Click);
@@ -545,11 +553,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(487, 85);
+            this.label5.Location = new System.Drawing.Point(311, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 19);
+            this.label5.Size = new System.Drawing.Size(66, 38);
             this.label5.TabIndex = 191;
-            this.label5.Text = "Progress Color";
+            this.label5.Text = "Progress \r\nColor";
             // 
             // circular_Supreme_OuterColor_Btn
             // 
@@ -557,9 +565,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_OuterColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Supreme_OuterColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Supreme_OuterColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Supreme_OuterColor_Btn.Location = new System.Drawing.Point(590, 37);
+            this.circular_Supreme_OuterColor_Btn.Location = new System.Drawing.Point(377, 38);
             this.circular_Supreme_OuterColor_Btn.Name = "circular_Supreme_OuterColor_Btn";
-            this.circular_Supreme_OuterColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.circular_Supreme_OuterColor_Btn.Size = new System.Drawing.Size(39, 24);
             this.circular_Supreme_OuterColor_Btn.TabIndex = 190;
             this.circular_Supreme_OuterColor_Btn.UseVisualStyleBackColor = false;
             this.circular_Supreme_OuterColor_Btn.Click += new System.EventHandler(this.circular_Supreme_OuterColor_Btn_Click);
@@ -570,11 +578,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(487, 41);
+            this.label6.Location = new System.Drawing.Point(311, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 19);
+            this.label6.Size = new System.Drawing.Size(49, 38);
             this.label6.TabIndex = 189;
-            this.label6.Text = "Outer Color";
+            this.label6.Text = "Outer \r\nColor";
             // 
             // circular_Supreme_DrawMode_ComboBox
             // 
@@ -584,9 +592,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_DrawMode_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_DrawMode_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_Supreme_DrawMode_ComboBox.FormattingEnabled = true;
-            this.circular_Supreme_DrawMode_ComboBox.Location = new System.Drawing.Point(115, 89);
+            this.circular_Supreme_DrawMode_ComboBox.Location = new System.Drawing.Point(84, 88);
             this.circular_Supreme_DrawMode_ComboBox.Name = "circular_Supreme_DrawMode_ComboBox";
-            this.circular_Supreme_DrawMode_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_Supreme_DrawMode_ComboBox.Size = new System.Drawing.Size(56, 25);
             this.circular_Supreme_DrawMode_ComboBox.TabIndex = 188;
             this.circular_Supreme_DrawMode_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_Supreme_DrawMode_ComboBox_SelectedIndexChanged);
             // 
@@ -598,9 +606,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label9.Location = new System.Drawing.Point(5, 90);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 19);
+            this.label9.Size = new System.Drawing.Size(45, 38);
             this.label9.TabIndex = 187;
-            this.label9.Text = "Draw Mode";
+            this.label9.Text = "Draw \r\nMode";
             // 
             // circular_Supreme_SolidColor_Btn
             // 
@@ -608,9 +616,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_SolidColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Supreme_SolidColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Supreme_SolidColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Supreme_SolidColor_Btn.Location = new System.Drawing.Point(590, 134);
+            this.circular_Supreme_SolidColor_Btn.Location = new System.Drawing.Point(377, 135);
             this.circular_Supreme_SolidColor_Btn.Name = "circular_Supreme_SolidColor_Btn";
-            this.circular_Supreme_SolidColor_Btn.Size = new System.Drawing.Size(70, 24);
+            this.circular_Supreme_SolidColor_Btn.Size = new System.Drawing.Size(39, 24);
             this.circular_Supreme_SolidColor_Btn.TabIndex = 184;
             this.circular_Supreme_SolidColor_Btn.UseVisualStyleBackColor = false;
             this.circular_Supreme_SolidColor_Btn.Click += new System.EventHandler(this.circular_Supreme_SolidColor_Btn_Click);
@@ -621,11 +629,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(487, 135);
+            this.label3.Location = new System.Drawing.Point(311, 130);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 19);
+            this.label3.Size = new System.Drawing.Size(42, 38);
             this.label3.TabIndex = 183;
-            this.label3.Text = "Solid Color";
+            this.label3.Text = "Solid \r\nColor";
             // 
             // circular_Supreme_GradColor2_Btn
             // 
@@ -633,9 +641,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_GradColor2_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Supreme_GradColor2_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Supreme_GradColor2_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Supreme_GradColor2_Btn.Location = new System.Drawing.Point(375, 86);
+            this.circular_Supreme_GradColor2_Btn.Location = new System.Drawing.Point(247, 85);
             this.circular_Supreme_GradColor2_Btn.Name = "circular_Supreme_GradColor2_Btn";
-            this.circular_Supreme_GradColor2_Btn.Size = new System.Drawing.Size(70, 24);
+            this.circular_Supreme_GradColor2_Btn.Size = new System.Drawing.Size(41, 24);
             this.circular_Supreme_GradColor2_Btn.TabIndex = 182;
             this.circular_Supreme_GradColor2_Btn.UseVisualStyleBackColor = false;
             this.circular_Supreme_GradColor2_Btn.Click += new System.EventHandler(this.circular_Supreme_GradColor2_Btn_Click);
@@ -646,20 +654,21 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(251, 89);
+            this.label2.Location = new System.Drawing.Point(166, 82);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 19);
+            this.label2.Size = new System.Drawing.Size(66, 38);
             this.label2.TabIndex = 181;
-            this.label2.Text = "Gradient Color 2";
+            this.label2.Text = "Gradient \r\nColor 2";
             // 
             // circular_Supreme_OuterBorder_Numeric
             // 
             this.circular_Supreme_OuterBorder_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_Supreme_OuterBorder_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_Supreme_OuterBorder_Numeric.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.circular_Supreme_OuterBorder_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_Supreme_OuterBorder_Numeric.Location = new System.Drawing.Point(375, 244);
+            this.circular_Supreme_OuterBorder_Numeric.Location = new System.Drawing.Point(247, 242);
             this.circular_Supreme_OuterBorder_Numeric.Name = "circular_Supreme_OuterBorder_Numeric";
-            this.circular_Supreme_OuterBorder_Numeric.Size = new System.Drawing.Size(70, 29);
+            this.circular_Supreme_OuterBorder_Numeric.Size = new System.Drawing.Size(41, 25);
             this.circular_Supreme_OuterBorder_Numeric.TabIndex = 156;
             this.circular_Supreme_OuterBorder_Numeric.ValueChanged += new System.EventHandler(this.circular_Supreme_OuterBorder_Numeric_ValueChanged);
             // 
@@ -669,11 +678,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(252, 249);
+            this.label23.Location = new System.Drawing.Point(167, 241);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(90, 19);
+            this.label23.Size = new System.Drawing.Size(50, 38);
             this.label23.TabIndex = 148;
-            this.label23.Text = "Outer Border";
+            this.label23.Text = "Outer \r\nBorder";
             // 
             // circular_Supreme_GradColor1_Btn
             // 
@@ -681,9 +690,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_Supreme_GradColor1_Btn.FlatAppearance.BorderSize = 0;
             this.circular_Supreme_GradColor1_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_Supreme_GradColor1_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_Supreme_GradColor1_Btn.Location = new System.Drawing.Point(375, 40);
+            this.circular_Supreme_GradColor1_Btn.Location = new System.Drawing.Point(247, 39);
             this.circular_Supreme_GradColor1_Btn.Name = "circular_Supreme_GradColor1_Btn";
-            this.circular_Supreme_GradColor1_Btn.Size = new System.Drawing.Size(70, 24);
+            this.circular_Supreme_GradColor1_Btn.Size = new System.Drawing.Size(41, 24);
             this.circular_Supreme_GradColor1_Btn.TabIndex = 173;
             this.circular_Supreme_GradColor1_Btn.UseVisualStyleBackColor = false;
             this.circular_Supreme_GradColor1_Btn.Click += new System.EventHandler(this.circular_Supreme_GradColor1_Btn_Click);
@@ -694,11 +703,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(252, 44);
+            this.label10.Location = new System.Drawing.Point(167, 32);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 19);
+            this.label10.Size = new System.Drawing.Size(66, 38);
             this.label10.TabIndex = 172;
-            this.label10.Text = "Gradient Color 1";
+            this.label10.Text = "Gradient \r\nColor 1";
             // 
             // numericUpDown1
             // 
@@ -722,14 +731,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -755,8 +764,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Bar2Smooth = 1;
             this.ZeroitThematicProgress1.Bar2Value = 0;
             this.ZeroitThematicProgress1.Bar3.ActiveColor = System.Drawing.Color.LightSeaGreen;
-            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Black;
-            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.LightGreen;
+            this.ZeroitThematicProgress1.Bar3.BorderColor = System.Drawing.Color.Gray;
+            this.ZeroitThematicProgress1.Bar3.FinishColor = System.Drawing.Color.Lime;
             this.ZeroitThematicProgress1.Bar3.InactiveColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.Bar3ActiveColor = System.Drawing.Color.LightSeaGreen;
             this.ZeroitThematicProgress1.Bar3BorderColor = System.Drawing.Color.Gray;
@@ -796,11 +805,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.BorderGradient = false;
             this.ZeroitThematicProgress1.BorderRoundCorners = false;
             this.ZeroitThematicProgress1.BorderSize = 0;
-            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.Single;
+            this.ZeroitThematicProgress1.BorderType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.BorderTypes.None;
             this.ZeroitThematicProgress1.Caption = "%";
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -833,6 +843,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -871,8 +882,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CPv5_Reset = false;
             this.ZeroitThematicProgress1.CPv5_Text = "ZeroitThematicProgress1";
             this.ZeroitThematicProgress1.CustomFadeColor = System.Drawing.SystemColors.Control;
-            this.ZeroitThematicProgress1.DagAnimSpeed = 100;
-            this.ZeroitThematicProgress1.DagAnimUpSpeed = 100;
+            this.ZeroitThematicProgress1.DagAnimSpeed = 5;
+            this.ZeroitThematicProgress1.DagAnimUpSpeed = 5;
             this.ZeroitThematicProgress1.DagDrawInnerCircle = true;
             this.ZeroitThematicProgress1.DagFilledColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(220)))), ((int)(((byte)(210)))));
             this.ZeroitThematicProgress1.DagFilledColorAlpha = 130;
@@ -918,6 +929,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -927,7 +939,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -943,6 +955,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -1000,18 +1013,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(688, 75);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(433, 74);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Matrix_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Matrix_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartAngle = 270F;
             this.ZeroitThematicProgress1.MacOSX_Matrix_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Matrix_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
@@ -1019,18 +1033,18 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.MacOSX_Optimized_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Interval = 60;
             this.ZeroitThematicProgress1.MacOSX_Optimized_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_Optimized_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartAngle = 30F;
             this.ZeroitThematicProgress1.MacOSX_Optimized_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Optimized_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MacOSX_Rotation = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.MacOSX_Direction.CLOCKWISE;
-            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 100;
+            this.ZeroitThematicProgress1.MacOSX_SpokesCount = 12;
             this.ZeroitThematicProgress1.MacOSX_StartAngle = 270;
             this.ZeroitThematicProgress1.MacOSX_StartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_TickColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
             this.ZeroitThematicProgress1.MainColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
             this.ZeroitThematicProgress1.Marquee = false;
-            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 2000F;
+            this.ZeroitThematicProgress1.MarqueeAnimationSpeed = 100F;
             this.ZeroitThematicProgress1.MarqueeSpeed = 100;
             this.ZeroitThematicProgress1.Maximum = 100F;
             this.ZeroitThematicProgress1.Maze_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -1229,7 +1243,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.OuterCircleRadius = 11;
             this.ZeroitThematicProgress1.OuterColor = System.Drawing.Color.Gray;
             this.ZeroitThematicProgress1.OuterMargin = -25;
-            this.ZeroitThematicProgress1.OuterRadius = 74;
+            this.ZeroitThematicProgress1.OuterRadius = 24;
             this.ZeroitThematicProgress1.OuterWidth = 26;
             this.ZeroitThematicProgress1.P_AnimationColor = System.Drawing.Color.DimGray;
             this.ZeroitThematicProgress1.P_BaseColor = System.Drawing.Color.DarkGray;
@@ -1241,8 +1255,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1317,12 +1333,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            //this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1331,6 +1347,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1343,7 +1360,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1362,7 +1379,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = true;
             this.ZeroitThematicProgress1.ShowValue = true;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(183, 202);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(128, 143);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1386,6 +1403,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1483,7 +1501,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "Supreme_UC";
-            this.Size = new System.Drawing.Size(874, 405);
+            this.Size = new System.Drawing.Size(566, 405);
             this.bars_Extended_GroupBox.ResumeLayout(false);
             this.bars_Extended_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.circular_Supreme_VerticalTweak_Numeric)).EndInit();

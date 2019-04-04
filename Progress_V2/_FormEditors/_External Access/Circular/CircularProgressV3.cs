@@ -70,18 +70,18 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
             #region Bool
 
-            if (progressInput.CPv3_ShowText == true)
-            {
-                circularProgressV3_UC.circular_V3_ShowText_Yes_RadioBtn.Checked = true;
+            //if (progressInput.CPv3_ShowText == true)
+            //{
+            //    circularProgressV3_UC.circular_V3_ShowText_Yes_RadioBtn.Checked = true;
 
-                circularProgressV3_UC.ZeroitThematicProgress1.CPv3_ShowText = true;
-            }
-            else
-            {
-                circularProgressV3_UC.circular_V3_ShowText_No_RadioBtn.Checked = true;
+            //    circularProgressV3_UC.ZeroitThematicProgress1.CPv3_ShowText = true;
+            //}
+            //else
+            //{
+            //    circularProgressV3_UC.circular_V3_ShowText_No_RadioBtn.Checked = true;
 
-                circularProgressV3_UC.ZeroitThematicProgress1.CPv3_ShowText = false;
-            }
+            //    circularProgressV3_UC.ZeroitThematicProgress1.CPv3_ShowText = false;
+            //}
 
             #endregion
 
@@ -231,15 +231,15 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
 
             #region Bool
 
-            if (circularProgressV3_UC.circular_V3_ShowText_Yes_RadioBtn.Checked == true)
-            {
-                progressInput.CPv3_ShowText = true;
+            //if (circularProgressV3_UC.circular_V3_ShowText_Yes_RadioBtn.Checked == true)
+            //{
+            //    progressInput.CPv3_ShowText = true;
                 
-            }
-            else
-            {
-                progressInput.CPv3_ShowText = false;
-            }
+            //}
+            //else
+            //{
+            //    progressInput.CPv3_ShowText = false;
+            //}
 
             #endregion
 

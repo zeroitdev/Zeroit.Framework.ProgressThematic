@@ -24,6 +24,8 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         public CircularIndeterminate_UC()
         {
             InitializeComponent();
+
+            
         }
 
         private void Preview_Btn_MouseEnter(object sender, EventArgs e)

@@ -43,7 +43,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
         /// </summary>
         private void InitializeComponent()
         {
-            Zeroit.Framework.ProgressThematic.PenParameters penParameters1 = new Zeroit.Framework.ProgressThematic.PenParameters();
+            Zeroit.Framework.ProgressThematic.PenParameters penParameters2 = new Zeroit.Framework.ProgressThematic.PenParameters();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DaggerV2_UC));
             this.Preview_Btn = new System.Windows.Forms.Button();
             this.bars_Extended_GroupBox = new System.Windows.Forms.GroupBox();
@@ -143,9 +143,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Preview_Btn.FlatAppearance.BorderSize = 0;
             this.Preview_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Preview_Btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.Preview_Btn.Location = new System.Drawing.Point(692, 16);
+            this.Preview_Btn.Location = new System.Drawing.Point(500, 17);
             this.Preview_Btn.Name = "Preview_Btn";
-            this.Preview_Btn.Size = new System.Drawing.Size(105, 43);
+            this.Preview_Btn.Size = new System.Drawing.Size(61, 24);
             this.Preview_Btn.TabIndex = 110;
             this.Preview_Btn.Text = "Preview";
             this.Preview_Btn.UseVisualStyleBackColor = false;
@@ -202,11 +202,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.bars_Extended_GroupBox.Controls.Add(this.label2);
             this.bars_Extended_GroupBox.Controls.Add(this.circular_DaggerV2_UnfilledColor_Btn);
             this.bars_Extended_GroupBox.Controls.Add(this.label4);
-            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bars_Extended_GroupBox.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.bars_Extended_GroupBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.bars_Extended_GroupBox.Location = new System.Drawing.Point(3, 5);
             this.bars_Extended_GroupBox.Name = "bars_Extended_GroupBox";
-            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(643, 485);
+            this.bars_Extended_GroupBox.Size = new System.Drawing.Size(450, 462);
             this.bars_Extended_GroupBox.TabIndex = 112;
             this.bars_Extended_GroupBox.TabStop = false;
             this.bars_Extended_GroupBox.Text = "Dagger V1";
@@ -216,10 +216,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel4.Controls.Add(this.circular_DaggerV2_InnerBorder_Yes_RadioBtn);
             this.panel4.Controls.Add(this.circular_DaggerV2_InnerBorder_No_RadioBtn);
-            this.panel4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel4.Location = new System.Drawing.Point(530, 191);
+            this.panel4.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel4.Location = new System.Drawing.Point(392, 191);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(104, 38);
+            this.panel4.Size = new System.Drawing.Size(54, 53);
             this.panel4.TabIndex = 202;
             // 
             // circular_DaggerV2_InnerBorder_Yes_RadioBtn
@@ -228,7 +228,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Checked = true;
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Name = "circular_DaggerV2_InnerBorder_Yes_RadioBtn";
-            this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerV2_InnerBorder_Yes_RadioBtn.Text = "Yes";
@@ -238,9 +238,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerV2_InnerBorder_No_RadioBtn
             // 
             this.circular_DaggerV2_InnerBorder_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerV2_InnerBorder_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerV2_InnerBorder_No_RadioBtn.Location = new System.Drawing.Point(6, 29);
             this.circular_DaggerV2_InnerBorder_No_RadioBtn.Name = "circular_DaggerV2_InnerBorder_No_RadioBtn";
-            this.circular_DaggerV2_InnerBorder_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerV2_InnerBorder_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_InnerBorder_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerV2_InnerBorder_No_RadioBtn.Text = "No";
             this.circular_DaggerV2_InnerBorder_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -251,7 +251,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label24.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label24.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label24.Location = new System.Drawing.Point(432, 196);
+            this.label24.Location = new System.Drawing.Point(306, 196);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(86, 19);
             this.label24.TabIndex = 201;
@@ -262,10 +262,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel3.Controls.Add(this.circular_DaggerV2_InnerCircle_Yes_RadioBtn);
             this.panel3.Controls.Add(this.circular_DaggerV2_InnerCircle_No_RadioBtn);
-            this.panel3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel3.Location = new System.Drawing.Point(530, 135);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel3.Location = new System.Drawing.Point(392, 135);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(104, 38);
+            this.panel3.Size = new System.Drawing.Size(54, 50);
             this.panel3.TabIndex = 161;
             // 
             // circular_DaggerV2_InnerCircle_Yes_RadioBtn
@@ -274,7 +274,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Checked = true;
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Name = "circular_DaggerV2_InnerCircle_Yes_RadioBtn";
-            this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerV2_InnerCircle_Yes_RadioBtn.Text = "Yes";
@@ -284,9 +284,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerV2_InnerCircle_No_RadioBtn
             // 
             this.circular_DaggerV2_InnerCircle_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerV2_InnerCircle_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerV2_InnerCircle_No_RadioBtn.Location = new System.Drawing.Point(6, 24);
             this.circular_DaggerV2_InnerCircle_No_RadioBtn.Name = "circular_DaggerV2_InnerCircle_No_RadioBtn";
-            this.circular_DaggerV2_InnerCircle_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerV2_InnerCircle_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_InnerCircle_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerV2_InnerCircle_No_RadioBtn.Text = "No";
             this.circular_DaggerV2_InnerCircle_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -297,7 +297,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label22.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label22.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label22.Location = new System.Drawing.Point(432, 140);
+            this.label22.Location = new System.Drawing.Point(306, 140);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(78, 19);
             this.label22.TabIndex = 160;
@@ -308,19 +308,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel1.Controls.Add(this.circular_DaggerV2_Styled_Yes_RadioBtn);
             this.panel1.Controls.Add(this.circular_DaggerV2_Styled_No_RadioBtn);
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel1.Location = new System.Drawing.Point(530, 82);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel1.Location = new System.Drawing.Point(392, 82);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(104, 38);
+            this.panel1.Size = new System.Drawing.Size(54, 47);
             this.panel1.TabIndex = 161;
             // 
             // circular_DaggerV2_Styled_Yes_RadioBtn
             // 
             this.circular_DaggerV2_Styled_Yes_RadioBtn.AutoSize = true;
             this.circular_DaggerV2_Styled_Yes_RadioBtn.Checked = true;
-            this.circular_DaggerV2_Styled_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_DaggerV2_Styled_Yes_RadioBtn.Location = new System.Drawing.Point(6, 3);
             this.circular_DaggerV2_Styled_Yes_RadioBtn.Name = "circular_DaggerV2_Styled_Yes_RadioBtn";
-            this.circular_DaggerV2_Styled_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerV2_Styled_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_Styled_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerV2_Styled_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerV2_Styled_Yes_RadioBtn.Text = "Yes";
@@ -330,9 +330,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerV2_Styled_No_RadioBtn
             // 
             this.circular_DaggerV2_Styled_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerV2_Styled_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerV2_Styled_No_RadioBtn.Location = new System.Drawing.Point(6, 21);
             this.circular_DaggerV2_Styled_No_RadioBtn.Name = "circular_DaggerV2_Styled_No_RadioBtn";
-            this.circular_DaggerV2_Styled_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerV2_Styled_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_Styled_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerV2_Styled_No_RadioBtn.Text = "No";
             this.circular_DaggerV2_Styled_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -343,7 +343,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label21.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label21.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label21.Location = new System.Drawing.Point(432, 87);
+            this.label21.Location = new System.Drawing.Point(306, 87);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(46, 19);
             this.label21.TabIndex = 160;
@@ -355,26 +355,27 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label20.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label20.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label20.Location = new System.Drawing.Point(9, 411);
+            this.label20.Location = new System.Drawing.Point(3, 398);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(91, 38);
+            this.label20.Size = new System.Drawing.Size(67, 57);
             this.label20.TabIndex = 200;
-            this.label20.Text = "Inner Unfilled\r\nThickness";
+            this.label20.Text = "Inner \r\nUnfilled\r\nThickness";
             this.label20.Visible = false;
             // 
             // circular_DaggerV2_InnerUnfilledThickness_Numeric
             // 
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Location = new System.Drawing.Point(106, 413);
+            this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Location = new System.Drawing.Point(85, 408);
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Name = "circular_DaggerV2_InnerUnfilledThickness_Numeric";
-            this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Size = new System.Drawing.Size(101, 29);
+            this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Size = new System.Drawing.Size(59, 22);
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.TabIndex = 199;
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.Visible = false;
             this.circular_DaggerV2_InnerUnfilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_InnerUnfilledThickness_Numeric_ValueChanged);
@@ -385,7 +386,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label19.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label19.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label19.Location = new System.Drawing.Point(242, 82);
+            this.label19.Location = new System.Drawing.Point(153, 82);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(76, 38);
             this.label19.TabIndex = 198;
@@ -395,15 +396,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_InnerFilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_InnerFilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_InnerFilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_InnerFilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_InnerFilledThickness_Numeric.Location = new System.Drawing.Point(339, 87);
+            this.circular_DaggerV2_InnerFilledThickness_Numeric.Location = new System.Drawing.Point(250, 87);
             this.circular_DaggerV2_InnerFilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_InnerFilledThickness_Numeric.Name = "circular_DaggerV2_InnerFilledThickness_Numeric";
-            this.circular_DaggerV2_InnerFilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_InnerFilledThickness_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_InnerFilledThickness_Numeric.TabIndex = 197;
             this.circular_DaggerV2_InnerFilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_InnerFilledThickness_Numeric_ValueChanged);
             // 
@@ -413,7 +415,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label18.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label18.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label18.Location = new System.Drawing.Point(242, 295);
+            this.label18.Location = new System.Drawing.Point(153, 295);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(89, 38);
             this.label18.TabIndex = 196;
@@ -423,15 +425,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_OuterTransparency_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_OuterTransparency_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_OuterTransparency_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_OuterTransparency_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_OuterTransparency_Numeric.Location = new System.Drawing.Point(339, 296);
+            this.circular_DaggerV2_OuterTransparency_Numeric.Location = new System.Drawing.Point(250, 296);
             this.circular_DaggerV2_OuterTransparency_Numeric.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.circular_DaggerV2_OuterTransparency_Numeric.Name = "circular_DaggerV2_OuterTransparency_Numeric";
-            this.circular_DaggerV2_OuterTransparency_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_OuterTransparency_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_OuterTransparency_Numeric.TabIndex = 195;
             this.circular_DaggerV2_OuterTransparency_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_OuterTransparency_Numeric_ValueChanged);
             // 
@@ -441,9 +444,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_InnerFilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerV2_InnerFilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerV2_InnerFilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerV2_InnerFilledColor_Btn.Location = new System.Drawing.Point(530, 356);
+            this.circular_DaggerV2_InnerFilledColor_Btn.Location = new System.Drawing.Point(392, 352);
             this.circular_DaggerV2_InnerFilledColor_Btn.Name = "circular_DaggerV2_InnerFilledColor_Btn";
-            this.circular_DaggerV2_InnerFilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerV2_InnerFilledColor_Btn.Size = new System.Drawing.Size(54, 28);
             this.circular_DaggerV2_InnerFilledColor_Btn.TabIndex = 194;
             this.circular_DaggerV2_InnerFilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerV2_InnerFilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerV2_InnerFilledColor_Btn_Click);
@@ -454,7 +457,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label17.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label17.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label17.Location = new System.Drawing.Point(433, 354);
+            this.label17.Location = new System.Drawing.Point(307, 352);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(80, 38);
             this.label17.TabIndex = 193;
@@ -464,15 +467,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_BorderWidth_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_BorderWidth_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_BorderWidth_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_BorderWidth_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_BorderWidth_Numeric.Location = new System.Drawing.Point(106, 354);
+            this.circular_DaggerV2_BorderWidth_Numeric.Location = new System.Drawing.Point(85, 356);
             this.circular_DaggerV2_BorderWidth_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_BorderWidth_Numeric.Name = "circular_DaggerV2_BorderWidth_Numeric";
-            this.circular_DaggerV2_BorderWidth_Numeric.Size = new System.Drawing.Size(101, 29);
+            this.circular_DaggerV2_BorderWidth_Numeric.Size = new System.Drawing.Size(59, 22);
             this.circular_DaggerV2_BorderWidth_Numeric.TabIndex = 192;
             this.circular_DaggerV2_BorderWidth_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_BorderWidth_Numeric_ValueChanged);
             // 
@@ -482,11 +486,11 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label16.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label16.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label16.Location = new System.Drawing.Point(14, 358);
+            this.label16.Location = new System.Drawing.Point(8, 347);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(91, 19);
+            this.label16.Size = new System.Drawing.Size(54, 38);
             this.label16.TabIndex = 191;
-            this.label16.Text = "Border Width";
+            this.label16.Text = "Border \r\nWidth";
             // 
             // label15
             // 
@@ -494,7 +498,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label15.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label15.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label15.Location = new System.Drawing.Point(14, 247);
+            this.label15.Location = new System.Drawing.Point(8, 247);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(60, 19);
             this.label15.TabIndex = 190;
@@ -505,12 +509,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_EndCap_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_EndCap_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_EndCap_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_EndCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_EndCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_EndCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_EndCap_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_EndCap_ComboBox.Location = new System.Drawing.Point(104, 248);
+            this.circular_DaggerV2_EndCap_ComboBox.Location = new System.Drawing.Point(83, 250);
             this.circular_DaggerV2_EndCap_ComboBox.Name = "circular_DaggerV2_EndCap_ComboBox";
-            this.circular_DaggerV2_EndCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_EndCap_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_EndCap_ComboBox.TabIndex = 189;
             this.circular_DaggerV2_EndCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_EndCap_ComboBox_SelectedIndexChanged);
             // 
@@ -520,7 +524,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label13.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label13.Location = new System.Drawing.Point(14, 304);
+            this.label13.Location = new System.Drawing.Point(8, 304);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(62, 19);
             this.label13.TabIndex = 188;
@@ -531,12 +535,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_LineJoin_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_LineJoin_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_LineJoin_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_LineJoin_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_LineJoin_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_LineJoin_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_LineJoin_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_LineJoin_ComboBox.Location = new System.Drawing.Point(104, 301);
+            this.circular_DaggerV2_LineJoin_ComboBox.Location = new System.Drawing.Point(83, 303);
             this.circular_DaggerV2_LineJoin_ComboBox.Name = "circular_DaggerV2_LineJoin_ComboBox";
-            this.circular_DaggerV2_LineJoin_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_LineJoin_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_LineJoin_ComboBox.TabIndex = 187;
             this.circular_DaggerV2_LineJoin_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_LineJoin_ComboBox_SelectedIndexChanged);
             // 
@@ -546,7 +550,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(14, 195);
+            this.label12.Location = new System.Drawing.Point(8, 195);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(66, 19);
             this.label12.TabIndex = 186;
@@ -557,12 +561,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_StartCap_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_StartCap_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_StartCap_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_StartCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_StartCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_StartCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_StartCap_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_StartCap_ComboBox.Location = new System.Drawing.Point(104, 195);
+            this.circular_DaggerV2_StartCap_ComboBox.Location = new System.Drawing.Point(83, 197);
             this.circular_DaggerV2_StartCap_ComboBox.Name = "circular_DaggerV2_StartCap_ComboBox";
-            this.circular_DaggerV2_StartCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_StartCap_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_StartCap_ComboBox.TabIndex = 185;
             this.circular_DaggerV2_StartCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_StartCap_ComboBox_SelectedIndexChanged);
             // 
@@ -572,7 +576,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label11.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label11.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label11.Location = new System.Drawing.Point(14, 143);
+            this.label11.Location = new System.Drawing.Point(8, 143);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(73, 19);
             this.label11.TabIndex = 184;
@@ -583,12 +587,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_DashStyle_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_DashStyle_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_DashStyle_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_DashStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_DashStyle_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_DashStyle_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_DashStyle_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_DashStyle_ComboBox.Location = new System.Drawing.Point(104, 142);
+            this.circular_DaggerV2_DashStyle_ComboBox.Location = new System.Drawing.Point(83, 144);
             this.circular_DaggerV2_DashStyle_ComboBox.Name = "circular_DaggerV2_DashStyle_ComboBox";
-            this.circular_DaggerV2_DashStyle_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_DashStyle_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_DashStyle_ComboBox.TabIndex = 183;
             this.circular_DaggerV2_DashStyle_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_DashStyle_ComboBox_SelectedIndexChanged);
             // 
@@ -598,9 +602,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_InnerCircleColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerV2_InnerCircleColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerV2_InnerCircleColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerV2_InnerCircleColor_Btn.Location = new System.Drawing.Point(530, 413);
+            this.circular_DaggerV2_InnerCircleColor_Btn.Location = new System.Drawing.Point(392, 401);
             this.circular_DaggerV2_InnerCircleColor_Btn.Name = "circular_DaggerV2_InnerCircleColor_Btn";
-            this.circular_DaggerV2_InnerCircleColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerV2_InnerCircleColor_Btn.Size = new System.Drawing.Size(54, 31);
             this.circular_DaggerV2_InnerCircleColor_Btn.TabIndex = 182;
             this.circular_DaggerV2_InnerCircleColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerV2_InnerCircleColor_Btn.Click += new System.EventHandler(this.circular_DaggerV2_InnerCircleColor_Btn_Click);
@@ -611,7 +615,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label10.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(433, 409);
+            this.label10.Location = new System.Drawing.Point(307, 398);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 38);
             this.label10.TabIndex = 181;
@@ -623,9 +627,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerV2_InnerCircleBorderColor_Btn.Location = new System.Drawing.Point(339, 416);
+            this.circular_DaggerV2_InnerCircleBorderColor_Btn.Location = new System.Drawing.Point(250, 404);
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.Name = "circular_DaggerV2_InnerCircleBorderColor_Btn";
-            this.circular_DaggerV2_InnerCircleBorderColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerV2_InnerCircleBorderColor_Btn.Size = new System.Drawing.Size(46, 31);
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.TabIndex = 180;
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerV2_InnerCircleBorderColor_Btn.Click += new System.EventHandler(this.circular_DaggerV2_InnerCircleBorderColor_Btn_Click);
@@ -636,7 +640,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label9.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(241, 412);
+            this.label9.Location = new System.Drawing.Point(152, 401);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 38);
             this.label9.TabIndex = 179;
@@ -648,7 +652,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label3.Location = new System.Drawing.Point(242, 135);
+            this.label3.Location = new System.Drawing.Point(153, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 38);
             this.label3.TabIndex = 178;
@@ -658,15 +662,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_UnfilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_UnfilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_UnfilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_UnfilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_UnfilledThickness_Numeric.Location = new System.Drawing.Point(339, 137);
+            this.circular_DaggerV2_UnfilledThickness_Numeric.Location = new System.Drawing.Point(250, 137);
             this.circular_DaggerV2_UnfilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_UnfilledThickness_Numeric.Name = "circular_DaggerV2_UnfilledThickness_Numeric";
-            this.circular_DaggerV2_UnfilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_UnfilledThickness_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_UnfilledThickness_Numeric.TabIndex = 177;
             this.circular_DaggerV2_UnfilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_UnfilledThickness_Numeric_ValueChanged);
             // 
@@ -676,7 +681,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(14, 91);
+            this.label1.Location = new System.Drawing.Point(8, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 19);
             this.label1.TabIndex = 176;
@@ -687,12 +692,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_DashCap_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_DashCap_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_DashCap_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_DashCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_DashCap_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_DashCap_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_DashCap_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_DashCap_ComboBox.Location = new System.Drawing.Point(104, 89);
+            this.circular_DaggerV2_DashCap_ComboBox.Location = new System.Drawing.Point(83, 91);
             this.circular_DaggerV2_DashCap_ComboBox.Name = "circular_DaggerV2_DashCap_ComboBox";
-            this.circular_DaggerV2_DashCap_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_DashCap_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_DashCap_ComboBox.TabIndex = 175;
             this.circular_DaggerV2_DashCap_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_DashCap_ComboBox_SelectedIndexChanged);
             // 
@@ -702,7 +707,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(242, 29);
+            this.label8.Location = new System.Drawing.Point(153, 29);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 38);
             this.label8.TabIndex = 169;
@@ -712,15 +717,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_FilledThickness_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_FilledThickness_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_FilledThickness_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_FilledThickness_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_FilledThickness_Numeric.Location = new System.Drawing.Point(339, 34);
+            this.circular_DaggerV2_FilledThickness_Numeric.Location = new System.Drawing.Point(250, 34);
             this.circular_DaggerV2_FilledThickness_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_FilledThickness_Numeric.Name = "circular_DaggerV2_FilledThickness_Numeric";
-            this.circular_DaggerV2_FilledThickness_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_FilledThickness_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_FilledThickness_Numeric.TabIndex = 168;
             this.circular_DaggerV2_FilledThickness_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_FilledThickness_Numeric_ValueChanged);
             // 
@@ -730,7 +736,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(242, 239);
+            this.label7.Location = new System.Drawing.Point(153, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 38);
             this.label7.TabIndex = 167;
@@ -740,15 +746,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_InnerTransparency_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_InnerTransparency_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_InnerTransparency_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_InnerTransparency_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_InnerTransparency_Numeric.Location = new System.Drawing.Point(339, 246);
+            this.circular_DaggerV2_InnerTransparency_Numeric.Location = new System.Drawing.Point(250, 246);
             this.circular_DaggerV2_InnerTransparency_Numeric.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
             this.circular_DaggerV2_InnerTransparency_Numeric.Name = "circular_DaggerV2_InnerTransparency_Numeric";
-            this.circular_DaggerV2_InnerTransparency_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_InnerTransparency_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_InnerTransparency_Numeric.TabIndex = 166;
             this.circular_DaggerV2_InnerTransparency_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_InnerTransparency_Numeric_ValueChanged);
             // 
@@ -758,7 +765,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label6.Location = new System.Drawing.Point(242, 188);
+            this.label6.Location = new System.Drawing.Point(153, 188);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 38);
             this.label6.TabIndex = 165;
@@ -768,15 +775,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_AnimationSpeed_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_AnimationSpeed_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_AnimationSpeed_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_AnimationSpeed_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_AnimationSpeed_Numeric.Location = new System.Drawing.Point(339, 192);
+            this.circular_DaggerV2_AnimationSpeed_Numeric.Location = new System.Drawing.Point(250, 192);
             this.circular_DaggerV2_AnimationSpeed_Numeric.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.circular_DaggerV2_AnimationSpeed_Numeric.Name = "circular_DaggerV2_AnimationSpeed_Numeric";
-            this.circular_DaggerV2_AnimationSpeed_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_AnimationSpeed_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_AnimationSpeed_Numeric.TabIndex = 164;
             this.circular_DaggerV2_AnimationSpeed_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_AnimationSpeed_Numeric_ValueChanged);
             // 
@@ -786,7 +794,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label5.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label5.Location = new System.Drawing.Point(14, 39);
+            this.label5.Location = new System.Drawing.Point(8, 39);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 19);
             this.label5.TabIndex = 163;
@@ -797,12 +805,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_Alignment_ComboBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_Alignment_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.circular_DaggerV2_Alignment_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circular_DaggerV2_Alignment_ComboBox.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.circular_DaggerV2_Alignment_ComboBox.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_Alignment_ComboBox.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.circular_DaggerV2_Alignment_ComboBox.FormattingEnabled = true;
-            this.circular_DaggerV2_Alignment_ComboBox.Location = new System.Drawing.Point(104, 36);
+            this.circular_DaggerV2_Alignment_ComboBox.Location = new System.Drawing.Point(83, 38);
             this.circular_DaggerV2_Alignment_ComboBox.Name = "circular_DaggerV2_Alignment_ComboBox";
-            this.circular_DaggerV2_Alignment_ComboBox.Size = new System.Drawing.Size(104, 25);
+            this.circular_DaggerV2_Alignment_ComboBox.Size = new System.Drawing.Size(62, 21);
             this.circular_DaggerV2_Alignment_ComboBox.TabIndex = 162;
             this.circular_DaggerV2_Alignment_ComboBox.SelectedIndexChanged += new System.EventHandler(this.circular_DaggerV2_Alignment_ComboBox_SelectedIndexChanged);
             // 
@@ -811,19 +819,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.panel2.Controls.Add(this.circular_DaggerV2_Animated_Yes_RadioBtn);
             this.panel2.Controls.Add(this.circular_DaggerV2_Animated_No_RadioBtn);
-            this.panel2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.panel2.Location = new System.Drawing.Point(530, 34);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 8F);
+            this.panel2.Location = new System.Drawing.Point(392, 34);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(104, 38);
+            this.panel2.Size = new System.Drawing.Size(54, 42);
             this.panel2.TabIndex = 159;
             // 
             // circular_DaggerV2_Animated_Yes_RadioBtn
             // 
             this.circular_DaggerV2_Animated_Yes_RadioBtn.AutoSize = true;
             this.circular_DaggerV2_Animated_Yes_RadioBtn.Checked = true;
-            this.circular_DaggerV2_Animated_Yes_RadioBtn.Location = new System.Drawing.Point(6, 6);
+            this.circular_DaggerV2_Animated_Yes_RadioBtn.Location = new System.Drawing.Point(6, 4);
             this.circular_DaggerV2_Animated_Yes_RadioBtn.Name = "circular_DaggerV2_Animated_Yes_RadioBtn";
-            this.circular_DaggerV2_Animated_Yes_RadioBtn.Size = new System.Drawing.Size(47, 23);
+            this.circular_DaggerV2_Animated_Yes_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_Animated_Yes_RadioBtn.TabIndex = 113;
             this.circular_DaggerV2_Animated_Yes_RadioBtn.TabStop = true;
             this.circular_DaggerV2_Animated_Yes_RadioBtn.Text = "Yes";
@@ -833,9 +841,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // circular_DaggerV2_Animated_No_RadioBtn
             // 
             this.circular_DaggerV2_Animated_No_RadioBtn.AutoSize = true;
-            this.circular_DaggerV2_Animated_No_RadioBtn.Location = new System.Drawing.Point(54, 6);
+            this.circular_DaggerV2_Animated_No_RadioBtn.Location = new System.Drawing.Point(6, 22);
             this.circular_DaggerV2_Animated_No_RadioBtn.Name = "circular_DaggerV2_Animated_No_RadioBtn";
-            this.circular_DaggerV2_Animated_No_RadioBtn.Size = new System.Drawing.Size(45, 23);
+            this.circular_DaggerV2_Animated_No_RadioBtn.Size = new System.Drawing.Size(40, 17);
             this.circular_DaggerV2_Animated_No_RadioBtn.TabIndex = 114;
             this.circular_DaggerV2_Animated_No_RadioBtn.Text = "No";
             this.circular_DaggerV2_Animated_No_RadioBtn.UseVisualStyleBackColor = true;
@@ -844,15 +852,16 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             this.circular_DaggerV2_EndAngle_Numeric.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.circular_DaggerV2_EndAngle_Numeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.circular_DaggerV2_EndAngle_Numeric.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.circular_DaggerV2_EndAngle_Numeric.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.circular_DaggerV2_EndAngle_Numeric.Location = new System.Drawing.Point(339, 353);
+            this.circular_DaggerV2_EndAngle_Numeric.Location = new System.Drawing.Point(250, 353);
             this.circular_DaggerV2_EndAngle_Numeric.Maximum = new decimal(new int[] {
             360,
             0,
             0,
             0});
             this.circular_DaggerV2_EndAngle_Numeric.Name = "circular_DaggerV2_EndAngle_Numeric";
-            this.circular_DaggerV2_EndAngle_Numeric.Size = new System.Drawing.Size(62, 29);
+            this.circular_DaggerV2_EndAngle_Numeric.Size = new System.Drawing.Size(46, 22);
             this.circular_DaggerV2_EndAngle_Numeric.TabIndex = 156;
             this.circular_DaggerV2_EndAngle_Numeric.Visible = false;
             this.circular_DaggerV2_EndAngle_Numeric.ValueChanged += new System.EventHandler(this.circular_DaggerV2_EndAngle_Numeric_ValueChanged);
@@ -863,7 +872,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label23.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label23.Location = new System.Drawing.Point(247, 358);
+            this.label23.Location = new System.Drawing.Point(158, 358);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(71, 19);
             this.label23.TabIndex = 148;
@@ -876,7 +885,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label14.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label14.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label14.Location = new System.Drawing.Point(432, 39);
+            this.label14.Location = new System.Drawing.Point(306, 39);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(68, 19);
             this.label14.TabIndex = 130;
@@ -888,9 +897,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_FilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerV2_FilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerV2_FilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerV2_FilledColor_Btn.Location = new System.Drawing.Point(530, 305);
+            this.circular_DaggerV2_FilledColor_Btn.Location = new System.Drawing.Point(392, 302);
             this.circular_DaggerV2_FilledColor_Btn.Name = "circular_DaggerV2_FilledColor_Btn";
-            this.circular_DaggerV2_FilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerV2_FilledColor_Btn.Size = new System.Drawing.Size(54, 28);
             this.circular_DaggerV2_FilledColor_Btn.TabIndex = 111;
             this.circular_DaggerV2_FilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerV2_FilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerV2_FilledColor_Btn_Click);
@@ -901,7 +910,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(433, 302);
+            this.label2.Location = new System.Drawing.Point(307, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 38);
             this.label2.TabIndex = 110;
@@ -913,9 +922,9 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.circular_DaggerV2_UnfilledColor_Btn.FlatAppearance.BorderSize = 0;
             this.circular_DaggerV2_UnfilledColor_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.circular_DaggerV2_UnfilledColor_Btn.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.circular_DaggerV2_UnfilledColor_Btn.Location = new System.Drawing.Point(530, 250);
+            this.circular_DaggerV2_UnfilledColor_Btn.Location = new System.Drawing.Point(392, 253);
             this.circular_DaggerV2_UnfilledColor_Btn.Name = "circular_DaggerV2_UnfilledColor_Btn";
-            this.circular_DaggerV2_UnfilledColor_Btn.Size = new System.Drawing.Size(62, 31);
+            this.circular_DaggerV2_UnfilledColor_Btn.Size = new System.Drawing.Size(54, 27);
             this.circular_DaggerV2_UnfilledColor_Btn.TabIndex = 107;
             this.circular_DaggerV2_UnfilledColor_Btn.UseVisualStyleBackColor = false;
             this.circular_DaggerV2_UnfilledColor_Btn.Click += new System.EventHandler(this.circular_DaggerV2_UnfilledColor_Btn_Click);
@@ -926,7 +935,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label4.Location = new System.Drawing.Point(432, 249);
+            this.label4.Location = new System.Drawing.Point(306, 249);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 38);
             this.label4.TabIndex = 105;
@@ -1030,14 +1039,14 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             // 
             // ZeroitThematicProgress1
             // 
-            this.ZeroitThematicProgress1.AllowTransparency = false;
+            this.ZeroitThematicProgress1.AllowTransparency = true;
             this.ZeroitThematicProgress1.Angle = 90F;
             this.ZeroitThematicProgress1.Animate_Indeterminate = false;
             this.ZeroitThematicProgress1.AnimateStartAngle = false;
             this.ZeroitThematicProgress1.AnimationFunction = Zeroit.Framework.ProgressThematic.AnimationHelpers.WinFormAnimation.KnownAnimationFunctions.Liner;
             this.ZeroitThematicProgress1.AnimationSpeed = new int[] {
         1000,
-        100,
+        10,
         5000};
             this.ZeroitThematicProgress1.AutoAnimate = false;
             this.ZeroitThematicProgress1.AutoIncrement = false;
@@ -1109,6 +1118,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.CaptionColor = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.CaptionMode = Zeroit.Framework.ProgressThematic.ProgressCaptionMode.Percent;
             this.ZeroitThematicProgress1.CaptionShadowColor = System.Drawing.Color.White;
+            this.ZeroitThematicProgress1.Change = 0.1F;
             this.ZeroitThematicProgress1.ChangeByMouse = false;
             this.ZeroitThematicProgress1.Color = System.Drawing.Color.Black;
             this.ZeroitThematicProgress1.Color1_Progress = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
@@ -1141,6 +1151,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ColorInnerCircle6Grad2 = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.ColorOuterBorder = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.ColorProgress = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
             this.ZeroitThematicProgress1.Control_Width = 462;
             this.ZeroitThematicProgress1.ControlSize = 20;
             this.ZeroitThematicProgress1.CPv2_AngleReduced = 90;
@@ -1226,6 +1237,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.EdgeLightColor = System.Drawing.Color.LightGray;
             this.ZeroitThematicProgress1.EdgeWidth = 1;
             this.ZeroitThematicProgress1.EnableInnerCover = false;
+            this.ZeroitThematicProgress1.EnableTransparency = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Minimum = 0;
             this.ZeroitThematicProgress1.ExtendedProgress_Shadow = true;
             this.ZeroitThematicProgress1.ExtendedProgress_Step = 1;
@@ -1235,7 +1247,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.FixedSize = false;
             this.ZeroitThematicProgress1.FloodPercentage = 0.2F;
             this.ZeroitThematicProgress1.FloodStyle = Zeroit.Framework.ProgressThematic.ProgressFloodStyle.Standard;
-            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.ZeroitThematicProgress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.ZeroitThematicProgress1.ForeColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.Glow = false;
             this.ZeroitThematicProgress1.GoogleProgress_BackgroundColor = System.Drawing.SystemColors.Control;
@@ -1251,6 +1263,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.GradientType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.GradientTypes.FullWidthGradient;
             this.ZeroitThematicProgress1.GraphWidth = 145F;
             this.ZeroitThematicProgress1.HatchBrush = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.HatchBrushType.ForwardDiagonal;
+            this.ZeroitThematicProgress1.HatchStyle = System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal;
             this.ZeroitThematicProgress1.HeartBeat = false;
             this.ZeroitThematicProgress1.HeartTimerInterval = 100;
             this.ZeroitThematicProgress1.IG_BorderStyleInner = System.Drawing.Drawing2D.DashStyle.DashDot;
@@ -1308,11 +1321,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.InterpolateColors = new System.Drawing.Color[] {
         System.Drawing.Color.Black,
         System.Drawing.Color.Black};
+            this.ZeroitThematicProgress1.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             this.ZeroitThematicProgress1.Invert = false;
             this.ZeroitThematicProgress1.LineColor1 = System.Drawing.Color.Yellow;
             this.ZeroitThematicProgress1.LineColor2 = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.LineSize = 1;
-            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(652, 78);
+            this.ZeroitThematicProgress1.Location = new System.Drawing.Point(456, 50);
             this.ZeroitThematicProgress1.MacOSX_Automatic = Zeroit.Framework.ProgressThematic.MacOSX_automatic.Start;
             this.ZeroitThematicProgress1.MacOSX_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.MacOSX_Interval = 60;
@@ -1549,8 +1563,10 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.Perplex_ColorGradient4 = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(153)))), ((int)(((byte)(16)))));
             this.ZeroitThematicProgress1.Perplex_DrawMode = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.perplex_DrawMode.Gradient;
             this.ZeroitThematicProgress1.Perplex_ShowPercentage = false;
+            this.ZeroitThematicProgress1.PerplexSluggish = false;
             this.ZeroitThematicProgress1.PieColor1 = System.Drawing.Color.Beige;
             this.ZeroitThematicProgress1.PieColor2 = System.Drawing.Color.Blue;
+            this.ZeroitThematicProgress1.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             this.ZeroitThematicProgress1.PostFix = "%";
             this.ZeroitThematicProgress1.ProgIndicator_CircleWidth = 15F;
             this.ZeroitThematicProgress1.ProgIndicator_NumberOfCircles = 45F;
@@ -1580,19 +1596,19 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressColor = System.Drawing.Color.Teal;
             this.ZeroitThematicProgress1.ProgressColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
             this.ZeroitThematicProgress1.ProgressColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            penParameters1.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
-            penParameters1.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
-            penParameters1.DashOffset = 0.5F;
-            penParameters1.DashPattern = new float[] {
+            penParameters2.Alignment = System.Drawing.Drawing2D.PenAlignment.Center;
+            penParameters2.DashCap = System.Drawing.Drawing2D.DashCap.Flat;
+            penParameters2.DashOffset = 0.5F;
+            penParameters2.DashPattern = new float[] {
         0.2F,
         0.75F};
-            penParameters1.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            penParameters1.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-            penParameters1.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
-            penParameters1.MiterLimit = 0.7F;
-            penParameters1.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
-            penParameters1.Width = 2F;
-            this.ZeroitThematicProgress1.ProgressEffects = penParameters1;
+            penParameters2.DashStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            penParameters2.EndCap = System.Drawing.Drawing2D.LineCap.Round;
+            penParameters2.LineJoin = System.Drawing.Drawing2D.LineJoin.Bevel;
+            penParameters2.MiterLimit = 0.7F;
+            penParameters2.StartCap = System.Drawing.Drawing2D.LineCap.Triangle;
+            penParameters2.Width = 2F;
+            this.ZeroitThematicProgress1.ProgressEffects = penParameters2;
             this.ZeroitThematicProgress1.ProgressInnerBorderWidth = 1F;
             this.ZeroitThematicProgress1.ProgressInnerColor1_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ZeroitThematicProgress1.ProgressInnerColor2_Default = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
@@ -1623,12 +1639,12 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ProgressRect_ValueColour = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(119)))), ((int)(((byte)(220)))));
             this.ZeroitThematicProgress1.ProgressShape_Default = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
             this.ZeroitThematicProgress1.ProgressShapeVal = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress._ProgressShape.Round;
-            this.ZeroitThematicProgress1.ProgressType = Zeroit.Framework.ProgressThematic.ProgressType.Bar;
             this.ZeroitThematicProgress1.ProgressWidth = 5D;
             this.ZeroitThematicProgress1.ProgressWidthEndCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.ProgressWidthStartCap = System.Drawing.Drawing2D.LineCap.Flat;
             this.ZeroitThematicProgress1.Refresh_Rate = 100;
             this.ZeroitThematicProgress1.RefreshRate = 100;
+            this.ZeroitThematicProgress1.Reverse = true;
             this.ZeroitThematicProgress1.RollBlockPercent = 20;
             this.ZeroitThematicProgress1.RollingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.RollingTypes.None;
             this.ZeroitThematicProgress1.RollTimer = 200;
@@ -1637,6 +1653,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingArc_StartAngle = 180F;
             this.ZeroitThematicProgress1.RotatingArc_SweepAngle = 360F;
             this.ZeroitThematicProgress1.RotatingBorder = false;
+            this.ZeroitThematicProgress1.RotatingBorderColor = System.Drawing.Color.Blue;
             this.ZeroitThematicProgress1.RotatingCompass_Angle = 90F;
             this.ZeroitThematicProgress1.RotatingCompass_FillPie = false;
             this.ZeroitThematicProgress1.RotatingCompass_LineColor1 = System.Drawing.Color.Yellow;
@@ -1649,7 +1666,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.RotatingType = Zeroit.Framework.ProgressThematic.ZeroitThematicProgress.PieArc.Arc;
             this.ZeroitThematicProgress1.RotationSpeed = 1000;
             this.ZeroitThematicProgress1.RowCount = 3;
-            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Century Gothic", 14F);
+            this.ZeroitThematicProgress1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.ZeroitThematicProgress1.SecondColor = System.Drawing.Color.White;
             this.ZeroitThematicProgress1.SetImage = ((System.Drawing.Image)(resources.GetObject("ZeroitThematicProgress1.SetImage")));
             this.ZeroitThematicProgress1.ShadowOffset = 1;
@@ -1668,7 +1685,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.ShowLine = true;
             this.ZeroitThematicProgress1.ShowText = true;
             this.ZeroitThematicProgress1.ShowValue = true;
-            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(178, 200);
+            this.ZeroitThematicProgress1.Size = new System.Drawing.Size(141, 157);
             this.ZeroitThematicProgress1.Smoothing = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
             this.ZeroitThematicProgress1.SolidColors = new System.Drawing.Color[] {
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
@@ -1692,6 +1709,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.ZeroitThematicProgress1.SP_ProgressColor = System.Drawing.SystemColors.HotTrack;
             this.ZeroitThematicProgress1.SP_SolidColor = System.Drawing.SystemColors.Control;
             this.ZeroitThematicProgress1.SP_Width_Tweak = 20;
+            this.ZeroitThematicProgress1.SpeedMultiplier = 1F;
             this.ZeroitThematicProgress1.Spinner_Active = false;
             this.ZeroitThematicProgress1.Spinner_EndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.ZeroitThematicProgress1.Spinner_StartCap = System.Drawing.Drawing2D.LineCap.Round;
@@ -1763,7 +1781,7 @@ namespace Zeroit.Framework.ProgressThematic.FormEditors
             this.Controls.Add(this.bars_Extended_GroupBox);
             this.Controls.Add(this.Preview_Btn);
             this.Name = "DaggerV2_UC";
-            this.Size = new System.Drawing.Size(845, 490);
+            this.Size = new System.Drawing.Size(600, 470);
             this.bars_Extended_GroupBox.ResumeLayout(false);
             this.bars_Extended_GroupBox.PerformLayout();
             this.panel4.ResumeLayout(false);
